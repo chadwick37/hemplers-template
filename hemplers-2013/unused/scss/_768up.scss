@@ -1,0 +1,1034 @@
+@import "site";
+
+/******************************************************************
+Stylesheet: Tablet & Small Desktop Stylesheet
+
+Here's where you can start getting into the good stuff.
+This size will work on iPads, other tablets, and desktops.
+So you can start working with more styles, background images,
+and other resources. You'll also notice the grid starts to
+come into play. Have fun!
+
+******************************************************************/
+
+
+/*********************
+GENERAL STYLES
+*********************/
+
+body {}
+
+.hentry p {
+	max-width: 650px;
+	margin-left: auto;
+  padding-bottom: 30px;
+}
+
+/*********************
+LAYOUT & GRID STYLES
+*********************/
+
+.wrap {
+	max-width: 1140px;
+}
+
+#content {
+}
+
+.bg-primary {
+	padding: 320px 0 300px;
+}
+
+body.home .bg-primary {
+	padding: 320px 0 0;
+}
+
+/*********************
+FULL SIZE BG IMAGE
+http://css-tricks.com/perfect-full-page-background-image/
+*********************/
+
+.bg {
+	display: block;
+	position:fixed; 
+	top:-50%; 
+	left:-50%; 
+	width:200%; 
+	height:200%;
+
+	/* Behind everything */
+	z-index: -1;
+
+	img {
+		position:absolute; 
+		top:0; 
+		left:0; 
+		right:0; 
+		bottom:0; 
+		margin:auto; 
+		min-width:50%;
+		min-height:50%;
+	}
+}
+
+/*********************
+PAGE BLOCK STYLES
+*********************/
+
+/* ADVANTAGES  PAGE */
+
+body.page-advantages {
+
+	.bg-primary {
+		background: url('../images/advantages-banner-boat-no-shadow.jpg') center top no-repeat;
+		background-size: cover;
+		background-color: $bcs-gray;
+
+		position: relative;
+		overflow: hidden;
+
+		img {
+			position: absolute;
+			left: 0px;
+			top: -70px;
+		}
+	}
+
+	.advantages-agility {
+		background: url('../images/advantages-agility-banner-bg.jpg') center center no-repeat;
+		background-size: cover;
+		background-color: $bcs-gold;
+		color: $bcs-mid-gray;
+		padding-top: 165px;
+		min-height: 630px;
+
+		h2, p {
+			margin-right: 550px;
+		}
+
+		div {
+			position: relative;
+		}
+
+		div p:last-child {
+			display: block;
+			position: absolute;
+			right: 0;
+			top: 40px;
+			width: 520px;
+			height: 290px;
+			margin: 0;
+			padding: 0;
+			background-color: rgba( $bcs-mid-gray, .4 );
+		}
+	}
+
+	.advantages-technology {
+		background: url('../images/advantages-tech-banner-w-star.jpg') center center no-repeat;
+		background-size: cover;
+		background-color: #6a5e4f;
+		padding: 170px 0 195px;
+		overflow: hidden;
+
+		h2, p {
+			margin-right: 260px;
+		}
+
+		h2 {
+			padding-top: 40px;
+		}
+	}
+
+	.advantages-access {
+		background: url('../images/advantages-tech-map.png') center center no-repeat;
+		background-size: cover;
+		background-color: #004f6a;
+		padding: 200px 0 0;
+		min-height: 790px;
+
+		h2, p {
+			margin-right: 130px;
+		}
+
+		h2 {
+			padding-top: 0;
+		}
+	}
+
+	.advantages-synergy {
+		background: url('../images/advantages-synergy-map-bg.jpg') center bottom no-repeat;
+		background-size: cover;
+		background-color: #004f6a;
+		padding: 370px 0 0;
+		min-height: 1190px;
+
+		position: relative;
+		overflow: visible;
+
+		img {
+			position: absolute;
+		}
+		img:nth-of-type(1) {	// Hex 1
+			right: 40%;
+			bottom: 300px;
+		}
+		img:nth-of-type(2) {	// Hex 2
+			right: 18%;
+			bottom: -100px;
+		}
+		img:nth-of-type(3) {	// Hex 3
+			right: 49%;
+			bottom: -410px;
+		}
+
+		div {
+			width: 100%;
+			max-width: 100%;
+			margin: 0;
+			background-color: rgba($bcs-blue,.8);
+		}
+
+		h2, p {
+			width: 960px;
+			max-width: 100% !important;
+			padding-right: 450px;
+			margin: 0 auto;
+		}
+
+		h2 {
+			padding-top: 70px;
+		}
+	}
+
+	.advantages-legacy {
+		background: url('../images/advantages-legacy-bg.jpg') center top no-repeat;
+		background-size: cover;
+		background-color: #004f6a;
+		padding: 60px 0 0;
+		min-height: 320px;
+
+		position: relative;
+		overflow: visible;
+
+		img {
+			position: absolute;
+			left: -200px;
+			bottom: -110px;
+		}
+
+		h2, p {
+			margin-right: 0px;
+		}
+
+		h2 {
+			padding-top: 0;
+		}
+	}
+
+}
+
+/* ABOUT PAGE */
+
+body.page-about {
+	line-height: 1.3;
+	background-color: #007da4;
+
+	section p {
+				max-width: 100%;
+				font-size: 15px;
+				padding-bottom: 20px;
+	}
+
+	h2 {
+		font-size: 48px;
+	}
+
+	.bg-primary {
+		background: url('../images/overview-banner-bg.jpg') center top no-repeat;
+		background-size: cover;
+		background-color: #003D4D;
+		position: relative;
+		overflow: hidden;
+	  text-align: left;
+	  padding-top: 150px;
+	  padding-bottom: 120px;
+
+		.article-header {
+			background: none;
+		}
+
+		.page-title {
+			padding-bottom: 50px;
+		}
+
+		.about-primary {
+			background: none;
+
+			p {
+				margin-right: 330px;
+
+				&:first-of-type {
+					font-family: "Open Sans Light", "OpenSans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+					font-size: 24px;
+				}
+			}
+
+			ul {
+				display: block;
+				width: 300px;
+				margin: 0;
+				position: absolute;
+				top: 0;
+				right: 0;
+
+				li {
+					margin: 0 0 6px;
+					padding: 0;
+
+					a, a:visited {
+						display: block;
+						position: relative;
+						width: 300px;
+						height: 66px;
+						line-height: 66px;
+						padding-left: 30px;
+						text-transform: uppercase;
+						color: white;
+						font-weight: bold;
+						font-family: "Open Sans Extrabold", "OpenSans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+					}
+					a:after {
+				    display: block;
+				    position: absolute;
+				    right: 17px;
+				    top: 50%;
+				    margin-top: -12px;
+				    content: "";
+				    width: 0;
+				    height: 0;
+				    border-top: 12px solid transparent;
+				    border-left: 8px solid white;
+				    border-bottom: 12px solid transparent;
+					}
+					&:nth-of-type(1) a {
+						background-color: #828a8f;
+						&:hover { background-color: darken(#828a8f, 5%); }
+					}
+					&:nth-of-type(2) a {
+						background-color: #007da4;
+						&:hover { background-color: darken(#007da4, 5%); }
+					}
+					&:nth-of-type(3) a {
+						background-color: $bcs-gold;
+						&:hover { background-color: darken($bcs-gold, 8%); }
+					}
+					&:nth-of-type(4) a {
+						background-color: #003d4d;
+						&:hover { background-color: lighten(#003d4d, 5%); }
+					}
+				}
+			}
+		}
+	}
+
+	/* dropdown icon nav shared props */
+	.about-dropdown ul,
+	.panel ul:first-of-type {
+			display: block;
+			position: absolute;
+			overflow: hidden;
+			margin: 0;
+
+			li {
+				display: block;
+			  width: 306px;
+			  height: 114px;
+				padding: 0;
+			  margin: 0 10px 0 0;
+				float: left;
+
+				a{
+					display: block;
+				  position: relative;
+				  width: 306px;
+				  height: 114px;
+					margin: 0;
+				  padding: 0;
+				  font-size: 0;
+				  line-height: 0;
+				  color: transparent;
+				}
+				&:nth-of-type(1) a {
+				  background: url(../images/overview-button-1-down.png) left top no-repeat;
+				}
+				&:nth-of-type(2) a {
+				  background: url(../images/overview-button-2-down.png) left top no-repeat;
+				}
+				&:nth-of-type(3) a {
+				  background: url(../images/overview-button-3-down.png) left top no-repeat;
+				}
+			}
+
+	}
+
+	/* Dropdown Nav Block */
+	.about-dropdown {
+		position: relative;
+
+		h2 {
+			display: none;
+		}
+
+		/* dropdown icon nav main version tweaks */
+		ul {
+			top: -69px;
+			z-index: 50;
+
+			li {
+			  height: 183px;
+				background-color: $bcs-gold;
+
+			  a {
+			  	height: 183px;
+				}
+				&:nth-of-type(1) a {
+				  background: url(../images/overview-button-1.png) left top no-repeat;
+					&:hover { opacity: .7; }
+				}
+				&:nth-of-type(2) a {
+				  background: url(../images/overview-button-2.png) left top no-repeat;
+					&:hover { opacity: .7; }
+				}
+				&:nth-of-type(3) a {
+				  background: url(../images/overview-button-3.png) left top no-repeat;
+					&:hover { opacity: .7; }
+				}
+			}
+		}
+	}
+
+	/* Dropdown Panel Blocks */
+	.panel {
+		@include transition( height 0s linear );
+		position: relative;
+		height: 0px;
+		overflow: hidden;
+		background-color: #007da4;
+		background-color: rgba( #007da4, .6 );
+		z-index: 60;
+		text-align: left;
+		font-size: 16px;
+		color: $bcs-light-blue;
+
+		.wrap {
+			padding-top: 114px;
+		}
+
+		h2 {
+			color: $white;
+		}
+
+		h4 {
+			color: $bcs-yellow;
+			font-size: 16px;
+			text-transform: none;
+		}
+
+		ul {
+			margin-top: 0;
+			width: 30%;
+		}
+		ul:first-of-type {
+			top: 0;
+			z-index: 70;
+			width: 100%;
+
+			li a {
+				opacity: 0;
+			}
+		}
+	}
+
+	.about-bellingham-bay-cam-weather {
+		ul:first-of-type li {
+			&:nth-of-type(2) a {
+				&:hover { opacity: .8; }
+				&:active { opacity: 1; }
+			}
+			&:nth-of-type(3) a {
+				&:hover { opacity: .8; }
+				&:active { opacity: 1; }
+			}
+		}
+
+
+	}
+	.about-downloads {
+		ul:first-of-type li {
+			&:nth-of-type(1) a {
+				&:hover { opacity: .8; }
+				&:active { opacity: 1; }
+			}
+			&:nth-of-type(3) a {
+				&:hover { opacity: .8; }
+				&:active { opacity: 1; }
+			}
+		}
+		h4:nth-of-type(1),
+		ul:nth-of-type(2),
+		h4:nth-of-type(2),
+		p {
+			float: right;
+			clear: right;
+			width: 65%;
+		}
+	}
+	.about-links {
+		ul:first-of-type li {
+			&:nth-of-type(1) a {
+				&:hover { opacity: .8; }
+				&:active { opacity: 1; }
+			}
+			&:nth-of-type(2) a {
+				&:hover { opacity: .8; }
+				&:active { opacity: 1; }
+			}
+		}
+		ul, h4 {
+			float: left;
+		}
+		ul:nth-of-type(2) {
+			clear: left;
+			padding-right: 5%;
+		}
+		ul:nth-of-type(3) {
+			padding-right: 5%;
+		}
+		h4:nth-of-type(2) {
+			position: relative;
+			margin-top: -1em;
+		}
+	}
+
+	.about-contact {
+		background-color: $white;
+		text-align: left;
+		color: #003d4d;
+		font-size: 15px;
+		padding-top: 69px;
+		padding-bottom: 100px;
+
+		h2 {
+			color: #003d4d;
+		}
+
+		p:last-of-type {
+			padding: 0;
+		}
+
+		ul {
+			margin: 0;
+		}
+
+		.wrap > div {
+			width: 33%;
+			margin-right: 3%;
+			float: left;
+
+			&:first-of-type {
+				width: 25%;
+			}
+		}
+	}
+}
+// if the anchor tag in the url bar is targeting this dropdown section then open it up
+#bellingham-bay-cam-weather:target,
+#downloads:target,
+#links:target {
+	@include transition( height 1s linear );
+	height: 786px;
+}
+// make the link inside the targeted tab be the correct one.
+#bellingham-bay-cam-weather:target ul li [href="#bellingham-bay-cam-weather"] {
+	opacity: 1;
+}
+#downloads:target ul li [href="#downloads"] {
+	opacity: 1;
+}
+#links:target ul li [href="#links"] {
+	opacity: 1;
+}
+
+/* ABOUT/TECHNOLOGY PAGE */
+
+body.page-technology {
+	line-height: 1.3;
+	background-color: $white; //#007da4;
+
+	section p {
+				max-width: 100%;
+				font-size: 15px;
+				padding-bottom: 20px;
+	}
+
+	h2 {
+		font-size: 48px;
+	}
+
+	.bg-primary {
+/*		background: url('../images/overview-banner-bg.jpg') center top no-repeat;
+		background-size: cover;
+		background-color: #003D4D;
+		position: relative;
+		overflow: hidden;
+	  text-align: left;
+	  padding-top: 150px;
+	  padding-bottom: 120px;
+*/
+		height: 555px;
+
+		.article-header,
+		.technology-primary {
+			.wrap {
+				width: 930px;
+				margin: 0 auto;
+			}
+		}
+
+		.page-title {
+			padding-bottom: 30px;
+		}
+
+		.technology-primary {
+			p {
+				&:first-of-type {
+					font-family: "Open Sans Light", "OpenSans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+					font-size: 24px;
+				}
+			}
+		}
+	}
+
+	/* slides block */
+	.technology-technology {
+		h2 {
+			display: none;
+		}
+
+		/* background stripes (these slides will have to be transparent) */
+		& > .wrap:before {
+			display: block;
+			content: "";
+			height: 466px;
+			width: 100%;
+			position: absolute;
+			top: 466px;
+			left: 0;
+			background: #ccc url(../images/gray-stripped-bg.jpg);
+		}
+		& > .wrap:after {
+			display: block;
+			content: "";
+			height: 466px;
+			width: 100%;
+			position: absolute;
+			bottom: 0px;
+			left: 0;
+			background: #ccc url(../images/gray-stripped-bg.jpg);
+		}
+
+		/* the slideshows */
+		.meteor-slides {
+			margin: 0 auto;
+
+			/* show the nav all the time */
+			.meteor-nav {
+				display: block;
+				a {
+					background: none;
+
+					&:after {
+						content: "";
+						width: 0;
+						height: 0;
+						border-top: 40px solid transparent;
+						border-bottom: 40px solid transparent;
+						position: absolute;
+						top: 50%;
+						margin-top: -40px;
+					}
+				}
+				.prev a:after {
+					right: 0px;
+					border-right: 25px solid rgba(0,138,176,.25);
+				}
+				.next a:after {
+					left: 0px;
+					border-left: 25px solid rgba(0,138,176,.25);
+				}
+				.prev a:hover:after {
+					border-right-color: rgba(0,138,176,.5);
+				}
+				.next a:hover:after {
+					border-left-color: rgba(0,138,176,.5);
+				}
+			}
+		}
+	}
+
+	.footer {
+		width: 100%;
+		margin: 0;
+
+		#inner-footer {
+			width: 960px;
+			margin: 0 auto;
+		}
+	}
+}
+
+/*********************
+HEADER SYTLES
+*********************/
+
+.header {
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+	#logo {
+		position: absolute;
+		left: 0;
+	}
+
+/*********************
+NAVIGATION STYLES
+*********************/
+
+.header .nav {
+	//width: 500px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	margin: 0;
+	padding-top: 30px;
+	//margin-left: 750px;
+
+	border: 0;
+
+	li {
+		display: block;
+		float: left;
+
+		a {
+
+			/*
+			you can use hover styles here even though this size
+			has the possibility of being a mobile device.
+			*/
+			&:hover, &:focus {
+
+			}
+		}
+
+		&:first-child {}
+		&:last-child {}
+
+		/*
+		plan your menus and drop-downs wisely.
+		*/
+		ul.sub-menu,
+		ul.children {
+			@include transition(opacity .25s linear, height 0s linear .5s);
+			display: block;
+			position: absolute;
+			right: 0;
+			top: 100%;
+			width: auto;
+			margin: 0 18px 0 0;
+			opacity: 0;
+			height: 0;
+			overflow: hidden;
+			z-index: 8999;
+
+			li {
+				display: inline-block;
+				float: none;
+
+				a {
+					padding: 0 5px;
+
+					&:hover,
+					&:focus {}
+
+					&:link {}
+				}
+
+				&:first-child {}
+
+				&:last-child {
+
+					a {
+						border-bottom: 0;
+					}
+				}
+
+				/*
+				if you need to go deeper, go nuts
+				just remember deeper menus suck
+				for usability. k, bai.
+				*/
+				ul {}
+			}
+
+			/* highlight sub-menu current page */
+			li.current-menu-item,
+			li.current_page_item,
+			li.current-page-ancestor {
+				a { }
+				a { }
+			}
+		}
+
+		/* showing sub-menus */
+		&:hover ul,
+		&.current-menu-parent ul {
+			@include transition(opacity .4s linear, height 0s linear 0s);
+			opacity: 1;
+			height: 21px;
+			overflow: visible;
+		}
+
+	} /* end .menu ul li */
+
+	/* highlight current page */
+	li.current-menu-item,
+	li.current_page_item,
+	li.current-page-ancestor {
+		a {}
+	}  /* end current highlighters */
+
+} /* end .nav */
+
+/*********************
+SIDEBARS & ASIDES
+*********************/
+
+.sidebar {
+	margin-top: 2.2em;
+}
+
+	.widgettitle {
+		border-bottom: 2px solid #444;
+		margin-bottom: 0.75em;
+	}
+
+	.widget {
+		padding: 0 10px;
+		margin: 2.2em 0;
+
+		ul {
+			li {
+				margin-bottom: 0.75em;
+
+				&:first-child {}
+				&:last-child {}
+				a {}
+				/* deep nesting */
+
+				ul {
+					margin-top: 0.75em;
+					padding-left: 1em;
+				}
+			}
+		}
+	}
+
+
+	/* links widget */
+	.widget_links {}
+	.widget_links ul {}
+	.widget_links ul li {}
+	.widget_links ul li a {}
+
+	/* meta widget */
+	.widget_meta {}
+	.widget_meta ul {}
+	.widget_meta ul li {}
+	.widget_meta ul li a {}
+
+	/* pages widget */
+	.widget_pages {}
+	.widget_pages ul {}
+	.widget_pages ul li {}
+	.widget_pages ul li a {}
+
+	/* recent-posts widget */
+	.widget_recent_entries {}
+	.widget_recent_entries ul {}
+	.widget_recent_entries ul li {}
+	.widget_recent_entries ul li a {}
+
+	/* archives widget */
+	.widget_archive {}
+	.widget_archive ul {}
+	.widget_archive ul li {}
+	.widget_archive ul li a {}
+	.widget_archive select {}
+	.widget_archive option {}
+
+	/* tag-cloud widget */
+	.widget_links {}
+	.widget_links li:after {}
+	.widget_links li:before {}
+	.widget_tag_cloud {}
+	.widget_tag_cloud a {}
+	.widget_tag_cloud a:after {}
+	.widget_tag_cloud a:before {}
+
+	/* calendar widget */
+	.widget_calendar {}
+	#calendar_wrap {}
+	#calendar_wrap th {}
+	#calendar_wrap td {}
+	#wp-calendar tr td {}
+	#wp-calendar caption {}
+	#wp-calendar a {}
+	#wp-calendar #today {}
+	#wp-calendar #prev {}
+	#wp-calendar #next {}
+	#wp-calendar #next a {}
+	#wp-calendar #prev a {}
+
+	/* category widget */
+	.widget_categories {}
+	.widget_categories ul {}
+	.widget_categories ul li {}
+	.widget_categories ul ul.children {}
+	.widget_categories a {}
+	.widget_categories select{}
+	.widget_categories select#cat {}
+	.widget_categories select.postform {}
+	.widget_categories option {}
+	.widget_categories .level-0 {}
+	.widget_categories .level-1 {}
+	.widget_categories .level-2 {}
+	.widget_categories .level-3 {}
+
+	/* recent-comments widget */
+	.recentcomments {}
+	#recentcomments {}
+	#recentcomments li {}
+	#recentcomments li a {}
+	.widget_recent_comments {}
+
+	/* search widget */
+	#searchform {}
+	.widget_search {}
+	.screen-reader-text {}
+
+	/* text widget */
+	.textwidget {}
+	.widget_text {}
+	.textwidget p {}
+
+
+/*********************
+FOOTER STYLES
+*********************/
+
+.footer {
+	width: 100%;
+	height: 260px;
+	background-color: $bcs-gray;
+	padding-top: 50px;
+
+	#footer-logo {
+		display: block;
+		float: left;
+		margin-right: 50px;
+	}
+}
+
+/* Widget area of footer, for easier maintenance */
+#sidebar-footer {
+	width: 500px;
+	float: left;
+	margin: 0;
+
+	p {
+		line-height: 1.3;
+	}
+
+	.widget {
+		width: 250px;
+		float: left;
+		margin: 0;
+		padding: 0;
+		color: #ffc20e;
+		
+		.widgettitle {
+			color: $white;
+			margin: 0;
+			border: 0;
+			line-height: 1.3;
+		}
+
+		&#text-3 .widgettitle {
+			display: none;
+		}
+	}
+}
+
+footer nav ul#menu-footer-menu {
+	float: right;
+	margin: 0;
+	width: 250px;
+
+	li {
+
+		&:last-child {
+			display: block;
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+
+		a {
+			&:hover {}
+		}
+		/*
+		be careful with the depth of your menus.
+		it's very rare to have multi-depth menus in
+		the footer.
+		*/
+		ul {}
+	}
+} /* end .footer-menu */
+
+/*footer nav {
+	position: relative;
+	margin-top: -23px;
+}
+
+footer .nav li {
+	float: none;
+	margin: 0;
+	padding: 0;
+}
+
+footer .nav li a {
+	margin: 0;
+	padding: 0;
+}
+
+footer .nav li#menu-item-71 {
+	margin-top: -72px;
+	margin-right: 220px;
+	float: right;
+}
+
+*/
+
+

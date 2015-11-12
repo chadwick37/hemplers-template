@@ -1,0 +1,10 @@
+Google Web Fonts
+ - Germania One
+ - Rye
+ - Lobster
+
+Hosted
+ - Gipsiero Kracxed (Gipsiero Kracxed.otf)
+
+Websafe
+ - Arial

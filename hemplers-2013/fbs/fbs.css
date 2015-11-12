@@ -1,0 +1,285 @@
+
+
+body {
+	/* background-color:{color:Background};  */
+	/* background-image:url({image:Background});  */
+	background-attachment:fixed; 
+	font-family:'helvetica neue', arial;
+	background: #fff;
+	margin: 0;
+}
+
+h1 {
+	background: url(http://www.hemplerfoodgroup.com/wp-content/themes/hemplers-2013/fbs/logo.png) center center no-repeat;
+	display: block;
+	text-indent: -1000px;
+	overflow: hidden;
+	height: 191px;
+	width: 211px;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: -46px;
+}
+
+div#menu {
+	width: 675px;
+	margin: 0 auto;
+}
+
+div#menu ul li {
+	float: left;
+	list-style: none;
+	font-family: 'Germania One', cursive;
+	color: #fff;
+	font-size: 24px;
+	margin-right: 30px;
+	margin-top: 30px;
+}
+
+div#menu ul li a {
+	color: #f3c38b;
+	text-transform: uppercase;
+}
+
+div#menu ul li a:hover {
+	color: #fff;
+}
+
+img {
+	border:none;
+	max-width:100%
+}
+
+img a {border:none;}
+
+#hemplers {
+	position: absolute;
+	top: 0;
+	left: 0;
+	
+	display: none;
+}
+
+#hemplers img {
+	height: 146px;
+}
+
+#top {
+	background: #000 url(http://www.hemplerfoodgroup.com/wp-content/themes/hemplers-2013/fbs/bg.jpg) center center repeat-x;
+	 width:100%;
+	 position:fixed;
+	 top:0;
+	 z-index:4;
+	 background-position:0px 0;
+	 height: 146px;
+}
+
+#top .title {
+	/* font-family:{font:Title};  */
+	font-family: 'Rye', 'serif';
+	/* font-size:{text:Header Title Size}px;  */
+	font-size: 22px;
+	text-transform: uppercase;
+	
+	text-align:center;
+}
+
+#top .title a {
+	color:#f3c38b; 
+	text-decoration:none;
+}
+#top .title a:hover {
+	color:#fff;
+}
+
+#top .description {
+	font-size:12px; 
+	color:#fff; 
+	text-align:center; padding:0 10px 0 18px;
+}
+
+#top .description a { 
+	color:#fff; 
+	text-decoration:none;
+}
+
+#top .description a:hover {}
+#top .description .links {margin:6px 0;}
+
+#shadow {
+	height: 20px;
+	background: transparent url(http://www.hemplerfoodgroup.com/wp-content/themes/hemplers-2013/fbs/shadow.png) center center repeat-x;
+	margin-top: 144px;
+}
+
+#gap {
+	margin-bottom:60px;
+	margin-top: 195px;
+	font-size:12px; 
+	position:relative;
+	z-index:1;
+}
+
+.content {
+	/* background-color:{color:Tiles}; */ 
+	/* margin:{text:Margins}px;  */
+	margin: 4px;
+	width:auto; 
+	height:auto; 
+	overflow:hidden; 
+	/* border:solid {text:Border Width}px {color:Tiles};  */
+	float:left;
+	color: #111;
+}
+
+p.post-title {
+	color: #111;
+}
+
+.content .permalink img {
+	opacity:0; 
+	width:auto; 
+	height:auto; 
+	margin-bottom:auto; 
+	position:relative; 
+	/* top:-15px; */ 
+	/* z-index:3; */
+}
+
+.content .permalink img:hover {opacity:0.4;}
+
+.content .post {
+	position:relative; 
+	z-index:2; 
+/* 	top:-20px; */
+}
+
+#permapage {
+	background-color:#fff; 
+	color: #111;
+	margin:50px auto 0; 
+	width:500px; 
+}
+
+#permapage .post {
+	position:relative;
+	z-index:2;
+	padding: 15px;
+	font-family: 'Germania One', 'Times New Roman', serif;
+	font-size: 16px;
+
+	
+}
+
+.title {
+	
+}
+.title a {
+	
+}
+.title a:hover {
+	
+}
+
+.text {
+	
+}
+.text a {
+	
+}
+.text a:hover {
+	
+}
+
+blockquote {
+	
+}
+
+.footer {
+	font-size: 12px;
+	font-family: arial;
+}
+.footer a {
+	
+}
+.footer a:hover {
+	
+}
+.footer .tag-commas:last-child {
+	display:none;
+}
+
+#notes {
+	background-color:#fff;
+	opacity:0.7;
+	margin:0 auto;
+	width:300px;
+}
+
+div.autopagerize_page_element {
+	max-width: 1033px;
+	margin: 0 auto;
+}
+
+div.autopagerize_page_element img {
+	opacity: 1;
+	-webkit-transition: opacity .3s linear;
+}
+
+div.autopagerize_page_element img:hover {
+	opacity: .2;
+	-webkit-transition: opacity .3s linear;
+}
+
+a, a:link, a:visited {
+	text-decoration: none;
+}
+
+a p strong {
+	margin-top: 0px;
+	padding-left: 20px;
+	padding-bottom: 0;
+	color: #111;
+	text-decoration: none;
+	opacity: 0;
+	text-transform: uppercase;
+	width: 230px;
+	font-family: 'Germania One', 'Times New Roman', serif;
+	font-size: 16px;
+	display: block;
+	
+	position: relative;
+	bottom: 60px;
+	
+}
+
+a p {
+	margin: 0;
+	padding: 0;
+	height: 0;
+	width: 0;
+}
+
+a:hover p strong {
+	opacity: 1;
+}
+
+strong a {
+	color: #111;
+}
+
+/* notes */
+
+div#notes {
+	width: 100%;
+	float: left;
+}
+
+div#notes ol {
+	margin: 0;
+	padding: 0;
+	padding-left: 32px;
+	font-size: 12px;
+}
+
+

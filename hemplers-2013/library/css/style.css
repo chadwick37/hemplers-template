@@ -1,0 +1,768 @@
+
+/******************************************************************
+Site Name: Hempler's 2013
+Author: MossyRock Media
+
+Stylesheet: Base Stylesheet
+
+This are the mobile styles. It's what people see on their phones. If
+you set a great foundation, you won't need to add too many styles in
+the other stylesheets. Remember, keep it light: Speed is Important.
+
+------------ MAP ------------
+
+01. GENERAL STYLES
+02. WORDPRESS BODY CLASSES
+03. LAYOUT & GRID STYLES
+04. LINK STYLES
+05. H1, H2, H3, H4, H5 STYLES
+06. HEADER SYTLES
+07. NAVIGATION STYLES
+08. POSTS & CONTENT STYLES
+09. PAGE NAVI STYLES
+10. COMMENT STYLES
+11. COMMENT FORM STYLES
+12. SIDEBARS & ASIDES
+13. FOOTER STYLES
+
+******************************************************************/
+
+/*********************
+01. GENERAL STYLES
+*********************/
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  line-height: 1.5;
+  color: #53380c;
+  background-color: #000;
+}
+
+#container {
+  background: #000 url('../images/header-grill-bg.jpg') center top no-repeat;
+  background-attachment: fixed;
+  overflow: hidden; /* stops abs placed graphics poking out on mobile/narrow desktop */
+}
+
+#inner-content {
+  background: url('../images/content-paper-bg.jpg') center top repeat;
+  position: relative;
+}
+
+p { margin-top: 0; }
+
+
+/********************
+02. WORDPRESS BODY CLASSES
+    style a page via class
+********************/
+
+
+/*********************
+03. LAYOUT
+*********************/
+
+.wrap {
+  width: 96%;
+  margin: 0 auto;
+}
+
+
+/*********************
+04. LINK STYLES
+*********************/
+
+/*
+ * Default links
+ */
+
+a,
+a:visited {
+  -webkit-transition: opacity 0.1s linear, color 0.1s linear, background-color 0.1s linear, border-color 0.1s linear, text-shadow 0.1s linear;
+      -ms-transition: opacity 0.1s linear, color 0.1s linear, background-color 0.1s linear, border-color 0.1s linear, text-shadow 0.1s linear;
+       -o-transition: opacity 0.1s linear, color 0.1s linear, background-color 0.1s linear, border-color 0.1s linear, text-shadow 0.1s linear;
+         -transition: opacity 0.1s linear, color 0.1s linear, background-color 0.1s linear, border-color 0.1s linear, text-shadow 0.1s linear;
+          transition: opacity 0.1s linear, color 0.1s linear, background-color 0.1s linear, border-color 0.1s linear, text-shadow 0.1s linear; 
+  color: #fff;
+}
+/* on hover = hempler's red */
+a:hover,
+a:focus {
+  color: #942013;
+}
+
+/* highlights links on iPhones/iPads. works like the :hover selector for mobile devices. */
+a:link,
+a:visited:link {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3);
+}
+
+/******************************************************************
+05. HEADING STYLES
+******************************************************************/
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5 {
+  font-family: 'Germania One', 'Times New Roman', serif;
+  text-rendering: optimizelegibility;
+  font-weight: normal;
+  color: white;
+  margin-top: 0;
+}
+
+/* Page Block Heading Emphasis Text */
+h1 em,
+.h1 em,
+h2 em,
+.h2 em,
+h3 em,
+.h3 em {
+  font-family: 'Lobster', 'Times New Roman', serif;
+  display: block;
+}
+
+/* Heading Links */
+h1 a,
+.h1 a,
+h2 a,
+.h2 a,
+h3 a,
+.h3 a,
+h4 a,
+.h4 a,
+h5 a,
+.h5 a {
+  text-decoration: none;
+}
+
+/* Heading sizing */
+h1,
+.h1 {
+  font-size: 2.5em;
+  line-height: 1.333em;
+}
+h2,
+.h2 {
+/*  font-size: 1.75em;*/
+  position: relative;
+  line-height: 1.4em;
+  margin-bottom: 0.375em;
+  font-family: 'Rye', 'serif';
+  font-size: 102px;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+body.home h2 { 
+  font-family: 'Germania One', 'Times New Roman', serif;
+  font-size: 31px;
+  margin-bottom: 135px;
+}
+
+h3,
+.h3 {
+  font-size: 1.125em;
+}
+h4,
+.h4 {
+  font-size: 1.1em;
+  font-weight: 700;
+}
+h5,
+.h5 {
+  font-size: 0.846em;
+  line-height: 2.09em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+
+/*********************
+06. HEADER STYLES
+*********************/
+
+.header {
+  text-rendering: optimizelegibility;
+  font-family: 'Germania One', 'Times New Roman', serif;
+  color: #FFF;
+}
+
+#inner-header {
+  position: relative;
+}
+
+.header #logo {
+  margin: 0;
+  display: block;
+  height: 160px;
+  overflow: hidden;
+}
+.header #logo a {
+  display: block;
+  margin: 0 auto;
+  width: 378px;
+  background: url('../images/header-hemplers-logo-small.png') left top no-repeat;
+}
+body.home .header #logo a {
+  background: url('../images/header-hemplers-logo.png') center top no-repeat;
+}
+
+.header #tagline {
+  text-transform: uppercase;
+  text-align: center;
+  color: #f7e0bb;
+  font-size: 52px;
+  text-shadow: #000 1px 1px 0px;
+  text-shadow: rgba(0,0,0,.75) 1px 1px 0px;
+}
+.header #tagline em {
+  display: block;
+  font-family: 'Rye', 'serif';
+  font-style: normal;
+  font-size: 150px;
+  line-height: .7;
+  text-shadow: none;
+  color: #fff;
+}
+
+.header #tag-arrow {
+  display: none;
+}
+
+/* Hide animation images, reveal at tablet width */
+#sausage-1,
+#sausage-2 {
+  display: none;
+}
+
+
+/*********************
+07. NAVIGATION STYLES
+*********************/
+
+.nav {}
+
+.nav ul {
+    margin-top: 0;
+}
+  body.home .nav ul {
+    text-align: center;
+    padding-right: 0;
+  }
+
+.nav li {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.nav li a {
+  display: block;
+  padding: 10px 10px;
+  font-family: 'Germania One', 'Times New Roman', serif;
+  font-size: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-shadow: #000 1px 1px 0px;
+  color: #808080;
+}
+  .home .nav li a {
+    color: #f7e0bb;
+  }
+  .nav li a:hover,
+  .home .nav li a:hover {
+    color: #942013;
+  }
+  .nav li.current_page_item a {
+    color: #f7e0bb !important;
+  }
+
+/* end .nav */
+
+
+/*********************
+08. POSTS & CONTENT STYLES
+*********************/
+
+#main {
+}
+
+.hentry {
+  background: transparent url('../images/primary-paper-bg.png') center top repeat-x;
+  margin-top: -20px;
+}
+
+#content {}
+
+/* entry content */
+
+.entry-content {
+  font-size: 21px;
+  line-height: 1.4;
+}
+  .entry-content.page-block {
+    margin: 0 auto;
+  }
+
+.wp-caption {
+  background: #eee;
+  padding: 5px;
+  /* images inside wp-caption */
+
+}
+.wp-caption img {
+  margin-bottom: 0;
+  width: 100%;
+}
+.wp-caption p.wp-caption-text {
+  font-size: 0.85em;
+  margin: 4px 0 7px;
+  text-align: center;
+}
+
+
+/*unused defaults?
+.entry-content dd {
+  margin-left: 0;
+  font-size: 0.9em;
+  color: #787878;
+  margin-bottom: 1.5em;
+}
+.entry-content img {
+  margin: 0 0 1.5em 0;
+  max-width: 100%;
+  height: auto;
+}
+.entry-content video,
+.entry-content object {
+  max-width: 100%;
+  height: auto;
+}
+.entry-content pre {
+  background: #eee;
+  border: 1px solid #cecece;
+  padding: 10px;
+}
+*/
+
+
+/*********************
+PAGE STYLES
+*********************/
+
+/* All top sections */
+.primary {}
+.primary .wrap {
+  padding-top: 140px;
+  min-height: 800px;
+  position: relative;
+  line-height: 1.4;
+  color: #53380c;
+}
+.primary .wrap li,
+.primary .wrap p {
+  text-shadow: #fff 1px 1px 0px;
+  text-shadow: rgba(255,255,255,.6) 1px 1px 0px;
+}
+
+
+/*
+ * Home Page
+ */
+
+.home-primary {}
+.home-primary .fill {
+  min-height: 422px;
+  background: url('../images/farm-to-family-path-start.png') center bottom no-repeat;
+}
+.home-primary .wrap {
+  padding-top: 80px;
+  padding-bottom: 0;
+  min-height: inherit;
+  font-family: 'Germania One', 'Times New Roman', serif;
+  font-size: 32px;
+}
+.home-primary .wrap p {
+  padding-left: 180px;
+  background: transparent url('../images/80-years.png') left top no-repeat;
+  min-height: 140px;
+}
+
+/* Farms Block */
+
+.home-farms-block .wrap {
+}
+
+  .home-farms-block .wrap h2 {
+  }
+
+
+/*
+ * Products Page
+ */
+
+.our-products-primary .wrap #snapshot-in {
+  display: none;
+  z-index: 99;
+}
+
+/*
+ * Distribution List Page
+ */
+
+.distribution-list-primary h4 {
+  font-family: 'Germania One', 'Times New Roman', serif;
+  font-size: 32px;
+  line-height: 1.4;
+  color: #53380C;
+  text-shadow: rgba(255, 255, 255, 0.6) 1px 1px 0px;
+}
+
+.distribution-list-primary ul li b {
+  margin-top: .5em;
+  display: block;
+}
+
+  .distribution-list-primary ul ul {
+    margin: 0;
+    padding: 0;
+    text-align: left !important;
+    margin-top: 20px !important;
+  }
+
+  .distribution-list-primary ul ul ul {
+    text-align: left !important;
+    margin: 0;
+    padding-left: 20px;
+    margin-top: 0px !important;
+  }
+
+  
+/******************************************************************
+PRODUCT SELECTOR
+******************************************************************/
+
+/* TO DO: */
+/*  May include styles that need to be bumped to specific widths */
+/*  Move this to section class selectors */
+
+/* Product Page Specific Base Styles */
+body.page-id-26 .hentry p {
+  max-width: 490px;
+  min-height: 180px;
+}
+
+/* Product Selector */
+#product_selector {
+  width: 230px;
+  float: left;
+  font-family: 'Germania One', 'Times New Roman', serif;
+}
+#product_selector ul {
+  font-size: 20px;
+  width: 100%;
+}
+#product_selector ul li {
+  display: block;
+  width: 100%;
+}
+#product_selector ul li a {
+  display: block;
+  width: 100%;
+  padding: 5px 15px;
+  color: #53380C;
+  text-shadow: rgba(255, 255, 255, 0.5) 1px 1px 0px;
+  text-decoration: none;
+}
+#product_selector ul li a:hover,
+#product_selector ul li a:focus {
+  color: #942013;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+#product_selector ul li a.disabled,
+#product_selector ul li a.disabled:hover,
+#product_selector ul li a.disabled:focus {
+  color: #999;
+  text-shadow: none;
+  background-color: transparent;
+}
+#product_selector ul li a.selected,
+#product_selector ul li a.selected:hover,
+#product_selector ul li a.selected:focus {
+  color: #942013;
+  text-shadow: none;
+  background-color: transparent;
+}
+
+/* Product List */
+#product_list {
+  padding-bottom: 400px;
+  margin-left: 250px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#product_list > ul {
+  font-size: 20px;
+  width: 100%;
+}
+#product_list > ul > li {
+  display: block;
+  width: 220px;
+  float: left;
+  margin: 0 10px 0 0;
+  height: 300px;
+  overflow: hidden;
+  background: url('../images/product-shadow.png') center 220px no-repeat;
+}
+#product_list > ul > li .thumb > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+#product_list > ul > li .thumb img {
+  -webkit-transition: border-color 0.5s ease-in-out;
+     -moz-transition: border-color 0.5s ease-in-out;
+      -ms-transition: border-color 0.5s ease-in-out;
+       -o-transition: border-color 0.5s ease-in-out;
+          transition: border-color 0.5s ease-in-out;
+  display: block;
+  margin: 0;
+  border: 10px solid #ddd;
+  border-radius: 10px;
+}
+#product_list > ul > li .thumb img.placeholder {
+  min-width: 220px !important;
+  min-height: 220px !important;
+  background-color: #ccc;
+}
+#product_list > ul > li .thumb a:hover img,
+#product_list > ul > li .thumb a:focus img {
+  border-color: #942013;
+}
+#product_list figure,
+#product_list .thumb {
+  position: relative;
+}
+#product_list figcaption {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  padding-top: 5px;
+  text-shadow: none;
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Product List Icons
+ *   html: "<ul class="product-types">
+ *          <li class="[type-slug]">
+ *          etc.
+ */
+.product-types {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  margin: 0;
+  max-width: 200px;
+  height: 34px;
+  overflow: hidden;
+}
+.product-types li {
+  display: block;
+  height: 34px;
+  float: left;
+  overflow: hidden;
+  margin-right: 1px;
+}
+.product-types li:last-of-type {
+  margin-right: 0;
+}
+.product-types li span {
+  display: block;
+  width: 35px;
+  height: 100%;
+  text-indent: 300px;
+  font-size: 0;
+  line-height: 0;
+  padding-top: 25px;
+  background-color: rgba( 200, 0, 0, .1);
+}
+.product-types li span:hover {
+  opacity: .6;
+}
+.product-types li:last-of-type span {
+  padding-right: 10px;
+}
+.product-types li span.prepared {
+  background: transparent url('../images/icon-prepared.gif') left top no-repeat;
+  width: 35px;
+}
+.product-types li span.no-nitrites {
+  background: transparent url('../images/icon-no-nitrites.png') left top no-repeat;
+  width: 55px;
+}
+.product-types li span.watch-how {
+  background: #c62500 url('../images/icon-watch-how.gif') left top no-repeat;
+  width: 200px;
+}
+
+
+/******************************************************************
+09. PAGE NAVI STYLES
+******************************************************************/
+
+
+/******************************************************************
+10. COMMENT STYLES
+******************************************************************/
+
+
+/******************************************************************
+11. COMMENT FORM STYLES
+******************************************************************/
+
+
+/*********************
+12. SIDEBARS & ASIDES
+*********************/
+
+
+/*********************
+13. FOOTER STYLES
+*********************/
+
+.footer {
+  clear: both;
+  background: #000 url('../images/footer-flames-bg.jpg') center bottom no-repeat;
+  min-height: 350px;
+  position: relative;
+  z-index: 50;
+
+  color: white; /* temp just so we know there's something there atm */
+}
+
+
+/*********************
+OTHER MEDIA QUERIES
+*********************/
+
+/*
+RETINA (2x RESOLUTION DEVICES)
+This applies to the retina iPhone (4s) and iPad (2,3) along with
+other displays with a 2x resolution. You can also create a media
+query for retina AND a certain size if you want. Go Nuts.
+*/
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  /* 
+  EXAMPLE 
+  Let's say you have an image and you need to make sure it looks ok
+  on retina screens. Let's say we have an icon which dimension are
+  24px x 24px. In your regular stylesheets, it would look something
+  like this:
+  
+  .icon {
+  	width: 24px;
+  	height: 24px;
+  	background: url(img/test.png) no-repeat;
+  }
+  
+  For retina screens, we have to make some adjustments, so that image
+  doesn't look blurry. So, taking into account the image above and the
+  dimensions, this is what we would put in our retina stylesheet:
+  
+  .icon {
+  	background: url(img/test@2x.png) no-repeat;
+  	background-size: 24px 24px;
+  }
+  
+  So, you would create the same icon, but at double the resolution, meaning 
+  it would be 48px x 48px. You'd name it the same, but with a @2x at the end
+  (this is pretty standard practice). Set the background image so it matches
+  the original dimensions and you are good to go. 
+  
+  */
+}
+
+
+/*
+iPHONE 5 MEDIA QUERY
+Want to get fancy for no good reason? Knock yourself out.
+*/
+@media (device-height: 568px) and (-webkit-min-device-pixel-ratio: 2) {}
+
+
+/*
+PRINT STYLESHEET
+Feel free to customize this. Remember to add things that won't make
+sense to print at the bottom. Things like nav, ads, and forms should
+be set to display none.
+*/
+@media print {
+  * {
+    background: transparent !important;
+    color: black !important;
+    text-shadow: none !important;
+    filter: none !important;
+    -ms-filter: none !important;
+  }
+  a,
+  a:visited {
+    color: #444 !important;
+    text-decoration: underline;
+  }
+  a:after,
+  a:visited:after {
+    content: " (" attr(href) ")";
+  }
+  a abbr[title]:after,
+  a:visited abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  thead {
+    display: table-header-group;
+  }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+  img {
+    max-width: 100% !important;
+  }
+  @page  {
+    margin: 0.5cm;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+  .sidebar,
+  .page-navigation,
+  .wp-prev-next,
+  .respond-form,
+  nav {
+    display: none;
+  }
+}

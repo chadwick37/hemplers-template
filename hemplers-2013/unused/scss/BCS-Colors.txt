@@ -1,0 +1,25 @@
+BCS styles:
+
+Font: OpenSans
+Color (dark gray): #414042
+Yellow text: #ffc20e
+Link text (light blue): #00b9ff
+
+Home
+--------
+Footer bg: #2a2723
+Home boxes (blue): #003d4d
+Nav bar bg: #2a2723 @ %80
+
+History
+--------
+
+
+Sustainability
+---------
+Gray band: #e0e2e3;
+
+
+
+
+

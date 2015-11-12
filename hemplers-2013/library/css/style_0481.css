@@ -1,0 +1,88 @@
+/******************************************************************
+Site Name: Hempler's 2013
+Author: MossyRock Media
+
+Stylesheet: 481px+ -- Large Mobile Stylesheet
+
+LARGER MOBILE DEVICES
+This is for devices like the Galaxy Note or something that's
+larger than an iPhone but smaller than a tablet. It's set to 
+481px because at 480px it would load on a landscaped iPhone.
+  
+A word of warning. This size COULD be a larger mobile device,
+so you still want to keep it pretty light and simply expand
+upon your base styles.
+
+******************************************************************/
+
+/*********************
+NAVIGATION STYLES
+*********************/
+
+/* .menu is clearfixed inside mixins.scss */
+.menu {
+  /* end .menu ul */
+
+}
+.menu ul {
+  /* end .menu ul li */
+
+  /* highlight current page */
+
+  /* end current highlighters */
+
+}
+.menu ul li {
+  /*
+        plan your menus and drop-downs wisely.
+        */
+
+}
+.menu ul li a {
+  /*
+          you can use hover styles here even though this size
+          has the possibility of being a mobile device.
+          */
+
+}
+/* end .menu */
+
+/*********************
+POSTS & CONTENT STYLES
+*********************/
+/* entry content */
+.entry-content {
+  /* at this larger size, we can start to align images */
+
+}
+.entry-content .alignleft,
+.entry-content img.alignleft {
+  margin-right: 1.5em;
+  display: inline;
+  float: left;
+}
+.entry-content .alignright,
+.entry-content img.alignright {
+  margin-left: 1.5em;
+  display: inline;
+  float: right;
+}
+.entry-content .aligncenter,
+.entry-content img.aligncenter {
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  clear: both;
+}
+/* end .entry-content */
+
+/*********************
+FOOTER STYLES
+*********************/
+
+/*
+check your menus here. do they look good?
+do they need tweaking?
+*/
+/* end .footer-links */
+

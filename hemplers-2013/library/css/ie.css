@@ -1,0 +1,101 @@
+/******************************************************************
+Site Name: 
+Author: 
+
+Stylesheet: IE Stylesheet
+
+So instead of using the respond.js file to add media query support
+to IE, we're going to use SASS to create an easily readable css file.
+Here, we import all the styles the standard stylesheet gets, only
+without the media queries. No need to worry about editing anything!
+
+******************************************************************/
+
+/* IE 7+8 */
+
+html.lt-ie9 .home-farms-block .wrap ul {
+  padding-left: 400px;
+}
+
+/* IE 7 */
+
+html.lt-ie8 .header {
+  position: relative;
+  z-index: 1;
+}
+
+html.lt-ie8 .header .page-item-329 {
+  display: none !important;
+}
+
+html.lt-ie8 #content {
+  z-index: 0;
+}
+
+html.lt-ie8 .header #tagline {
+  top: 280px;
+}
+
+html.lt-ie8 .nav li {
+  display: inline;
+}
+
+html.lt-ie8 #inner-header nav {
+  z-index: 100;
+}
+
+html.lt-ie8 .primary .wrap {
+  /* IE7 doesn't understand "inherit" as a value? */
+  min-height: auto;
+}
+
+html.lt-ie8 body.home .page-block figure {
+  bottom: -40px;
+}
+
+html.lt-ie8 .home-secrets-block .wrap ul {
+  padding-right: 400px;
+}
+
+html.lt-ie8 .home-market-block .wrap ul {
+  text-align: right;
+}
+
+html.lt-ie8 .home-market-block .wrap ul li {
+  display: inline;
+  width: 200px;
+}
+
+html.lt-ie8 .home-get-it-block .wrap ul {
+  padding-right: 400px;
+}
+
+html.lt-ie8 .home-secrets-block h2 {
+  z-index: 1;
+}
+html.lt-ie8 .home-secrets-block #quality {
+  z-index: 0;
+}
+
+html.lt-ie8 .footer .wrap {
+  max-width: 100%;
+}
+
+html.lt-ie8 #footer-content > div {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+html.lt-ie8 #footer-content #footer-logo {
+  width: 150px;
+}
+
+html.lt-ie8 #footer-content .address {
+  width: 150px;
+}
+
+/* product list */
+
+html.lt-ie8 #product_list > ul > li {
+  margin-right: 0;
+}

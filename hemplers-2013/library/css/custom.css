@@ -1,0 +1,530 @@
+
+/* OTHER PAGES ***********************************************/
+
+/* PAGE GLOBAL --------------*/
+
+/* pages */
+
+/*body.page-id-26 #main,
+body.page-id-28 #main,
+body.page-id-30 #main,
+body.page-id-32 #main {
+	background: url('../images/pages-top-edge.jpg') center top no-repeat;
+}
+*/
+/*body.page-id-26 #main .entry-content .wrap,
+body.page-id-28 #main .entry-content .wrap,
+body.page-id-30 #main .entry-content .wrap,
+body.page-id-32 #main .entry-content .wrap {
+	padding-left: 0;
+	padding-top: 0;
+}
+*/
+
+
+/* OUR STORY PAGE */
+
+/*
+body.page-id-28 .footer #bottom-edge {
+	position: relative;
+	top: 0;
+	margin-top: -220px;
+}*/
+
+
+
+/*
+section#story-2 h2 {
+	margin-left: 450px;
+	font-size: 130px;
+}
+
+section#story-2 div.col1 {
+	width: 470px;
+}
+
+section#story-2 div.col1 {
+	margin-right: 2%;
+}
+
+section#story-2 div.col1 div {
+	width: 450px;
+	margin-bottom: 130px;
+}
+
+
+img.wp-image-60 {
+	margin-left: -25px;
+	margin-bottom: 0px;
+	margin-top: -25px;
+	padding: 0;
+	width: 450px;
+}
+*/
+
+
+
+
+/* store locator */
+
+
+/* contact */
+
+
+
+
+
+/* footer */
+
+/* nav */
+
+body.page nav {
+	margin-left: 218px;
+}
+
+
+body.home nav {
+	margin-left: 152px;
+}
+
+/*
+body.page nav {
+	margin-left: 218px;
+}
+*/
+
+/*
+body.page nav ul li {
+	margin: 0 8px !important;
+}
+*/
+
+
+/* products tweaks */
+
+#baconlink {
+	display: none;
+}
+
+#kestins-korner {
+	display: none;
+}
+
+
+body.home #baconlink {
+	display: block;
+	position: absolute;
+	right: 0;
+	margin-top: 57px;
+}
+
+body.home #kestins-korner {
+	display: block;
+	position: absolute;
+	right: 0;
+	margin-top: 198px;
+}
+
+body.page-id-458 #container {
+	background: none;
+}
+
+body.page-id-458 #content {
+	text-align: center;
+}
+
+body.page-id-458 .header {
+	min-height: 90px;
+}
+
+body.page-id-458 h2 {
+	font-size: 55px;
+}
+
+body.page-id-28 #content a,
+body.page-id-28 #content a:link,
+body.page-id-28 #content a:visited {
+	text-decoration: none;
+}
+
+
+div.jetpack_subscription_widget h2 {
+	display: none;
+}
+
+div.jetpack_subscription_widget form>p:first-of-type {
+	display: none;
+}
+
+div.jetpack_subscription_widget input#subscribe-field {
+	width: auto !important;
+	padding: 8px !important;
+}
+
+/* home */
+
+a#nws {
+	position: absolute;
+	margin-left: 586px;
+	padding-top: 16px;
+}
+
+.home-get-it-block .fill {
+	min-height: 795px;
+}
+
+.entry-content.home-get-it-block {
+	margin-top: -26px !important;
+}
+
+/* products */
+
+#product-info p {
+	height: auto;
+	margin: 0;
+	padding: 0;
+	min-height: auto;
+	max-height: auto;
+}
+
+#product-info a {
+	color: #333;
+	font-weight: bold;
+}
+
+/* footer */
+
+#footer-content .address {
+	padding-top: 16px;
+}
+
+/* distro list */
+
+body.page-id-329 .table-wrap {
+	clear: both;
+}
+
+/* contact us email address fix */
+
+/*
+div#container {
+	position: relative;
+	z-index: 9999;
+}
+*/
+
+a#close {
+	height: 500px;
+	width: 300px;
+	overflow: hidden;
+	display: block;
+	text-indent: -1000px;
+	border: 0px dotted #ccc;
+	position: absolute;
+	margin-left: 500px;
+	margin-top: -266px;
+	cursor: pointer;
+}
+
+/* wp stats */
+
+#wpstats {
+	position: absolute;
+	height: 0;
+	width: 0;
+	overflow: hidden;
+}
+
+/* hide ingredients */
+
+.home-secrets-block figure a {
+	/* background-image: url(/wp-content/themes/hemplers-2013/library/images/sandwich-good.jpg); */
+	background-image: url(/wp-content/themes/hemplers-2013/library/images/family-vid.jpeg);
+}
+
+/* kestin's korner */
+
+body.page-id-511 h1 {
+	font-family: 'rye';
+	font-size: 100px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+body.page-id-511 header.header {
+	min-height: 100px;
+}
+
+body.page-id-511 section div.fill {
+	margin-bottom: 200px;
+}
+
+body.page-id-511 div#container {
+	background-image: none;
+}
+
+body.page-id-511 p.intro {
+	font-size: 16px;
+}
+
+body.page-id-511 div#posts div.left img {
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+
+body.page-id-511 div#posts div.right img {
+	float: right;
+	margin-left: 20px;
+	margin-bottom: 20px;
+}
+
+body.page-id-511 .excerpt-dash {
+	display: none;
+}
+
+body.page-id-511 div.listing-item {
+	margin-top: 80px;
+	
+}
+
+body.page-id-511 div.listing-item h3 {
+	margin-bottom: 5px;
+	font-size: 35px;
+}
+
+body.page-id-511 div.listing-item {
+	font-size: 17px;
+	clear: both;
+}
+
+body.page-id-511 div.listing-item span.blog-tape {
+	display: block;
+	position: absolute;
+
+}
+
+body.page-id-511 div#posts div.right span.blog-tape {
+	background: url(/wp-content/themes/hemplers-2013/library/images/tape-right.png) no-repeat;
+	margin-left: 766px;
+	margin-top: -31px;
+	height: 57px;
+	width: 142px;
+}
+
+body.page-id-511 div#posts div.left span.blog-tape {
+	background: url(/wp-content/themes/hemplers-2013/library/images/tape-left.png) no-repeat;
+	margin-left: -29px;
+	margin-top: -42px;
+	height: 109px;
+	width: 139px;
+}
+
+/*
+body.page-id-511 div.frame-wrap {
+	display: none;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-color: rgba(51, 51, 51, .6);
+	z-index: 9999;
+	
+}
+
+body.page-id-511 div.frame-wrap.show {
+	display: block;
+}
+
+body.page-id-511 div.frame {
+	display: none;
+	border: 3px solid #666;
+	width: 700px;
+	height: 500px;
+	background: #fff;
+	overflow: auto;
+	padding: 30px;
+	z-index: 99999;
+	top: 15%;
+	left: 15%;
+	position: absolute;
+	/* margin: auto; */
+	/*border-radius: 10px;
+}
+*/
+
+div.blog-post div.frame h3 {
+	color: #666;
+}
+
+body.page-id-511 div.frame.show {
+	display: block;
+}
+
+/* post */
+
+iframe {
+	width: 900px;
+	height: 600px;
+}
+
+body.page-id-511 div#colorbox {
+	width: 900px;
+	height: 600px;
+	overflow: auto;
+	background: #fff;
+}
+
+div#colorbox div#cboxLoadedContent {
+	max-height: 600px !important;
+	overflow: auto;
+}
+
+div#colorbox div#inner-content  {
+	background: #fff;
+	padding: 40px;
+	font-size: 18px;
+}
+
+div#colorbox .eightcol  {
+	width: 100%;
+}
+
+div#colorbox p.byline  {
+	display: none;
+}
+
+div#colorbox .hentry {
+	background: none;
+}
+
+div#colorbox h1 {
+	font-size: 40px;
+	color: #333;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+
+div#colorbox section.entry-content {
+	font-size: 18px;
+}
+
+div#cboxTitle {
+	display: none;
+}
+
+.entry-content .alignleft, .entry-content img.alignleft,
+.entry-content .alignright, .entry-content img.alignright {
+	margin-bottom: 20px;
+}
+
+
+/* page */
+
+body.page-id-511 section div.fill {
+	background: url(/wp-content/themes/hemplers-2013/library/images/snake.png) center top repeat-y;
+}
+
+body.page-id-511 div#meteor-slideshow {
+	height: 340px;
+	width: 416px;
+	background: url('../images/home-video-frame.png') no-repeat;
+	z-index: 2;
+	padding: 27px 33px;
+	overflow: hidden;
+	float: right;
+	margin-left: 30px;
+}
+
+body.page-id-511 div#subscribe {
+	font-size: 17px;
+	color: #333;
+	margin-top: 90px;
+}
+
+body.page-id-511 div#subscribe label {
+	display: none;
+}
+
+article.post a,
+article.post a:visited,
+article.post a:link {
+	color: #53380C;
+}
+
+h3#comments {
+	color: #333;
+}
+
+div.comment-meta a {
+	font-size: 12px;
+	color: #666;
+	text-decoration: none;
+	font-style: italic;
+}
+
+div.comment-body {
+	font-size: 14px;
+	color: #666;
+	margin: 
+}
+
+article.post cite a.url {
+	text-decoration: none;
+	font-weight: bold;
+}
+
+article.post a.comment-reply-link {
+	background: #333;
+	color: #fff;
+	border-radius: 4px;
+	padding: 5px;
+	text-decoration: none;
+	font-size: 12px;
+	
+	display: none;
+}
+
+article.post a.comment-reply-link:hover {
+	background: #666;
+}
+
+li.comment {
+	border: 1px dashed #333;
+	padding: 15px;
+	margin: 20px 0;
+}
+
+form#commentform {
+	font-size: 12px;
+	color: #333;
+}
+
+textarea#comment {
+	width: 100%;
+}
+
+/* social for blog */
+
+#ssba {
+	margin-bottom: 40px;
+}
+
+a.ssba_tooptip{outline:none;text-decoration:none !important;color:inherit !important;}
+a.ssba_tooptip strong{line-height:12px;}
+a.ssba_tooptip:hover{text-decoration:none;color:inherit !important;} 
+a.ssba_tooptip span{z-index:10;display:none;padding:10px;margin-top:-30px;margin-left:28px;line-height:16px;}
+a.ssba_tooptip:hover span{font-family: arial;font-size: 12px;display:inline;position:absolute;color:#555e58;border:1px solid #e0dddd;background:#f5f5f5;}
+.callout{z-index:20;position:absolute;top:30px;border:0;left:-12px;}
+a.ssba_tooptip span{border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px;-khtml-border-radius:4px;-o-border-radius:4px;}
+
+#ssba img	{ 	
+	width: 50px !important;
+	padding: 6px;
+	border:  0;
+	box-shadow: none !important;
+	display: inline;
+	vertical-align: middle;
+}
+

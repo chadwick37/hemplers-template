@@ -1,0 +1,94 @@
+@import "site";
+
+/******************************************************************
+Stylesheet: Desktop Stylsheet
+
+This is the desktop size. It's larger than an iPad so it will only
+be seen on the Desktop. 
+
+******************************************************************/
+
+/*********************
+LAYOUT & GRID STYLES
+*********************/
+
+.wrap {
+  width: 960px;
+  margin: 0 auto;
+}
+
+/*********************
+HEADER SYTLES
+*********************/
+
+.header {}
+
+  #logo {
+    margin-left: -236px;
+  }
+
+/*********************
+NAVIGATION STYLES
+*********************/
+
+/*
+all navs have a .nav class applied via
+the wp_menu function; this is so we can
+easily write one group of styles for
+the navs on the site so our css is cleaner
+and more scalable.
+*/
+
+.header .nav {
+
+  & > li {
+    /* WebOPTICS Login Link*/
+    &:last-child {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: -75px;
+      background: url(../images/weboptics-login-bg.png) center bottom no-repeat;
+      width: 242px;
+      height: 32px;
+      font-size: 12px;
+      font-style: italic;
+      text-align: center;
+
+      a {
+        text-transform: none;
+        padding: 0;
+      }
+    }
+  }
+}
+
+/*********************
+POSTS & CONTENT STYLES
+*********************/
+
+#content {
+  margin: 0;
+}
+
+.hentry {
+}
+
+section.home-promo {
+  height: 450px;
+  position: relative;
+
+  div {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 400px;
+    height: 230px;
+    padding: 30px 25px;
+    overflow: hidden;
+
+    img {
+      margin-left: -20px !important;
+    }
+  }
+}

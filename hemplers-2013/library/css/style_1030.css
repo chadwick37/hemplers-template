@@ -1,0 +1,14 @@
+/******************************************************************
+Site Name: Hempler's 2013
+Author: MossyRock Media
+
+Stylesheet: 1030px+ -- Desktop Stylesheet
+
+DESKTOP
+This is the desktop size. It's larger than an iPad so it will only
+be seen on the Desktop. 
+
+******************************************************************/
+
+/* Temporary fix while mobile is disabled */
+#container { min-width: 1000px; }
