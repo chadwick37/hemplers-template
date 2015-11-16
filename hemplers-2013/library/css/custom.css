@@ -528,3 +528,25 @@ a.ssba_tooptip span{border-radius:4px;-moz-border-radius:4px;-webkit-border-radi
 	vertical-align: middle;
 }
 
+/* blog kestin korner */
+	article#post-458.clearfix.post-458.page.type-page.status-publish.hentry {
+		    background:none;
+	}
+
+	article#post-458.clearfix.post-458.page.type-page.status-publish.hentry section.entry-content:last-child {
+			background:none;
+
+	}
+
+body.page.page-id-458 div#container div#content div#inner-content {
+		background: transparent url('../images/wood2.png') center top repeat-y;
+	    background-size: cover;
+
+	}
+/* custom wp tiles */
+div.wp-tiles-loaded .wp-tiles-tile-bg {
+	top: 10px;
+	left: 10px;
+	right: 10px;
+	bottom: 10px;
+}
