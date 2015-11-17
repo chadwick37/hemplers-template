@@ -529,20 +529,136 @@ a.ssba_tooptip span{border-radius:4px;-moz-border-radius:4px;-webkit-border-radi
 }
 
 /* blog kestin korner */
-	article#post-458.clearfix.post-458.page.type-page.status-publish.hentry {
-		    background:none;
-	}
+article#post-458.clearfix.post-458.page.type-page.status-publish.hentry {
+	background:none;
+}
 
-	article#post-458.clearfix.post-458.page.type-page.status-publish.hentry section.entry-content:last-child {
-			background:none;
+article#post-458.clearfix.post-458.page.type-page.status-publish.hentry section.entry-content:last-child {
+	background:none;
 
-	}
+}
 
 body.page.page-id-458 div#container div#content div#inner-content {
-		background: transparent url('../images/wood2.png') center top repeat-y;
-	    background-size: cover;
+	/*background: transparent url('../images/wood2.png') center top repeat-y;
+	background-size: cover;*/
+	background: none;
 
-	}
+}
+
+body.page.page-id-458 div#container header.header div#inner-header nav{
+	display: none;
+}
+
+body.page.page-id-458 div#container header.header div#inner-header {
+	float: left;
+	margin: 0 0 0 15px;
+}
+
+body.page.page-id-458 div#container header.header div#inner-header h1#logo {
+	margin-left: 45px;
+}
+
+body.page.page-id-458 div#container header.header div#inner-header #logo a {
+    background: url('../images/header-hemplers-logo-small-1.png') left top no-repeat;
+}
+
+body.page.page-id-458 div#container header.header div#inner-header a#kestins-korner-1 img{
+	position: absolute;
+    margin-left: 775px;
+    width: 325px;
+    margin-top: 95px;
+}
+
+div.arrow {
+	background: transparent url('../images/arrow-left.png') no-repeat; 
+	padding-bottom: 100px;
+	margin-top: 75px;
+	background-size: 2% 30%;
+
+}
+
+div.kestin-pic {
+	background-color: transparent;
+	background-image: url('../images/kestin-pic.png') ;
+	background-position: right;
+	background-repeat: no-repeat;
+	padding-bottom: 275px;
+	margin-top: 75px;
+	background-size: contain;
+}
+
+article#post-458 section.entry-content div.fill.clearfix div.wrap.clearfix p {
+	color: #C9C9C9;
+	text-shadow: none;
+}
+article#post-458 section.entry-content div.fill.clearfix div.wrap {
+	width: 100%;
+}
+
+.blogcontent {
+	background: transparent url('../images/wood2.png') center top repeat-y;
+	background-size: cover;
+}
+/* Footer customize */
+footer #footer-content {
+    margin-top: 25px;
+}
+
+#footer-content .address {
+        /* margin-right: 55px; */
+    margin-top: 85px;
+    /* clear: both; */
+    position: absolute;
+}
+
+#footer-content .email, #footer-content .phone {
+    border: none;
+}
+
+#footer-content .address p {
+	text-align: center;
+	position: absolute;
+	color: #60574C;
+}
+
+#footer-content #footer-logo img {
+	margin-left: -90px;
+}
+
+#footer-content #footer-logo, #footer-links {
+	border-right: 2px dotted #93714e;
+}
+
+/* Custom social Icons Footer */
+#footer-content #ssba {
+	clear: right;
+    width: 400px;
+    /* padding-left: 415px; */
+    position: absolute;
+    margin-top: 60px;
+    margin-left: 400px;
+}
+
+#footer-content #ssba a.ssba_tooptip{outline:none;text-decoration:none !important;color:inherit !important;}
+#footer-content #ssba a.ssba_tooptip strong{line-height:12px;}
+#footer-content #ssba a.ssba_tooptip:hover{text-decoration:none;color:inherit !important;} 
+#footer-content #ssba a.ssba_tooptip span{z-index:10;display:none;padding:10px;margin-top:-30px;margin-left:28px;line-height:16px;}
+#footer-content #ssba a.ssba_tooptip:hover span{font-family: arial;font-size: 12px;display:inline;position:absolute;color:#555e58;border:1px solid #e0dddd;background:#f5f5f5;}
+#footer-content #ssba .callout{z-index:20;position:absolute;top:30px;border:0;left:-12px;}
+#footer-content #ssba a.ssba_tooptip span{border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px;-khtml-border-radius:4px;-o-border-radius:4px;}
+
+#footer-content #ssba img	{ 	
+	width: 50px !important;
+	padding: 6px;
+	border:  0;
+	box-shadow: none !important;
+	display: inline;
+	vertical-align: middle;
+}
+/* End Custom social Icons Footer*/
+
+/* End Footer Customize */
+
 /* custom wp tiles */
 div.wp-tiles-loaded .wp-tiles-tile-bg {
 	top: 10px;
@@ -550,3 +666,36 @@ div.wp-tiles-loaded .wp-tiles-tile-bg {
 	right: 10px;
 	bottom: 10px;
 }
+
+h4.wp-tiles-byline-title {
+	font-size: 0.8em;
+}
+
+.wp-tiles-byline-wrapper {
+	height: 75px;
+	cursor: url('../images/cursor.png'),url('../images/cursor.png'),auto;
+}
+
+/* hide article */
+.hide {
+  display: none;
+}
+
+a.read-more-show {
+	text-decoration: none;
+	color: #4F82CE;
+	text-shadow: none;
+}
+
+a.read-more-hide {
+	text-decoration: none;
+	color: #4F82CE;
+	text-shadow: none;
+}
+
+/* Custom CSS single.php */
+body.single.single-post div#container div.content.blog-post div#inner-content div#main.eightcol {
+	margin-top:45px;
+	margin-bottom:45px;
+}
+/* End CUstom CSS single.php*/
