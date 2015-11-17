@@ -89,6 +89,8 @@
 				<div id="inner-header" class="wrap clearfix">
 
 					<!-- to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> -->
+					<a href="<?php echo home_url(); ?>" class="flag" id="kestins-korner-1"><img src="<?php echo $themepath; ?>/library/images/kestins-korner-1.png"></a>
+					<div class="arrow"></div>
 					<h1 id="logo" class="h1"><a href="<?php echo home_url(); ?>" rel="nofollow"><?php bloginfo('name'); ?></a></h1>
 
 					<p id="tagline"><?php echo html_entity_decode(get_bloginfo('description')) ?></p>
