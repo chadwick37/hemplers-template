@@ -33,6 +33,10 @@
                           if( $post->ID == 26 ) {
                             get_template_part( 'productlist' );
                           }
+
+                          if( $post->ID == 458 ){
+                          	get_template_part( 'blogcontent' );
+                          }
 ?>
                         </div>
                       </div>
