@@ -549,16 +549,16 @@ body.page.page-id-458 div#container header.header div#inner-header nav{
 	display: none;
 }
 
-body.page.page-id-458 div#container header.header div#inner-header {
-	float: left;
+div#inner-header {
+	float: none;
 	margin: 0 0 0 15px;
 }
 
-body.page.page-id-458 div#container header.header div#inner-header h1#logo {
+div#inner-header h1#logo {
 	margin-left: 45px;
 }
 
-body.page.page-id-458 div#container header.header div#inner-header #logo a {
+div#inner-header #logo a {
     background: url('../images/header-hemplers-logo-small-1.png') left top no-repeat;
 }
 
@@ -567,6 +567,13 @@ body.page.page-id-458 div#container header.header div#inner-header a#kestins-kor
     margin-left: 775px;
     width: 325px;
     margin-top: 95px;
+}
+
+div.kk-logo {
+	background: transparent url('../images/kestins-korner-1.png') center top no-repeat;
+	padding-bottom: 100px;
+	margin-top: 75px;
+	background-size: 2% 30%;
 }
 
 div.arrow {
@@ -582,12 +589,12 @@ div.kestin-pic {
 	background-image: url('../images/kestin-pic.png') ;
 	background-position: right;
 	background-repeat: no-repeat;
-	padding-bottom: 275px;
-	margin-top: 75px;
-	background-size: contain;
+	padding-bottom: 360px;
+    margin-top: 15px;
+    background-size: inherit;
 }
 
-article#post-458 section.entry-content div.fill.clearfix div.wrap.clearfix p {
+article#post-458 section.entry-content div.fill.clearfix div.descriptions_blog p {
 	color: #C9C9C9;
 	text-shadow: none;
 }
@@ -596,13 +603,13 @@ article#post-458 section.entry-content div.fill.clearfix div.wrap {
 }
 
 .blogcontent {
-	background: transparent url('../images/wood2.png') center top repeat-y;
-	background-size: cover;
+	background: transparent url('../images/wood22.png') center top repeat-y;
+	background-size: 100%;
 }
 /* Footer customize */
-footer #footer-content {
+/*footer #footer-content {
     margin-top: 25px;
-}
+}*/
 
 #footer-content .address {
         /* margin-right: 55px; */
@@ -676,6 +683,10 @@ h4.wp-tiles-byline-title {
 	cursor: url('../images/cursor.png'),url('../images/cursor.png'),auto;
 }
 
+div.wp-tiles-tile {
+	box-shadow: 10px 10px 5px rgba(128, 128, 128, 0.28);
+}
+
 /* hide article */
 .hide {
   display: none;
@@ -693,9 +704,84 @@ a.read-more-hide {
 	text-shadow: none;
 }
 
+/* css div custom */
+.wrap_blog.clearfix {
+    margin-top: -300px;
+}
+
+.descriptions_blog {
+    margin-top: -110px;
+    padding-left: 400px;
+    padding-right: 400px;
+}
+/* end css div custom */
+
 /* Custom CSS single.php */
 body.single.single-post div#container div.content.blog-post div#inner-content div#main.eightcol {
 	margin-top:45px;
 	margin-bottom:45px;
 }
 /* End CUstom CSS single.php*/
+
+/* Custom Nave Menu Blog */
+div#blog_selector {
+	font-family: 'Germania One', 'Times New Roman', serif;
+	text-align: center;
+}
+
+div#blog_selector ul li a {
+	text-decoration: none;
+	width: 100%;
+	color: #FFE1BA;
+	text-transform: uppercase;
+	padding: 15px;
+}
+
+div#blog_selector ul li a:hover, a:active{
+	color:white;
+}
+
+div#blog_selector ul li {
+	display: inline;
+	border-right: 2px solid #FFE1BA;
+
+}
+
+div#blog_selector ul li.cat-item.cat-item-28 {
+
+	border-right: none;
+
+}
+
+div#blog_selector ul
+{
+	list-style-type: none;
+    padding: 10px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+/* End Custom Nav Menu Blog*/
+
+/* Custom Home */
+.header #tagline {
+    /* display: list-item; */
+    /*position: fixed;*/
+    min-height: 335px;
+    margin: 0 auto;
+    z-index: 99;
+    line-height: 89px;
+    top: 135px;
+    left: 485px;
+    /* padding-left: 200px; */
+}
+#sausage-1,#sausage-2 {
+	left:100%;
+}
+body.home .header #tag-arrow {
+	display: none;
+}
+
+body.home .header #logo a {
+	position: absolute;
+}
+/* End Custom Home*/
