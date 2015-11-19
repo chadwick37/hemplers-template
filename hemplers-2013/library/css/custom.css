@@ -603,7 +603,7 @@ article#post-458 section.entry-content div.fill.clearfix div.wrap {
 }
 
 .blogcontent {
-	background: transparent url('../images/wood22.png') center top repeat-y;
+	background: transparent url('../images/wood2.png') center top repeat-y;
 	background-size: 100%;
 }
 /* Footer customize */
@@ -727,6 +727,8 @@ body.single.single-post div#container div.content.blog-post div#inner-content di
 div#blog_selector {
 	font-family: 'Germania One', 'Times New Roman', serif;
 	text-align: center;
+	background-color: rgba(142, 141, 136, 0.49);
+	padding: 15px;
 }
 
 div#blog_selector ul li a {
@@ -764,24 +766,380 @@ div#blog_selector ul
 
 /* Custom Home */
 .header #tagline {
-    /* display: list-item; */
-    /*position: fixed;*/
     min-height: 335px;
     margin: 0 auto;
     z-index: 99;
     line-height: 89px;
-    top: 135px;
+    top: 240px;
     left: 485px;
-    /* padding-left: 200px; */
 }
+
 #sausage-1,#sausage-2 {
 	left:100%;
+	margin-top: -100px;
 }
+
 body.home .header #tag-arrow {
 	display: none;
 }
 
 body.home .header #logo a {
 	position: absolute;
+	z-index: 100;
+}
+
+body.home nav {
+    display: block;
+    margin: 0 auto; 
+
+}
+
+body.page nav {
+     margin-left: inherit;
+     background-color: rgba(0, 0, 0, 0.42);
+}
+
+ul#menu-the-menu {
+    display: table;
+    float: none;
+    margin: 0 auto;
+    padding: 10px;
+    height: 70px;
+}
+
+ul#menu-the-menu a {
+	color: white;
+	
+}
+
+ul#menu-the-menu a:hover,
+ul.nav li.current_page_item a {
+	color: #BF2010 !important;
+	
+}
+
+#inner-header nav {
+    position: fixed;
+    z-index: 99;
+    right: 0px
+}
+
+body.home div#container header.header div#inner-header div.arrow, 
+body.page div#container header.header div#inner-header div.arrow {
+	display: none;
+}
+
+body.page.page-id-458 div#container header.header div#inner-header div.arrow {
+	display: inherit;
+}
+
+#container {
+	background-size: cover;
+}
+
+div.logo-kestins-korner-1 {
+	background: transparent url('../images/kestins-korner-3.png') right top no-repeat;
+	background-size: 90%;
+	margin: 0 auto;
+	z-index: 101;
+	padding: 100px;
+    position: fixed;
+    width: 10%;
+    right: 0px;
+    top: 5px;
+    margin-right: 55px;
+}
+div.arrow-right {
+	background: transparent url('../images/arrow-right.png') right top no-repeat;
+    background-size: 5%;
+    margin: 0 auto;
+    z-index: 101;
+    padding: 100px;
+    position: fixed;
+    width: 25%;
+    right: 0px;
+    top: 15px;
+    margin-right: 20px;
+}
+
+body.page.page-id-458 div.logo-kestins-korner-1, body.page.page-id-458 div.arrow-right {
+	display: none;
+}
+
+body.home.page div#inner-header h1#logo, body.page div#inner-header h1#logo {
+	position: fixed;
+	z-index: 102;
+}
+
+body.page.page-id-458 div#inner-header h1#logo {
+    position: absolute;
+}
+
+body.home.page .header #logo {
+	width: 250px;
+}
+
+body.home.page div#container header.header a#baconlink, body.home.page div#container header.header a#kestins-korner {
+	display: none;
 }
 /* End Custom Home*/
+
+/* Custom css single.php */
+body.single.single-post div.arrow-right,
+body.single.single-post div.arrow,
+body.single.single-post div.logo-kestins-korner-1,
+body.single.single-post h1#logo,
+body.single.single-post nav {
+
+	display: none;
+}
+
+body.single.single-post div#container {
+	background: none;
+}
+
+body.single.single-post div#inner-header {
+	margin: 0 auto;
+}
+
+body.single.single-post iv#cboxLoadedContent {
+	max-height: 600px !important;
+	overflow: auto;
+}
+
+body.single.single-post div#inner-content  {
+	background: #fff;
+	padding: 40px;
+	font-size: 18px;
+}
+
+body.single.single-post .eightcol  {
+	width: 100%;
+}
+
+body.single.single-post p.byline  {
+	display: none;
+}
+
+body.single.single-post .hentry {
+	background: none;
+}
+
+body.single.single-post h1 {
+	font-size: 40px;
+	color: #5B3500;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+
+body.single.single-post h1 {
+	    /* font-family: "rye"; */
+    text-align: center;
+    /* text-transform: uppercase; */
+}
+
+body.single.single-post h3 {
+	font-family: "Germania One";
+}
+
+body.single.single-post section.entry-content {
+	font-size: 18px;
+}
+
+body.single.single-post div#cboxTitle {
+	display: none;
+}
+
+body.single.single-post .alignleft, img.alignleft,
+body.single.single-post .alignright, img.alignright {
+	margin-bottom: 20px;
+}
+
+body.single.single-post .alignleft, img.alignleft {
+	float: left;
+	padding-right: 20px;
+}
+
+body.single.single-post .alignright, img.alignright {
+	float: right;
+	padding-left: 20px;
+}
+
+
+body.page-id-511 div#subscribe {
+	font-size: 17px;
+	color: #333;
+	margin-top: 90px;
+}
+
+body.page-id-511 div#subscribe label {
+	display: none;
+}
+
+body.single.single-post article.post {
+	font-family: arial;
+	padding: 25px;
+}
+
+body.single.single-post article.post a,
+body.single.single-post article.post a:visited,
+body.single.single-post article.post a:link {
+	color: #53380C;
+}
+
+body.single.single-post h3#comments {
+	color: #333;
+}
+
+body.single.single-post div.comment-meta a {
+	font-size: 12px;
+	color: #666;
+	text-decoration: none;
+	font-style: italic;
+}
+
+body.single.single-post div.comment-body {
+	font-size: 14px;
+	color: #666;
+	margin: 
+}
+
+body.single.single-post article.post cite a.url {
+	text-decoration: none;
+	font-weight: bold;
+}
+
+body.single.single-post article.post a.comment-reply-link {
+	background: #333;
+	color: #fff;
+	border-radius: 4px;
+	padding: 5px;
+	text-decoration: none;
+	font-size: 12px;
+	
+	display: none;
+}
+
+body.single.single-post article.post a.comment-reply-link:hover {
+	background: #666;
+}
+
+body.single.single-post ol {
+	margin: 0;
+	padding: 0;
+}
+
+body.single.single-post li.comment {
+	border: 1px dashed #333;
+	padding: 15px;
+	margin: 20px 0;
+	list-style: none;
+}
+
+body.single.single-post form#commentform {
+	font-size: 12px;
+	color: #333;
+}
+
+body.single.single-post textarea#comment {
+	width: 100%;
+}
+
+/* social for blog */
+
+body.single.single-post #ssba {
+	margin-bottom: 40px;
+}
+
+body.single.single-post a.ssba_tooptip{outline:none;text-decoration:none !important;color:inherit !important;}
+body.single.single-post a.ssba_tooptip strong{line-height:12px;}
+body.single.single-post a.ssba_tooptip:hover{text-decoration:none;color:inherit !important;} 
+body.single.single-post a.ssba_tooptip span{z-index:10;display:none;padding:10px;margin-top:-30px;margin-left:28px;line-height:16px;}
+body.single.single-post a.ssba_tooptip:hover span{font-family: arial;font-size: 12px;display:inline;position:absolute;color:#555e58;border:1px solid #e0dddd;background:#f5f5f5;}
+body.single.single-post .callout{z-index:20;position:absolute;top:30px;border:0;left:-12px;}
+body.single.single-post a.ssba_tooptip span{border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px;-khtml-border-radius:4px;-o-border-radius:4px;}
+
+body.single.single-post #ssba img	{ 	
+	width: 50px !important;
+	padding: 6px;
+	border:  0;
+	box-shadow: none !important;
+	display: inline;
+	vertical-align: middle;
+}
+
+body.single.single-post header.header {
+	min-height: 150px;
+}
+
+body.single.single-post div#content.blog-post {
+	background: transparent url('../images/wood2.png') center top repeat-y;
+	background-size: contain;
+    padding: 70px;
+    margin: 0 auto;
+}
+
+body.single.single-post div.logo-single-post {
+	background-image: url('../images/kestins-korner-1.png');
+    background-position: center top;
+    background-repeat: no-repeat;
+    position: inherit;
+    margin: 0 auto;
+    width: 50%;
+    padding: 50px;
+    background-size: 55%;
+    top: 45px;
+}
+
+.back-from-single {
+	display: none;
+}
+
+body.single.single-post a.back-from-single {
+	display: inherit;
+	text-decoration: none;
+}
+
+body.single.single-post a.back-from-single p {
+	color: #4F82CE;
+	font-family: "arial";
+}
+
+body.single.single-post div.tape-single-post {
+	background: transparent url('../images/tape-right.png') center top no-repeat;
+	position: absolute;
+	background-size: 10%;
+	width: 100%;
+	padding: 15px;
+	-moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+    z-index: 100;
+    top: 190px;
+    right: 0px;
+}
+
+body.single.single-post div.tape-single-post-1 {
+	background: transparent url('../images/tape-right.png') center top no-repeat;
+	position: absolute;
+	background-size: 10%;
+	width: 100%;
+	padding: 20px;
+	-moz-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+    filter: FlipV;
+    -ms-filter: "FlipV";
+    z-index: 99;
+    top: 215px;
+    right: 0px;
+}
+
+body.single.single-post section.entry-content p {
+	color: #5B3500;
+}
+/* End Custom css single.php*/
