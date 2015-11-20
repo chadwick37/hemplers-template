@@ -438,7 +438,15 @@ $('.read-more-hide').on('click', function(e) {
 });
 // End Script readmore
 
+// Adding Script for arrow left
+$('div.arrow').on('click', function(e){
+    window.history.back();
+});
+// End Script
+
 }); /* end of as page load scripts */
+
+
 
 
 /*! A fix for the iOS orientationchange zoom bug.
