@@ -94,7 +94,7 @@
 					<a href="/kestins-korner" class="back-from-single"><p>< Kestin's Korner </p></a>
 					<a href="/kestins-korner"><div class="arrow-right"></div></a>
 					<div class="logo-kestins-korner-1"></div>
-					<div class="arrow"><a href=""></a></div>
+					<div class="arrow"><a href="<?php echo home_url(); ?>" rel="nofollow"> </a></div>
 					<h1 id="logo" class="h1"><a href="<?php echo home_url(); ?>" rel="nofollow"><?php bloginfo('name'); ?></a></h1>
 
 					<p id="tagline"><?php echo html_entity_decode(get_bloginfo('description')) ?></p>
