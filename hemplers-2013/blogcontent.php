@@ -39,7 +39,12 @@
       </div>
         <div class="wptiles clearfix">
             <?php
-            echo do_shortcode('[wp-tiles full_width post_type="post" orderby="date" order="DESC" grids="News"]');
+            if ( function_exists ( 'the_wp_tiles' ) ) {
+              echo do_shortcode('[wp-tiles full_width post_type="post" orderby="date" order="DESC" grids="News"]');
+            }
+            else {
+              echo "Please Activated WP Tiles Plugin";
+            }
             ?>
         </div>
     </div>
