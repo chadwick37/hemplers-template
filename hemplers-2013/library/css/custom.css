@@ -1105,41 +1105,28 @@ body.single.single-post a.back-from-single p {
 	font-family: "arial";
 }
 
-body.single.single-post div.tape-single-post {
-	background: transparent url('../images/tape-right.png') center top no-repeat;
-	position: absolute;
-	background-size: 10%;
-	width: 100%;
-	padding: 15px;
-	-moz-transform: scaleX(-1);
-    -o-transform: scaleX(-1);
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-    filter: FlipH;
-    -ms-filter: "FlipH";
-    z-index: 100;
-    top: 190px;
-    right: 0px;
-}
-
-body.single.single-post div.tape-single-post-1 {
-	background: transparent url('../images/tape-right.png') center top no-repeat;
-	position: absolute;
-	background-size: 10%;
-	width: 100%;
-	padding: 20px;
-	-moz-transform: scaleY(-1);
-    -o-transform: scaleY(-1);
-    -webkit-transform: scaleY(-1);
-    transform: scaleY(-1);
-    filter: FlipV;
-    -ms-filter: "FlipV";
-    z-index: 99;
-    top: 215px;
-    right: 0px;
-}
 
 body.single.single-post section.entry-content p {
 	color: #5B3500;
+}
+
+body.single.single-post div.tape-single-post {
+    background: url('../images/button-tape.png') center center no-repeat;
+    position: absolute;
+    background-size: 10%;
+    width: 100%;
+    padding: 35px;
+    z-index: 99;
+    top: 190px;
+    right: 0px;
+    -moz-transform: rotate(-5deg);
+    -o-transform: rotate(-5deg);
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+     opacity: .7;
+    transition: opacity .7s ease-out;
+    -moz-transition: opacity .7s ease-out;
+    -webkit-transition: opacity .7s ease-out;
+    -o-transition: opacity .7s ease-out;
 }
 /* End Custom css single.php*/
