@@ -1,6 +1,6 @@
 <div class="wrap_blog clearfix">
-  <div class="kestin-pic"></div>
-    <div class="blogcontent">
+  <div class="kestin-pic clearfix"></div>
+    <div class="blogcontent clearfix">
       <div id="blog_selector" class="clearfix">
         <ul class="menu_blog clearfix">
           <li><a rel="all" href="/our-story/kestins-korner/">View All</a></li>
@@ -37,7 +37,7 @@
             ?>
         </ul>
       </div>
-        <div class="wptiles wrap clearfix">
+        <div class="wptiles clearfix">
             <?php
             echo do_shortcode('[wp-tiles full_width post_type="post" orderby="date" order="DESC" grids="News"]');
             ?>
