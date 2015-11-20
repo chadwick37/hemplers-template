@@ -557,8 +557,16 @@ body.page.page-id-458 .wptiles.clearfix {
 
 div#inner-header {
 	float: none;
+	/*margin: 0 0 0 15px;*/
+	margin: 0 auto;
+}
+
+/*  inner-header for Blog page */
+body.page.page-id-458 div#inner-header, body.single.single-post div#inner-header {
 	margin: 0 0 0 15px;
 }
+/* end inner-header for Blog page*/
+
 
 div#inner-header h1#logo {
 	margin-left: 45px;
@@ -645,6 +653,15 @@ footer #footer-content {
 	border-right: 2px dotted #93714e;
 }
 
+div#footer-links {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+div#footer-links ul {
+    margin-right: 10px;
+}
+
 /* Custom social Icons Footer */
 #footer-content #ssba {
 	clear: right;
@@ -652,7 +669,7 @@ footer #footer-content {
     /* padding-left: 415px; */
     position: absolute;
     margin-top: 60px;
-    margin-left: 400px;
+    margin-left: 415px;
 }
 
 #footer-content #ssba a.ssba_tooptip{outline:none;text-decoration:none !important;color:inherit !important;}
@@ -730,7 +747,16 @@ body.single.single-post div#container div.content.blog-post div#inner-content di
 	margin-top:45px;
 	margin-bottom:45px;
 }
-/* End CUstom CSS single.php*/
+
+body.single.single-post footer.article-footer p.tags a {
+	text-decoration: underline;
+}
+
+body.single.single-post h3 {
+    color: black;
+    font-size: larger;
+}
+/* End Custom CSS single.php*/
 
 /* Custom Nave Menu Blog */
 div#blog_selector {
@@ -784,12 +810,12 @@ div#blog_selector ul
     z-index: 99;
     line-height: 89px;
     top: 240px;
-    left: 485px;
+   /* left: 485px;*/
 }
 
 #sausage-1,#sausage-2 {
-	left:100%;
-	margin-top: -100px;
+	/*left:100%;*/
+	margin-top: -50px;
 }
 
 body.home .header #tag-arrow {
@@ -844,6 +870,8 @@ body.page div#container header.header div#inner-header div.arrow {
 
 body.page.page-id-458 div#container header.header div#inner-header div.arrow {
 	display: inherit;
+	position: inherit;
+    z-index: 103;
 }
 
 #container {
@@ -882,6 +910,8 @@ body.page.page-id-458 div.logo-kestins-korner-1, body.page.page-id-458 div.arrow
 body.home.page div#inner-header h1#logo, body.page div#inner-header h1#logo {
 	position: fixed;
 	z-index: 102;
+	margin: 0 auto;
+    left: 20px;
 }
 
 body.page.page-id-458 div#inner-header h1#logo {
