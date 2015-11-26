@@ -125,15 +125,18 @@ body.home #kestins-korner {
 	margin-top: 198px;
 }
 
-body.page-id-458 #container {
+body.page-id-458 #container,
+body.archive.category #container {
 	background: none;
 }
 
-body.page-id-458 #content {
+body.page-id-458 #content,
+body.archive.category #content {
 	text-align: center;
 }
 
-body.page-id-458 .header {
+body.page-id-458 .header,
+body.archive.category .header {
 	min-height: 90px;
 }
 
@@ -533,24 +536,36 @@ article#post-458.clearfix.post-458.page.type-page.status-publish.hentry {
 	background:none;
 }
 
-article#post-458.clearfix.post-458.page.type-page.status-publish.hentry section.entry-content:last-child {
+article#post-458.clearfix.post-458.page.type-page.status-publish.hentry section.entry-content:last-child{
 	background:none;
 
 }
 
-body.page.page-id-458 div#container div#content div#inner-content {
+body.archive.category div#container div#content div#inner-content div#main section.entry-content:last-child  {
+	background: none;
+}
+
+body.page.page-id-458 div#container div#content div#inner-content,
+body.archive.category div#container div#content div#inner-content {
 	/*background: transparent url('../images/wood2.png') center top repeat-y;
 	background-size: cover;*/
 	background: none;
 
 }
 
-body.page.page-id-458 div#container header.header div#inner-header nav{
+body.page.page-id-458 div#container header.header div#inner-header nav,
+body.archive.category div#container header.header div#inner-header nav {
 	display: none;
 }
 
 body.page.page-id-458 .wptiles.clearfix {
     margin: 0 auto;
+    position: inherit;
+    padding: 150px;
+}
+
+body.archive.category .wptiles_cat.clearfix {
+	margin: 0 auto;
     position: inherit;
     padding: 150px;
 }
@@ -562,7 +577,9 @@ div#inner-header {
 }
 
 /*  inner-header for Blog page */
-body.page.page-id-458 div#inner-header, body.single.single-post div#inner-header {
+body.page.page-id-458 div#inner-header, 
+body.single.single-post div#inner-header,
+body.archive.category div#inner-header {
 	margin: 0 0 0 15px;
 }
 /* end inner-header for Blog page*/
@@ -606,6 +623,11 @@ div.kestin-pic {
 }
 
 article#post-458 section.entry-content div.fill.clearfix div.descriptions_blog p {
+	color: #C9C9C9;
+	text-shadow: none;
+}
+
+body.archive.category section.entry-content div.fill.clearfix div.descriptions_blog p {
 	color: #C9C9C9;
 	text-shadow: none;
 }
@@ -778,7 +800,8 @@ div#blog_selector ul li a {
 	padding: 15px;
 }
 
-div#blog_selector ul li a:hover, a:active{
+div#blog_selector ul li a:hover,
+div#blog_selector ul li a.active {
 	color:white;
 }
 
@@ -788,7 +811,7 @@ div#blog_selector ul li {
 
 }
 
-div#blog_selector ul li.cat-item.cat-item-28 {
+div#blog_selector ul li:last-child {
 
 	border-right: none;
 
@@ -868,7 +891,12 @@ body.page div#container header.header div#inner-header div.arrow {
 	display: none;
 }
 
-body.page.page-id-458 div#container header.header div#inner-header div.arrow {
+body.page.page-id-458 .wrap_blog.clearfix {
+    margin-top: -285px;
+}
+
+body.page.page-id-458 div#container header.header div#inner-header div.arrow,
+body.archive.category div#container header.header div#inner-header div.arrow {
 	display: inherit;
 	position: inherit;
     z-index: 103;
@@ -903,18 +931,22 @@ div.arrow-right {
     margin-right: 20px;
 }
 
-body.page.page-id-458 div.logo-kestins-korner-1, body.page.page-id-458 div.arrow-right {
+body.page.page-id-458 div.logo-kestins-korner-1, body.page.page-id-458 div.arrow-right,
+body.archive.category div.logo-kestins-korner-1, body.archive.category div.arrow-right {
 	display: none;
 }
 
-body.home.page div#inner-header h1#logo, body.page div#inner-header h1#logo {
+body.home.page div#inner-header h1#logo, 
+body.page div#inner-header h1#logo,
+body.archive.category div#inner-header h1#logo {
 	position: fixed;
 	z-index: 102;
 	margin: 0 auto;
     left: 20px;
 }
 
-body.page.page-id-458 div#inner-header h1#logo {
+body.page.page-id-458 div#inner-header h1#logo,
+body.archive.category div#inner-header h1#logo {
     position: absolute;
 }
 
@@ -1174,3 +1206,10 @@ body.single.single-post div.tape-single-post {
     -o-transition: opacity .7s ease-out;
 }
 /* End Custom css single.php*/
+
+
+/* Custom Category.php */
+/*body.archive.category .wrap_blog{
+	    margin-top: -275px;
+}
+*//* End Custom category.php*/
