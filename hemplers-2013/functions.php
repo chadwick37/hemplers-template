@@ -192,7 +192,9 @@ function load_fonts() {
     wp_register_style('googleFonts', 'http://fonts.googleapis.com/css?family=Lobster|Germania+One|Rye');
     wp_enqueue_style( 'googleFonts');
 }
-
+// Adding css bigvideo
+wp_register_style('bigvideostyle', get_stylesheet_directory_uri() . '/library/css/bigvideo.css');
+wp_enqueue_style( 'bigvideostyle');
 
 /* jQuery Parallax Plugin ==> http://johnpolacek.github.com/scrolldeck.js/decks/parallax/ */
 wp_register_script( 'jquery-parallax', get_stylesheet_directory_uri() . '/library/js/libs/jquery.parallax-1.1.3.js', array( 'jquery' ), '', true );
@@ -207,24 +209,26 @@ wp_enqueue_script( 'jquery-parallax' );
     wp_enqueue_script( 'jquery-parallax' );
 
 /* Enqueue Big Video ==> http://dfcb.github.com/BigVideo.js/ */
-// wp_register_script( 'bigvideo', get_stylesheet_directory_uri() . '/library/js/libs/bigvideo.js', array( 'jquery' ), '', true );
-// wp_enqueue_script( 'bigvideo' );
+wp_register_script( 'bigvideo', get_stylesheet_directory_uri() . '/library/js/libs/bigvideo.js', array( 'jquery' ), '', true );
+wp_enqueue_script( 'bigvideo' );
 
     // Enqueue jQuery UI
-//    wp_register_script( 'jquery-ui', get_stylesheet_directory_uri() . '/library/js/libs/jquery-ui-1.8.22.custom.min.js', array( 'jquery' ), '', true );
-//    wp_enqueue_script( 'jquery-ui' );
+   // wp_register_script( 'jquery-ui', get_stylesheet_directory_uri() . '/library/js/libs/jquery-ui-1.8.22.custom.min.js', array( 'jquery' ), '', true );
+   // wp_enqueue_script( 'jquery-ui' );
+
+   /* jQuery UI ==> http://jqueryui.com/ */
+    wp_register_script( 'jquery-ui', get_stylesheet_directory_uri() . '/library/js/libs/jquery-ui-1.10.2.custom.min.js', array( 'jquery' ), '', true );
+    wp_enqueue_script( 'jquery-ui' );
 
     // Enqueue jQuery images loaded
-    // wp_register_script( 'video', get_stylesheet_directory_uri() . '/library/js/libs/jquery.imagesloaded.min.js', array( 'jquery' ), '', true );
-    // wp_enqueue_script( 'video' );
+    wp_register_script( 'imagesloaded', get_stylesheet_directory_uri() . '/library/js/libs/jquery.imagesloaded.min.js', array( 'jquery' ), '', true );
+    wp_enqueue_script( 'imagesloaded' );
 
     // Enqueue Video.js
-    // wp_register_script( 'video', 'http://vjs.zencdn.net/c/video.js', array( 'jquery' ), '', true );
-    // wp_enqueue_script( 'video' );
+    wp_register_script( 'video', 'http://vjs.zencdn.net/c/video.js', array( 'jquery' ), '', true );
+    wp_enqueue_script( 'video' );
 
-/* jQuery UI ==> http://jqueryui.com/ */
-wp_register_script( 'jquery-ui', get_stylesheet_directory_uri() . '/library/js/libs/jquery-ui-1.10.2.custom.min.js', array( 'jquery' ), '', true );
-wp_enqueue_script( 'jquery-ui' );
+
 
 
 

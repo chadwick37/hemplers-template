@@ -841,6 +841,24 @@ div#blog_selector ul
 	margin-top: -50px;
 }
 
+body.home div#container {
+	background: #000 url('../images/ham.jpg') center top no-repeat;
+}
+
+body.home div#container header.header div#sausage-1,
+body.home div#container header.header div#sausage-2 {
+	display: none;
+}
+body.home.page div#big-video-wrap {
+	display: block;
+}
+
+body.page div#big-video-wrap, 
+body.archive div#big-video-wrap,
+body.single div#big-video-wrap {
+	display: none;
+}  
+
 body.home .header #tag-arrow {
 	display: none;
 }
@@ -923,7 +941,7 @@ div.arrow-right {
     background-size: 5%;
     margin: 0 auto;
     z-index: 101;
-    padding: 100px;
+    padding: 50px;
     position: fixed;
     width: 25%;
     right: 0px;
