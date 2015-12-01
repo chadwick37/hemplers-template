@@ -324,6 +324,7 @@ jQuery(document).ready(function($) {
                 action: 'load_gallery',
                 id: prod_id
             };
+            console.log(data);
         jQuery.post( ajaxurl, data, function(response) {
 
             // success, load colorbox and feed it the response html
@@ -415,10 +416,40 @@ TBD */
 TBD */
 
 
+// Adding Script readmore
+// Hide the extra content initially, using JS so that if JS is disabled, no problemo:
+$('.read-more-content').addClass('hide')
+
+// Set up a link to expand the hidden content:
+.before('<br /><a class="read-more-show" href="#">Read more...</a>')
+  
+// Set up a link to hide the expanded content.
+.append('<br /><a class="read-more-hide" href="#">Show less</a>');
+
+// Set up the toggle effect:
+$('.read-more-show').on('click', function(e) {
+  $(this).next('.read-more-content').removeClass('hide');
+  $(this).addClass('hide');
+  e.preventDefault();
+});
+
+$('.read-more-hide').on('click', function(e) {
+  $(this).parent('.read-more-content').addClass('hide').parent().children('.read-more-show').removeClass('hide');
+  e.preventDefault();
+});
+// End Script readmore
+
+// Adding Script for arrow left
+$('div.arrow').on('click', function(e){
+    window.history.back();
+});
+// End Script
 
 
 
 }); /* end of as page load scripts */
+
+
 
 
 /*! A fix for the iOS orientationchange zoom bug.
@@ -457,3 +488,232 @@ TBD */
 })( this );
 
 
+// Menu Blog
+// (function($) {  
+//         // initiliaze
+//         $nav_wptiles = $("#blog_selector a");    // our filtering links
+//         $contents = $(".wp-tiles-container > div.wp-tiles-grid > div.wp-tiles-tile");   // the content to be filtered
+
+//          // // some constants
+//         var li_height = $contents.outerHeight();
+//         var li_width = $contents.outerWidth();
+//         var anim_time = 100;
+//         var anim_spacing = anim_time * .2;
+
+//         if ( $nav_wptiles.length > 0 && $contents.length > 0 ) {
+//             $nav_wptiles.each(function(i, a){
+//                 if( $contents.filter( "." + $(this).attr('rel') ).length == 0 && $(this).attr('rel') != 'all' ) $(this).addClass('disabled');
+//                 $(this).click( function(e){
+//                     console.log(e.target.href);
+//                     e.preventDefault();
+
+//                     var $link_wptiles = $(e.target);
+//                     var term_wptiles =  $link_wptiles.attr('rel');
+//                     var termclass = "." + term_wptiles;
+//                     var numprods = $contents.filter( termclass ).length;
+
+//                     // skip if link disabled or no products to show
+//                     if( $link_wptiles.hasClass('disabled') || ( term_wptiles != "all" && numprods == 0 ) ) return false;
+//                 // view all was clicked, show everything
+//                     if( term_wptiles == "all" ) {
+
+//                         // reset links
+//                         $nav_wptiles.removeClass('selected');
+
+//                         // show all hidden
+//                         var $showall_post_wptiles = $contents.filter( ".hidden" ).removeClass('hidden');
+//                         if( $showall_post_wptiles.length > 0 ) {
+//                             (function shownext(jq){
+//                                 if( typeof i == "undefined" ) var i = 0; else i++;
+//                                 jq.eq(0).animate({ opacity: 1, height: li_height, width: li_width }, anim_time );
+//                                 setTimeout( function(){ jq.length > 1 && shownext(jq.slice(1)); }, i*anim_time + anim_spacing );
+
+//                             })( $showall_post_wptiles )
+//                         }
+//                     } else {
+
+//                         // don't do anything if we're already filtering to this
+//                         if( $nav_wptiles.filter( "[rel='" + term_wptiles + "']" ).hasClass('selected') ) return;
+
+//                          // reset links, highlight selected link
+//                         $nav_wptiles.removeClass('selected').filter( "[rel='" + term_wptiles + "']" ).addClass('selected');
+
+//                         // prep elements to show and hide
+//                         var $show_wptiles = $contents.filter( termclass ).filter( ".hidden" ).switchClass('hidden', 'showthis');
+//                         var $hide_wptiles = $contents.not( termclass ).not( ".hidden" ).switchClass('hidden', 'hidethis');
+                        
+//                          // show elements needing to be shown
+//                         if( $show_wptiles.length > 0 ) {
+//                             (function shownext(jq){
+//                                 if( typeof i == "undefined" ) var i = 0; else i++;
+//                                 jq.eq(0).animate({ opacity: 1, height: li_height, width: li_width}, anim_time ).removeClass('showthis');
+//                                 setTimeout( function(){ jq.length > 1 && shownext(jq.slice(1)); }, i*anim_time + anim_spacing );
+//                                 $('.wp-tiles-container').trigger('resize');
+//                                 $('#wp_tiles_1').resize();
+//                             })( $show_wptiles )
+//                         }
+
+//                          // hide elements that need to be hidden
+//                         if( $hide_wptiles.length > 0 ) {
+//                             (function hidenext(jq) {
+//                                 if( typeof i == "undefined" ) var i = 0; else i++;
+//                                 jq.eq(0).animate({ opacity: 0, height: 0, width: 0}, anim_time ).switchClass('hidethis', 'hidden');
+//                                 setTimeout( function(){ jq.length > 1 && hidenext(jq.slice(1)); }, i*anim_time + anim_spacing );
+//                             })( $hide_wptiles )
+//                         }
+
+//                     }
+//                 });
+//             });
+//         } else {
+//             console.log("Error");
+//         };
+        
+        // // some constants
+        // var li_height = "300px";
+        // var li_width = $content.outerWidth();
+        // var anim_time = 100;
+        // var anim_spacing = anim_time * .2;
+
+        // // if we have the elements
+        // if( $nav.length > 0 && $content.length > 0 ) {
+
+        //     // bind the filter links
+        //     $nav.each(function(i,a) {
+
+        //         // add disabled class to empty terms
+        //         if( $content.filter( "." + $(this).attr('rel') ).length == 0 && $(this).attr('rel') != 'all' ) $(this).addClass('disabled');
+
+        //         /* handle click events */
+        //         $(this).click( function(e) {
+
+        //             // prevent link clickthrough
+        //             e.preventDefault();
+
+        //             // finish any current animations immediately // .each(function(i) { $(this).finish(); });
+        //             $content.filter(':animated').stop(true, true);
+        //             if( $content.filter(':animated').length > 0 ) $.fx.off = !($.fx.off = true);
+
+        //             // get link info
+        //             var $link = $(e.target);
+        //             var term =  $link.attr('rel');
+        //             var termclass = "." + term;
+        //             var numprods = $content.filter( termclass ).length;
+
+        //             // skip if link disabled or no products to show
+        //             if( $link.hasClass('disabled') || ( term != "all" && numprods == 0 ) ) return false;
+
+        //             // view all was clicked, show everything
+        //             if( term == "all" ) {
+
+        //                 // reset links
+        //                 $nav.removeClass('selected');
+
+        //                 // show all hidden
+        //                 var $showall = $content.filter( ".hidden" ).removeClass('hidden');
+        //                 if( $showall.length > 0 ) {
+        //                     (function shownext(jq){
+        //                         if( typeof i == "undefined" ) var i = 0; else i++;
+        //                         jq.eq(0).animate({ opacity: 1, height: li_height, width: li_width }, anim_time );
+        //                         setTimeout( function(){ jq.length > 1 && shownext(jq.slice(1)); }, i*anim_time + anim_spacing );
+        //                     })( $showall )
+        //                 }
+
+        //                 // change header image to default
+        //                 var $headerimg_in = $('#snapshot-in');
+        //                 var $headerimg_out = $('#snapshot');
+        //                 var hdrimg = '/wp-content/themes/hemplers-2013/library/images/products-header-snapshot.png';
+
+        //                 // change the header image
+        //                 $headerimg_in.find('img').attr('src',hdrimg);
+        //                 $headerimg_in.fadeIn(function() {
+        //                     $headerimg_out.find('img').attr('src',hdrimg);
+        //                     $headerimg_in.hide();
+        //                 });
+        //             } else {
+
+        //                 // don't do anything if we're already filtering to this
+        //                 if( $nav.filter( "[rel='" + term + "']" ).hasClass('selected') ) return;
+
+        //                 // reset links, highlight selected link
+        //                 $nav.removeClass('selected').filter( "[rel='" + term + "']" ).addClass('selected');
+
+        //                 // prep elements to show and hide
+        //                 var $show = $content.filter( termclass ).filter( ".hidden" ).switchClass('hidden', 'showthis');
+        //                 var $hide = $content.not( termclass ).not( ".hidden" ).switchClass('hidden', 'hidethis');
+                        
+        //                 // show elements needing to be shown
+        //                 if( $show.length > 0 ) {
+        //                     (function shownext(jq){
+        //                         if( typeof i == "undefined" ) var i = 0; else i++;
+        //                         jq.eq(0).animate({ opacity: 1, height: li_height, width: li_width }, anim_time ).removeClass('showthis');
+        //                         setTimeout( function(){ jq.length > 1 && shownext(jq.slice(1)); }, i*anim_time + anim_spacing );
+        //                     })( $show )
+        //                 }
+                        
+        //                 // change header image based on product type
+        //                 var $headerimg_in = $('#snapshot-in');
+        //                 var $headerimg_out = $('#snapshot');
+                        
+        //                 // most cases use an image name the same as the term and a gif format
+        //                 var hdrimg = '/wp-content/themes/hemplers-2013/library/images/products-header-' + term + '.gif';
+                        
+        //                 // a few don't match this pattern, handle them
+        //                 switch( term ) {
+        //                     case 'smoked-turkeychicken':
+        //                         hdrimg = '/wp-content/themes/hemplers-2013/library/images/products-header-turkey.gif';
+        //                         break;
+        //                     case 'ground-sausage':
+        //                     case 'fresh-sausage':
+        //                         hdrimg = '/wp-content/themes/hemplers-2013/library/images/products-header-sausage.gif';
+        //                         break;
+        //                     case 'misc':
+        //                         hdrimg = '/wp-content/themes/hemplers-2013/library/images/products-header-misc.gif';
+        //                         break;
+        //                     case 'deli-hams-half-hams':
+        //                     case 'gourmet-hams':
+        //                         hdrimg = '/wp-content/themes/hemplers-2013/library/images/products-header-snapshot.png';
+        //                         break;
+        //                 }
+
+        //                 // change the header image
+        //                 $headerimg_in.find('img').attr('src',hdrimg);
+        //                 $headerimg_in.fadeIn(function() {
+        //                     $headerimg_out.find('img').attr('src',hdrimg);
+        //                     $headerimg_in.hide();
+        //                 });
+
+        //                 // hide elements that need to be hidden
+        //                 if( $hide.length > 0 ) {
+        //                     (function hidenext(jq) {
+        //                         if( typeof i == "undefined" ) var i = 0; else i++;
+        //                         jq.eq(0).animate({ opacity: 0, height: 0, width: 0}, anim_time ).switchClass('hidethis', 'hidden');
+        //                         setTimeout( function(){ jq.length > 1 && hidenext(jq.slice(1)); }, i*anim_time + anim_spacing );
+        //                     })( $hide )
+        //                 }
+        //             }
+
+        //             // prevent link clickthrough
+        //             return false;
+        //         } );
+        //     });
+        // }
+    // })(jQuery);
+// End Scripts Menu Blog
+
+// Adding script to added active class on blog menu
+(function($) {
+     var pgurl = window.location.pathname;
+     $("#blog_selector ul li a").each(function(){
+          if($(this).attr("href") == pgurl || $(this).attr("href") == '' )
+          $(this).addClass("active");
+     })
+})(jQuery);
+// End Adding script to added active class on blog menu
+
+// Configure bigvideo
+(function($) {
+    var BV = new $.BigVideo({controls:false, doLoop:true});
+    BV.init();
+    BV.show('/wp-content/themes/hemplers-2013/library/images/video/ham.mp4',{ambient:true});
+})(jQuery);

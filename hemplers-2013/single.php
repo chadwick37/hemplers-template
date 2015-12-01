@@ -1,14 +1,14 @@
-<noscript>
+<!-- <noscript> -->
 <?php  get_header(); ?>
-</noscript>
+<!-- </noscript> -->
 
-<link rel='stylesheet' id='googleFonts-css'  href='http://fonts.googleapis.com/css?family=Lobster%7CGermania+One%7CRye' type='text/css' media='all' />
+<!-- <link rel='stylesheet' id='googleFonts-css'  href='http://fonts.googleapis.com/css?family=Lobster%7CGermania+One%7CRye' type='text/css' media='all' /> -->
 
 <style>
 
 /* post */
 
-div#cboxLoadedContent {
+/*div#cboxLoadedContent {
 	max-height: 600px !important;
 	overflow: auto;
 }
@@ -152,7 +152,7 @@ textarea#comment {
 
 /* social for blog */
 
-#ssba {
+/*#ssba {
 	margin-bottom: 40px;
 }
 
@@ -171,7 +171,7 @@ a.ssba_tooptip span{border-radius:4px;-moz-border-radius:4px;-webkit-border-radi
 	box-shadow: none !important;
 	display: inline;
 	vertical-align: middle;
-}
+}*/
 
 </style>
 
@@ -179,6 +179,10 @@ a.ssba_tooptip span{border-radius:4px;-moz-border-radius:4px;-webkit-border-radi
 
 			
 			<div id="content" class="blog-post">
+
+			  <!-- Adding Tape -->
+			  <div class="tape-single-post"></div>
+			  <div class="tape-single-post-1"></div>
 
 				<div id="inner-content" class="wrap clearfix">
 			
@@ -239,6 +243,6 @@ a.ssba_tooptip span{border-radius:4px;-moz-border-radius:4px;-webkit-border-radi
     
 			</div> <!-- end #content -->
 			
-<noscript>
+<!-- <noscript> -->
 <?php get_footer(); ?>
-</noscript>
+<!-- </noscript> -->
