@@ -192,7 +192,9 @@ function load_fonts() {
     wp_register_style('googleFonts', 'http://fonts.googleapis.com/css?family=Lobster|Germania+One|Rye');
     wp_enqueue_style( 'googleFonts');
 }
-
+// Adding css bigvideo
+wp_register_style('bigvideostyle', get_stylesheet_directory_uri() . '/library/css/bigvideo.css');
+wp_enqueue_style( 'bigvideostyle');
 
 /* jQuery Parallax Plugin ==> http://johnpolacek.github.com/scrolldeck.js/decks/parallax/ */
 wp_register_script( 'jquery-parallax', get_stylesheet_directory_uri() . '/library/js/libs/jquery.parallax-1.1.3.js', array( 'jquery' ), '', true );
@@ -207,24 +209,26 @@ wp_enqueue_script( 'jquery-parallax' );
     wp_enqueue_script( 'jquery-parallax' );
 
 /* Enqueue Big Video ==> http://dfcb.github.com/BigVideo.js/ */
-// wp_register_script( 'bigvideo', get_stylesheet_directory_uri() . '/library/js/libs/bigvideo.js', array( 'jquery' ), '', true );
-// wp_enqueue_script( 'bigvideo' );
+wp_register_script( 'bigvideo', get_stylesheet_directory_uri() . '/library/js/libs/bigvideo.js', array( 'jquery' ), '', true );
+wp_enqueue_script( 'bigvideo' );
 
     // Enqueue jQuery UI
-//    wp_register_script( 'jquery-ui', get_stylesheet_directory_uri() . '/library/js/libs/jquery-ui-1.8.22.custom.min.js', array( 'jquery' ), '', true );
-//    wp_enqueue_script( 'jquery-ui' );
+   // wp_register_script( 'jquery-ui', get_stylesheet_directory_uri() . '/library/js/libs/jquery-ui-1.8.22.custom.min.js', array( 'jquery' ), '', true );
+   // wp_enqueue_script( 'jquery-ui' );
+
+   /* jQuery UI ==> http://jqueryui.com/ */
+    wp_register_script( 'jquery-ui', get_stylesheet_directory_uri() . '/library/js/libs/jquery-ui-1.10.2.custom.min.js', array( 'jquery' ), '', true );
+    wp_enqueue_script( 'jquery-ui' );
 
     // Enqueue jQuery images loaded
-    // wp_register_script( 'video', get_stylesheet_directory_uri() . '/library/js/libs/jquery.imagesloaded.min.js', array( 'jquery' ), '', true );
-    // wp_enqueue_script( 'video' );
+    wp_register_script( 'imagesloaded', get_stylesheet_directory_uri() . '/library/js/libs/jquery.imagesloaded.min.js', array( 'jquery' ), '', true );
+    wp_enqueue_script( 'imagesloaded' );
 
     // Enqueue Video.js
-    // wp_register_script( 'video', 'http://vjs.zencdn.net/c/video.js', array( 'jquery' ), '', true );
-    // wp_enqueue_script( 'video' );
+    wp_register_script( 'video', 'http://vjs.zencdn.net/c/video.js', array( 'jquery' ), '', true );
+    wp_enqueue_script( 'video' );
 
-/* jQuery UI ==> http://jqueryui.com/ */
-wp_register_script( 'jquery-ui', get_stylesheet_directory_uri() . '/library/js/libs/jquery-ui-1.10.2.custom.min.js', array( 'jquery' ), '', true );
-wp_enqueue_script( 'jquery-ui' );
+
 
 
 
@@ -715,4 +719,66 @@ function get_the_slug( $post_id = -1 ) {
 // Allow shortcodes to process in sidebar widgets
 //add_filter('widget_text', 'do_shortcode');
 
+/**
+ * Include the TGM_Plugin_Activation class.
+ */
+require_once dirname( __FILE__ ) . '/class-tgm-plugin-activation.php';
+
+add_action( 'tgmpa_register', 'my_theme_register_required_plugins' );
+/**
+ * Register the required plugins for this theme.
+ *
+ * In this example, we register five plugins:
+ * - one included with the TGMPA library
+ * - two from an external source, one from an arbitrary source, one from a GitHub repository
+ * - two from the .org repo, where one demonstrates the use of the `is_callable` argument
+ *
+ * The variable passed to tgmpa_register_plugins() should be an array of plugin
+ * arrays.
+ *
+ * This function is hooked into tgmpa_init, which is fired within the
+ * TGM_Plugin_Activation class constructor.
+ */
+
+function my_theme_register_required_plugins() {
+  /*
+   * Array of plugin arrays. Required keys are name and slug.
+   * If the source is NOT from the .org repo, then source is also required.
+   */
+  $plugins = array(
+
+    // Adding require WP Tiles Plugin
+    array(
+      'name'               => 'WP Tiles', 
+      'slug'               => 'wp-tiles', 
+      'source'             => 'https://downloads.wordpress.org/plugin/wp-tiles.1.1.1.zip',
+    ),
+
+  );
+
+  /*
+   * Array of configuration settings. Amend each line as needed.
+   *
+   * TGMPA will start providing localized text strings soon. If you already have translations of our standard
+   * strings available, please help us make TGMPA even better by giving us access to these translations or by
+   * sending in a pull-request with .po file(s) with the translations.
+   *
+   * Only uncomment the strings in the config array if you want to customize the strings.
+   */
+  $config = array(
+    'id'           => 'tgmpa',                 // Unique ID for hashing notices for multiple instances of TGMPA.
+    'default_path' => '',                      // Default absolute path to bundled plugins.
+    'menu'         => 'tgmpa-install-plugins', // Menu slug.
+    'parent_slug'  => 'themes.php',            // Parent menu slug.
+    'capability'   => 'edit_theme_options',    // Capability needed to view plugin install page, should be a capability associated with the parent menu used.
+    'has_notices'  => true,                    // Show admin notices or not.
+    'dismissable'  => true,                    // If false, a user cannot dismiss the nag message.
+    'dismiss_msg'  => '',                      // If 'dismissable' is false, this message will be output at top of nag.
+    'is_automatic' => false,                   // Automatically activate plugins after installation or not.
+    'message'      => '',                      // Message to output right before the plugins table.
+
+  );
+
+  tgmpa( $plugins, $config );
+}
 ?>

