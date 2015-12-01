@@ -22,19 +22,40 @@
     					
     						    <section class="entry-content clearfix <?php echo is_front_page() ? 'home' : $slug; ?>-primary primary " itemprop="articleBody">
                       <div class="fill clearfix">
-                        <div class="wrap clearfix">
+                        
 <?php
                           // font is behaving weird, trying this out to circumvent problems
-                          if( $slug == "our-story" ) { echo '<h2>Then...</h2>'; }
+                          if( $slug == "our-story" ) { 
+                          	echo '<div class="wrap clearfix">';
+                          	echo '<h2>Then...</h2>';
+                          	the_content(); 
+                          	echo '</div>';
 
-                          the_content();
+                          }
 
                           // product list
                           if( $post->ID == 26 ) {
+                          	echo '<div class="wrap clearfix">';
+                          	the_content(); 
                             get_template_part( 'productlist' );
+                            echo '</div>';
+                          }
+
+                          //Kestin's Blog
+                          if( $post->ID == 458 ) {
+                          	echo '<div class="descriptions_blog" >';
+                        	the_content();
+                        	echo '</div>';
+                          	get_template_part( 'blogcontent' );
+                          }
+
+                          // Other Page
+                          else {
+                          	echo '<div class="wrap clearfix">';
+                          	the_content(); 
+                            echo '</div>';
                           }
 ?>
-                        </div>
                       </div>
     						  	</section>
 <?php           // </div>
