@@ -832,7 +832,7 @@ div#blog_selector ul
     margin: 0 auto;
     z-index: 99;
     line-height: 89px;
-    top: 240px;
+    top: 295px;
    /* left: 485px;*/
 }
 
@@ -851,6 +851,10 @@ body.home div#container header.header div#sausage-2 {
 }
 body.home.page div#big-video-wrap {
 	display: block;
+}
+
+body.home.page div#container div#content div#inner-content {
+	margin-top: 285px;
 }
 
 body.page div#big-video-wrap, 
