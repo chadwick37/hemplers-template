@@ -832,8 +832,10 @@ div#blog_selector ul
     margin: 0 auto;
     z-index: 99;
     line-height: 89px;
-    top: 295px;
+    /*top: 295px;*/
+    /*top: -600px;*/
    /* left: 485px;*/
+   bottom: 450px;
 }
 
 #sausage-1,#sausage-2 {
@@ -849,17 +851,21 @@ body.home div#container header.header div#sausage-1,
 body.home div#container header.header div#sausage-2 {
 	display: none;
 }
-body.home.page div#big-video-wrap {
+body.home.page div#vid-wrap {
 	display: block;
 }
 
-body.home.page div#container div#content div#inner-content {
+/*body.home.page div#container div#content div#inner-content {
 	margin-top: 285px;
+}*/
+
+body.home.page div#content {
+	margin-top: -320px;
 }
 
-body.page div#big-video-wrap, 
-body.archive div#big-video-wrap,
-body.single div#big-video-wrap {
+body.page div#vid-wrap, 
+body.archive div#vid-wrap,
+body.single div#vid-wrap {
 	display: none;
 }  
 
@@ -1235,3 +1241,23 @@ body.single.single-post div.tape-single-post {
 	    margin-top: -275px;
 }
 *//* End Custom category.php*/
+
+#vid-wrap {
+    /* height: 666px; */
+    width: 100%;
+    overflow: hidden;
+    /* position: absolute; */
+}
+
+#canvas-wrap {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#video-background {
+    height: auto;
+    width: 100%;
+}
