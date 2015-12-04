@@ -712,8 +712,10 @@ $('div.arrow').on('click', function(e){
 // End Adding script to added active class on blog menu
 
 // Configure bigvideo
-(function($) {
-    var BV = new $.BigVideo({controls:false, doLoop:true});
-    BV.init();
-    BV.show('/wp-content/themes/hemplers-2013/library/images/video/ham.mp4',{ambient:true});
-})(jQuery);
+// (function($) {
+//     var BV = new $.BigVideo({controls:false, doLoop:true});
+//     BV.init();
+//     BV.show('/wp-content/themes/hemplers-2013/library/images/video/ham.mp4',{ambient:true});
+// })(jQuery);
+
+// videojs(".video-js", { "controls": true, "autoplay": false, "preload": "auto" });
