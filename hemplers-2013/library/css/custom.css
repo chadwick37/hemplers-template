@@ -788,7 +788,7 @@ body.single.single-post h3 {
 div#blog_selector {
 	font-family: 'Germania One', 'Times New Roman', serif;
 	text-align: center;
-	background-color: rgba(142, 141, 136, 0.49);
+	background-color: rgba(142, 141, 136, 0.33);
 	padding: 15px;
 	margin: 0 auto;
     width: 100%;
@@ -865,13 +865,7 @@ body.home.page div#vid-wrap {
 
 body.home.page div#content {
 	margin-top: -320px;
-}
-
-body.page div#vid-wrap, 
-body.archive div#vid-wrap,
-body.single div#vid-wrap {
-	display: none;
-}  
+} 
 
 body.home .header #tag-arrow {
 	display: none;
@@ -891,6 +885,10 @@ body.home nav {
 body.page nav {
      margin-left: inherit;
      background-color: rgba(0, 0, 0, 0.42);
+}
+
+body.home.page nav {
+	background-color: rgba(12, 12, 12, 0.7);
 }
 
 ul#menu-the-menu {
@@ -1219,13 +1217,13 @@ body.single.single-post section.entry-content p {
 }
 
 body.single.single-post div.tape-single-post {
-    background: url('../images/button-tape.png') center center no-repeat;
-    position: absolute;
-    background-size: 10%;
+    background: transparent url('../images/button-tape-1.png') center center no-repeat;
+    position: relative;
+    background-size: 15%;
     width: 100%;
     padding: 35px;
     z-index: 99;
-    top: 190px;
+    top: 35px;
     right: 0px;
     -moz-transform: rotate(-5deg);
     -o-transform: rotate(-5deg);
