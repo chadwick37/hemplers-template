@@ -80,6 +80,7 @@
 		<div id="container">
 			<header class="header" role="banner">
 
+			<?php if (is_front_page()) { ?>
 			<!-- Adding video on front page -->
 			<div id="vid-wrap">
                     	<canvas id="canvas-wrap"></canvas>
@@ -89,6 +90,7 @@
 						</video>
             </div>
 			<!-- end video on front page  -->
+			<?php }  ?>
 
 				<a href="http://forbaconssake.com" class="flag" id="baconlink"><img src="<?php echo $themepath; ?>/library/images/baconlink.png"></a>
 				<a href="/kestins-korner-2" class="flag" id="kestins-korner"><img src="<?php echo $themepath; ?>/library/images/kestins-korner.png"></a>
