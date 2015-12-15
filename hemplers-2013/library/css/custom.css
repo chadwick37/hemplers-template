@@ -642,7 +642,7 @@ article#post-458 section.entry-content div.fill.clearfix div.wrap {
 }
 /* Footer customize */
 footer #footer-content {
-    margin-left: 90px;
+    margin-left: 65px;
 }
 
 .footer {
@@ -656,7 +656,7 @@ footer #footer-content {
     position: absolute;
 }
 
-#footer-content .email, #footer-content .phone {
+#footer-content .email, #footer-content #footer-links{
     border: none;
 }
 
@@ -668,30 +668,33 @@ footer #footer-content {
 }
 
 #footer-content #footer-logo img {
-	margin-left: -90px;
+	margin-left: -105px;
 }
 
-#footer-content #footer-logo, #footer-links {
+#footer-content #footer-logo {
 	border-right: 2px dotted #93714e;
 }
 
 div#footer-links {
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+    min-height: 165px;
 }
 
 div#footer-links ul {
-    margin-right: 10px;
+    /*margin-right: 10px;*/
+    font-weight: bold;
 }
 
 /* Custom social Icons Footer */
 #footer-content #ssba {
-	clear: right;
+    clear: both;
     width: 400px;
     /* padding-left: 415px; */
-    position: absolute;
-    margin-top: 60px;
-    margin-left: 415px;
+    position: relative;
+    margin: 0 auto;
+    margin-top: -110px;
+    margin-left: 475px; 	
 }
 
 #footer-content #ssba a.ssba_tooptip{outline:none;text-decoration:none !important;color:inherit !important;}
@@ -729,6 +732,7 @@ h4.wp-tiles-byline-title {
 .wp-tiles-byline-wrapper {
 	height: 75px;
 	cursor: url('../images/cursor.png'),url('../images/cursor.png'),auto;
+	margin-top: 15px;
 }
 
 div.wp-tiles-tile {
@@ -1260,4 +1264,53 @@ body.single.single-post div.tape-single-post {
 #video-background {
     height: auto;
     width: 100%;
+}
+
+/* css update footer */
+.address_new {
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    margin-left: -78px;
+    clear: both;
+    margin-top: -25px;
+    color: #60574C;
+    font-weight: bold;
+}
+
+#footer-content .address { 
+	display:none;
+}
+
+#footer-links ul li {
+    border-bottom: 2px solid #432300;
+}
+
+div#footer-logo {
+    min-height: 165px;
+}
+
+div#footer-content .phone {
+	border-right: none;
+	border-left: 2px dotted #93714e;
+	min-height: 165px;
+}
+
+div#footer-content .phone p {
+    position: relative;
+    margin: 0 auto;
+    margin-right: -40px;
+}
+
+#footer-content .email {
+    margin-left: 25px;
+}
+
+#footer-links ul li a {
+    margin-left: 3px;
+}
+
+/** WP TILES update Make the font for image tiles smaller **/
+.wp-tiles-tile-with-image .wp-tiles-byline-title {
+    font-size: 1.1em;
 }
