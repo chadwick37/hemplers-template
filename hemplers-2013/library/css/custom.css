@@ -973,6 +973,7 @@ body.archive.category div#inner-header h1#logo {
 	z-index: 102;
 	margin: 0 auto;
     left: 20px;
+    margin-top: -10px;
 }
 
 body.page.page-id-458 div#inner-header h1#logo,
