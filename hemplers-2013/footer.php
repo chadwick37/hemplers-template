@@ -11,14 +11,22 @@
 	                
 	                <div id="footer-logo">
 	                	<img src="/wp-content/themes/hemplers-2013/library/images/footer-logo.png">
+	                	 <div class="address_new">
+	                	
+					<p>Hempler's Foods Group<br/>
+	                	<!-- 5470 Nielsen Ave<br/> -->
+
+	                	Ferndale, WA<!--  98248 --></p>
+	                </div>
 
 	                </div>
 	                <div id="footer-links">
 	                	<ul>
 	                		<li><a href="/our-products">Our Products</a></li>
 	                		<li><a href="/our-story">Our Story</a></li>
-	                		<li><a href="/where-to-buy">Where to Buy</a></li>
+	                		<li><a href="/where-to-buy">Where to Find It</a></li>
 	                		<li><a href="/contact-us">Contact Us</a></li>
+	                		<li><a href="/kestins-korner">Kestin's Korner</a></li>
 	                	</ul>
 	                </div>
 	                <div class="phone">

@@ -80,23 +80,29 @@
 		<div id="container">
 			<header class="header" role="banner">
 
+			<?php if (is_front_page()) { ?>
+			<!-- Adding video on front page -->
+			<div id="vid-wrap">
+                    	<canvas id="canvas-wrap"></canvas>
+                    	<video id="video-background" class="video-js" preload loop autoplay muted>
+							<source src="/wp-content/themes/hemplers-2013/library/images/video/ham.mp4" type="video/mp4">
+							<!-- <source src="movie.ogg" type="video/ogg"> -->
+						</video>
+            </div>
+			<!-- end video on front page  -->
+			<?php }  ?>
+
 				<a href="http://forbaconssake.com" class="flag" id="baconlink"><img src="<?php echo $themepath; ?>/library/images/baconlink.png"></a>
 				<a href="/kestins-korner-2" class="flag" id="kestins-korner"><img src="<?php echo $themepath; ?>/library/images/kestins-korner.png"></a>
 
 
 				<div id="inner-header" class="wrap clearfix">
- 				<!-- Adding code to display video -->
-				<div id="big-video-wrap">
-					<img src="/wp-content/themes/hemplers-2013/library/images/ham.jpg" id="big-video-image" />
-					<div id="big-video-vid"></div>
-				</div>
-				<!-- End Adding code to display video  -->
 
 					<!-- to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> -->
 					<!-- <a href="<?php echo home_url(); ?>" class="flag" id="kestins-korner-1"><img src="<?php echo $themepath; ?>/library/images/kestins-korner-1.png"></a> -->
 					<div class="logo-single-post"></div>
-					<a href="/kestins-korner" class="back-from-single"><p>< Kestin's Korner </p></a>
-					<a href="/kestins-korner"><div class="arrow-right"></div></a>
+					<a href="/kestins-korner-2" class="back-from-single"><p>< Kestin's Korner </p></a>
+					<a href="/kestins-korner-2"><div class="arrow-right"></div></a>
 					<div class="logo-kestins-korner-1"></div>
 					<div class="arrow"><a href="<?php echo home_url(); ?>" rel="nofollow"> </a></div>
 					<h1 id="logo" class="h1"><a href="<?php echo home_url(); ?>" rel="nofollow"><?php bloginfo('name'); ?></a></h1>
