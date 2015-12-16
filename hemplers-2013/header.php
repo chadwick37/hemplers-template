@@ -101,8 +101,8 @@
 					<!-- to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> -->
 					<!-- <a href="<?php echo home_url(); ?>" class="flag" id="kestins-korner-1"><img src="<?php echo $themepath; ?>/library/images/kestins-korner-1.png"></a> -->
 					<div class="logo-single-post"></div>
-					<a href="/kestins-korner" class="back-from-single"><p>< Kestin's Korner </p></a>
-					<a href="/kestins-korner"><div class="arrow-right"></div></a>
+					<a href="/kestins-korner-2" class="back-from-single"><p>< Kestin's Korner </p></a>
+					<a href="/kestins-korner-2"><div class="arrow-right"></div></a>
 					<div class="logo-kestins-korner-1"></div>
 					<div class="arrow"><a href="<?php echo home_url(); ?>" rel="nofollow"> </a></div>
 					<h1 id="logo" class="h1"><a href="<?php echo home_url(); ?>" rel="nofollow"><?php bloginfo('name'); ?></a></h1>
