@@ -194,6 +194,14 @@ function load_fonts() {
 }
 
 
+// Adding css video
+wp_register_style('videostyle', 'http://vjs.zencdn.net/5.2.4/video-js.css');
+wp_enqueue_style( 'videostyle');
+
+// Adding css bigvideo
+// wp_register_style('bigvideostyle', get_stylesheet_directory_uri() . '/library/css/bigvideo.css');
+// wp_enqueue_style( 'bigvideostyle');
+
 /* jQuery Parallax Plugin ==> http://johnpolacek.github.com/scrolldeck.js/decks/parallax/ */
 wp_register_script( 'jquery-parallax', get_stylesheet_directory_uri() . '/library/js/libs/jquery.parallax-1.1.3.js', array( 'jquery' ), '', true );
 wp_enqueue_script( 'jquery-parallax' );
@@ -211,20 +219,22 @@ wp_enqueue_script( 'jquery-parallax' );
 // wp_enqueue_script( 'bigvideo' );
 
     // Enqueue jQuery UI
-//    wp_register_script( 'jquery-ui', get_stylesheet_directory_uri() . '/library/js/libs/jquery-ui-1.8.22.custom.min.js', array( 'jquery' ), '', true );
-//    wp_enqueue_script( 'jquery-ui' );
+   // wp_register_script( 'jquery-ui', get_stylesheet_directory_uri() . '/library/js/libs/jquery-ui-1.8.22.custom.min.js', array( 'jquery' ), '', true );
+   // wp_enqueue_script( 'jquery-ui' );
+
+   /* jQuery UI ==> http://jqueryui.com/ */
+    wp_register_script( 'jquery-ui', get_stylesheet_directory_uri() . '/library/js/libs/jquery-ui-1.10.2.custom.min.js', array( 'jquery' ), '', true );
+    wp_enqueue_script( 'jquery-ui' );
 
     // Enqueue jQuery images loaded
-    // wp_register_script( 'video', get_stylesheet_directory_uri() . '/library/js/libs/jquery.imagesloaded.min.js', array( 'jquery' ), '', true );
-    // wp_enqueue_script( 'video' );
+    wp_register_script( 'imagesloaded', get_stylesheet_directory_uri() . '/library/js/libs/jquery.imagesloaded.min.js', array( 'jquery' ), '', true );
+    wp_enqueue_script( 'imagesloaded' );
 
     // Enqueue Video.js
-    // wp_register_script( 'video', 'http://vjs.zencdn.net/c/video.js', array( 'jquery' ), '', true );
-    // wp_enqueue_script( 'video' );
+    wp_register_script( 'video', 'http://vjs.zencdn.net/5.2.4/video.js', array( 'jquery' ), '', true );
+    wp_enqueue_script( 'video' );
 
-/* jQuery UI ==> http://jqueryui.com/ */
-wp_register_script( 'jquery-ui', get_stylesheet_directory_uri() . '/library/js/libs/jquery-ui-1.10.2.custom.min.js', array( 'jquery' ), '', true );
-wp_enqueue_script( 'jquery-ui' );
+
 
 
 

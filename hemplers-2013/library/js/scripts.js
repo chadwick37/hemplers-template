@@ -324,6 +324,7 @@ jQuery(document).ready(function($) {
                 action: 'load_gallery',
                 id: prod_id
             };
+            console.log(data);
         jQuery.post( ajaxurl, data, function(response) {
 
             // success, load colorbox and feed it the response html
@@ -709,3 +710,12 @@ $('div.arrow').on('click', function(e){
      })
 })(jQuery);
 // End Adding script to added active class on blog menu
+
+// Configure bigvideo
+// (function($) {
+//     var BV = new $.BigVideo({controls:false, doLoop:true});
+//     BV.init();
+//     BV.show('/wp-content/themes/hemplers-2013/library/images/video/ham.mp4',{ambient:true});
+// })(jQuery);
+
+// videojs(".video-js", { "controls": true, "autoplay": false, "preload": "auto" });
