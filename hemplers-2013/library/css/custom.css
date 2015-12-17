@@ -125,22 +125,22 @@ body.home #kestins-korner {
 	margin-top: 198px;
 }
 
-body.page-id-458 #container,
+body.page-id-511 #container,
 body.archive.category #container {
 	background: none;
 }
 
-body.page-id-458 #content,
+body.page-id-511 #content,
 body.archive.category #content {
 	text-align: center;
 }
 
-body.page-id-458 .header,
+body.page-id-511 .header,
 body.archive.category .header {
 	min-height: 90px;
 }
 
-body.page-id-458 h2 {
+body.page-id-511 h2 {
 	font-size: 55px;
 }
 
@@ -258,9 +258,9 @@ body.page-id-511 header.header {
 	min-height: 100px;
 }
 
-body.page-id-511 section div.fill {
+/*body.page-id-511 section div.fill {
 	margin-bottom: 200px;
-}
+}*/
 
 body.page-id-511 div#container {
 	background-image: none;
@@ -425,11 +425,11 @@ div#cboxTitle {
 
 /* page */
 
-body.page-id-511 section div.fill {
+/*body.page-id-511 section div.fill {
 	background: url(/wp-content/themes/hemplers-2013/library/images/snake.png) center top repeat-y;
-}
+}*/
 
-body.page-id-511 div#meteor-slideshow {
+/*body.page-id-511 div#meteor-slideshow {
 	height: 340px;
 	width: 416px;
 	background: url('../images/home-video-frame.png') no-repeat;
@@ -449,7 +449,7 @@ body.page-id-511 div#subscribe {
 body.page-id-511 div#subscribe label {
 	display: none;
 }
-
+*/
 article.post a,
 article.post a:visited,
 article.post a:link {
@@ -532,20 +532,22 @@ a.ssba_tooptip span{border-radius:4px;-moz-border-radius:4px;-webkit-border-radi
 }
 
 /* blog kestin korner */
-article#post-458.clearfix.post-458.page.type-page.status-publish.hentry {
+article#post-511.clearfix.post-511.page.type-page.status-publish.hentry {
 	background:none;
+	margin-top: 0;
 }
 
-article#post-458.clearfix.post-458.page.type-page.status-publish.hentry section.entry-content:last-child{
+article#post-511.clearfix.post-511.page.type-page.status-publish.hentry section.entry-content:last-child{
 	background:none;
 
 }
 
 body.archive.category div#container div#content div#inner-content div#main section.entry-content:last-child  {
 	background: none;
+	margin-top: 15px;
 }
 
-body.page.page-id-458 div#container div#content div#inner-content,
+body.page.page-id-511 div#container div#content div#inner-content,
 body.archive.category div#container div#content div#inner-content {
 	/*background: transparent url('../images/wood2.png') center top repeat-y;
 	background-size: cover;*/
@@ -553,21 +555,29 @@ body.archive.category div#container div#content div#inner-content {
 
 }
 
-body.page.page-id-458 div#container header.header div#inner-header nav,
+body.page.page-id-511 div#container header.header div#inner-header nav,
 body.archive.category div#container header.header div#inner-header nav {
 	display: none;
 }
 
-body.page.page-id-458 .wptiles.clearfix {
+body.page.page-id-511 .wptiles.clearfix {
     margin: 0 auto;
     position: inherit;
-    padding: 150px;
+    /*padding: 150px;*/
+    padding-top: 140px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;     
 }
 
 body.archive.category .wptiles_cat.clearfix {
 	margin: 0 auto;
     position: inherit;
-    padding: 150px;
+   /* padding: 150px;*/
+    padding-top: 140px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px; 
 }
 
 div#inner-header {
@@ -577,7 +587,7 @@ div#inner-header {
 }
 
 /*  inner-header for Blog page */
-body.page.page-id-458 div#inner-header, 
+body.page.page-id-511 div#inner-header, 
 body.single.single-post div#inner-header,
 body.archive.category div#inner-header {
 	margin: 0 0 0 15px;
@@ -593,7 +603,7 @@ div#inner-header #logo a {
     background: url('../images/header-hemplers-logo-small-1.png') left top no-repeat;
 }
 
-body.page.page-id-458 div#container header.header div#inner-header a#kestins-korner-1 img{
+body.page.page-id-511 div#container header.header div#inner-header a#kestins-korner-1 img{
 	position: absolute;
     margin-left: 775px;
     width: 325px;
@@ -611,34 +621,41 @@ div.arrow {
 	background: transparent url('../images/arrow-left.png') no-repeat; 
 	padding-bottom: 100px;
 	margin-top: 75px;
-	background-size: 2% 30%;
+	background-size: 25% 35%;
+    margin-left: 30px;
+    margin-right: 800px;
 
 }
 
 div.kestin-pic {
-	background: transparent url('../images/kestin-pic.png') center right no-repeat;
-	padding-bottom: 360px;
+	background: transparent url('../images/kestin-pic-2.png') center right no-repeat;
+	padding-bottom: 355px;
     margin:0 auto;
     background-size: inherit;
+    margin-left: 1190px;
+    filter: brightness(45%) contrast(90%);
+    -webkit-filter: brightness(45%) contrast(90%);
 }
 
-article#post-458 section.entry-content div.fill.clearfix div.descriptions_blog p {
+article#post-511 section.entry-content div.fill.clearfix div.descriptions_blog p {
 	color: #C9C9C9;
 	text-shadow: none;
+	font-size: 1.1em;
 }
 
 body.archive.category section.entry-content div.fill.clearfix div.descriptions_blog p {
 	color: #C9C9C9;
 	text-shadow: none;
+	font-size: 1.1em;
 }
-article#post-458 section.entry-content div.fill.clearfix div.wrap {
+article#post-511 section.entry-content div.fill.clearfix div.wrap {
 	width: 100%;
 }
 
 .blogcontent {
 	background: transparent url('../images/wood2.png') center top repeat-y;
-	background-size: 100%;
-	margin-bottom: 45px;
+	/*background-size: 100%;*/
+	margin-bottom: 75px;
 }
 /* Footer customize */
 footer #footer-content {
@@ -646,7 +663,7 @@ footer #footer-content {
 }
 
 .footer {
-	background-repeat: repeat-x;
+	zoom: 1.37;
 }
 
 #footer-content .address {
@@ -672,7 +689,7 @@ footer #footer-content {
 }
 
 #footer-content #footer-logo {
-	border-right: 2px dotted #93714e;
+	border-right: 1px dotted #93714e;
 }
 
 div#footer-links {
@@ -763,7 +780,7 @@ a.read-more-hide {
 
 .descriptions_blog {
     margin-top: -110px;
-    padding-left: 400px;
+    padding-left: 390px;
     padding-right: 400px;
 }
 /* end css div custom */
@@ -788,7 +805,7 @@ body.single.single-post h3 {
 div#blog_selector {
 	font-family: 'Germania One', 'Times New Roman', serif;
 	text-align: center;
-	background-color: rgba(142, 141, 136, 0.49);
+	background-color: rgba(142, 141, 136, 0.33);
 	padding: 15px;
 	margin: 0 auto;
     width: 100%;
@@ -827,6 +844,7 @@ div#blog_selector ul
     padding: 10px;
     margin: 0 auto;
     overflow: hidden;
+    font-size: 1.1em;
 }
 /* End Custom Nav Menu Blog*/
 
@@ -865,13 +883,7 @@ body.home.page div#vid-wrap {
 
 body.home.page div#content {
 	margin-top: -320px;
-}
-
-body.page div#vid-wrap, 
-body.archive div#vid-wrap,
-body.single div#vid-wrap {
-	display: none;
-}  
+} 
 
 body.home .header #tag-arrow {
 	display: none;
@@ -891,6 +903,10 @@ body.home nav {
 body.page nav {
      margin-left: inherit;
      background-color: rgba(0, 0, 0, 0.42);
+}
+
+body.home.page nav {
+	background-color: rgba(12, 12, 12, 0.7);
 }
 
 ul#menu-the-menu {
@@ -923,11 +939,11 @@ body.page div#container header.header div#inner-header div.arrow {
 	display: none;
 }
 
-body.page.page-id-458 .wrap_blog.clearfix {
+body.page.page-id-511 .wrap_blog.clearfix {
     margin-top: -285px;
 }
 
-body.page.page-id-458 div#container header.header div#inner-header div.arrow,
+body.page.page-id-511 div#container header.header div#inner-header div.arrow,
 body.archive.category div#container header.header div#inner-header div.arrow {
 	display: inherit;
 	position: inherit;
@@ -963,7 +979,7 @@ div.arrow-right {
     margin-right: 20px;
 }
 
-body.page.page-id-458 div.logo-kestins-korner-1, body.page.page-id-458 div.arrow-right,
+body.page.page-id-511 div.logo-kestins-korner-1, body.page.page-id-511 div.arrow-right,
 body.archive.category div.logo-kestins-korner-1, body.archive.category div.arrow-right {
 	display: none;
 }
@@ -975,11 +991,14 @@ body.archive.category div#inner-header h1#logo {
 	z-index: 102;
 	margin: 0 auto;
     left: 20px;
+    margin-top: -10px;
 }
 
-body.page.page-id-458 div#inner-header h1#logo,
+body.page.page-id-511 div#inner-header h1#logo,
 body.archive.category div#inner-header h1#logo {
     position: absolute;
+    margin-left: 60px;
+
 }
 
 body.home.page .header #logo {
@@ -1018,6 +1037,8 @@ body.single.single-post div#inner-content  {
 	background: #fff;
 	padding: 40px;
 	font-size: 18px;
+	zoom: 1.4;
+	margin-bottom: 75px;
 }
 
 body.single.single-post .eightcol  {
@@ -1182,7 +1203,7 @@ body.single.single-post header.header {
 body.single.single-post div#content.blog-post {
 	background: transparent url('../images/wood2.png') center top repeat-y;
 	background-size: contain;
-    padding: 70px;
+    padding: 30px;
     margin: 0 auto;
     margin-bottom: 45px;
 }
@@ -1193,10 +1214,12 @@ body.single.single-post div.logo-single-post {
     background-repeat: no-repeat;
     position: inherit;
     margin: 0 auto;
-    width: 50%;
+    width: 60%;
     padding: 50px;
     background-size: 55%;
-    top: 45px;
+    top: 23px;
+    -webkit-filter: brightness(40%);
+    filter: brightness(40%);
 }
 
 .back-from-single {
@@ -1206,6 +1229,9 @@ body.single.single-post div.logo-single-post {
 body.single.single-post a.back-from-single {
 	display: inherit;
 	text-decoration: none;
+	font-weight: 600;
+    font-size: large;
+    margin-left: -170px;
 }
 
 body.single.single-post a.back-from-single p {
@@ -1219,13 +1245,13 @@ body.single.single-post section.entry-content p {
 }
 
 body.single.single-post div.tape-single-post {
-    background: url('../images/button-tape.png') center center no-repeat;
-    position: absolute;
-    background-size: 10%;
+    background: transparent url('../images/button-tape-1.png') center center no-repeat;
+    position: relative;
+    background-size: 17%;
     width: 100%;
     padding: 35px;
     z-index: 99;
-    top: 190px;
+    top: 35px;
     right: 0px;
     -moz-transform: rotate(-5deg);
     -o-transform: rotate(-5deg);
@@ -1292,7 +1318,7 @@ div#footer-logo {
 
 div#footer-content .phone {
 	border-right: none;
-	border-left: 2px dotted #93714e;
+	border-left: 1px dotted #93714e;
 	min-height: 165px;
 }
 
@@ -1313,4 +1339,17 @@ div#footer-content .phone p {
 /** WP TILES update Make the font for image tiles smaller **/
 .wp-tiles-tile-with-image .wp-tiles-byline-title {
     font-size: 1.1em;
+    zoom: 1.2;
+}
+
+/* Update Blog Page 16.12.2015 */
+body.page.page-id-511 div#container,
+body.archive.category div#container,
+body.single.single-post div#container {
+    width: 1600px;
+    margin: 0 auto;
+}
+
+div.descriptions_blog img.aligncenter {
+	    margin-bottom: 15px;
 }

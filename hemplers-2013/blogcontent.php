@@ -3,7 +3,7 @@
     <div class="blogcontent clearfix">
       <div id="blog_selector" class="clearfix">
         <ul class="menu_blog clearfix">
-          <li><a rel="all" href="/our-story/kestins-korner/">View All</a></li>
+          <li><a rel="all" href="/our-story/kestins-korner-2/">View All</a></li>
               <?php
             // wp_list_categories( array(
             //     'include'           => 'ID',    

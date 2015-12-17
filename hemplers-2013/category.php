@@ -11,8 +11,9 @@
                 		);
                 $contents = new WP_Query($args);
                 	while($contents->have_posts()):$contents->the_post();
-		                if ($post->ID == 458) {
+		                if ($post->ID == 511) {
 		                	echo '<div class="descriptions_blog" >';
+		                	echo "<img class='aligncenter' src='".get_stylesheet_directory_uri()."/library/images/kestins-korner-1.png' alt='kestins-korner-1' width='400' height='130' />";
 		                	the_content(); 
 		                	echo '</div>';
 		                }
@@ -23,7 +24,7 @@
     						<div class="blogcontent clearfix">
       							<div id="blog_selector" class="clearfix">
         							<ul class="menu_blog clearfix">
-          								<li><a rel="all" href="/our-story/kestins-korner/">View All</a></li>
+          								<li><a rel="all" href="/our-story/kestins-korner-2/">View All</a></li>
 								             <?php
 								            $cat_args = array(
 								                            'hide_empty' => true,
