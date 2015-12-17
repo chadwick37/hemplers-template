@@ -85,7 +85,8 @@
 			<div id="vid-wrap">
                     	<canvas id="canvas-wrap"></canvas>
                     	<video id="video-background" class="video-js" preload loop autoplay muted>
-							<source src="/wp-content/themes/hemplers-2013/library/images/video/ham.mp4" type="video/mp4">
+							<!-- <source src="/wp-content/themes/hemplers-2013/library/images/video/ham.mp4" type="video/mp4"> -->
+							<!-- <source src="/wp-content/themes/hemplers-2013/library/images/video/Bacon.mp4" type="video/mp4"> -->
 							<!-- <source src="movie.ogg" type="video/ogg"> -->
 						</video>
             </div>
