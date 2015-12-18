@@ -632,7 +632,7 @@ div.kestin-pic {
 	padding-bottom: 355px;
     margin:0 auto;
     background-size: inherit;
-    margin-left: 1190px;
+    /*margin-left: 1190px;*/
     filter: brightness(45%) contrast(90%);
     -webkit-filter: brightness(45%) contrast(90%);
 }
@@ -663,7 +663,11 @@ footer #footer-content {
 }
 
 .footer {
-	zoom: 1.37;
+	/* zoom: 1.37; */
+    background-size: 121% 65%;
+    margin-bottom: -35px;
+    height: 490px;
+    margin-top: 65px;
 }
 
 #footer-content .address {
@@ -689,7 +693,7 @@ footer #footer-content {
 }
 
 #footer-content #footer-logo {
-	border-right: 1px dotted #93714e;
+	border-right: 2px dotted #93714e;
 }
 
 div#footer-links {
@@ -782,6 +786,8 @@ a.read-more-hide {
     margin-top: -110px;
     padding-left: 390px;
     padding-right: 400px;
+    z-index: 99;
+    position: relative;
 }
 /* end css div custom */
 
@@ -1026,6 +1032,8 @@ body.single.single-post div#container {
 
 body.single.single-post div#inner-header {
 	margin: 0 auto;
+	max-width: 1300px;
+	position: inherit;
 }
 
 body.single.single-post iv#cboxLoadedContent {
@@ -1037,8 +1045,9 @@ body.single.single-post div#inner-content  {
 	background: #fff;
 	padding: 40px;
 	font-size: 18px;
-	zoom: 1.4;
+	/*zoom: 1.4;*/
 	margin-bottom: 75px;
+	max-width: 1300px;
 }
 
 body.single.single-post .eightcol  {
@@ -1205,7 +1214,7 @@ body.single.single-post div#content.blog-post {
 	background-size: contain;
     padding: 30px;
     margin: 0 auto;
-    margin-bottom: 45px;
+    margin-bottom: 75px;
 }
 
 body.single.single-post div.logo-single-post {
@@ -1216,6 +1225,7 @@ body.single.single-post div.logo-single-post {
     margin: 0 auto;
     width: 60%;
     padding: 50px;
+    padding-bottom: 85px;
     background-size: 55%;
     top: 23px;
     -webkit-filter: brightness(40%);
@@ -1231,7 +1241,7 @@ body.single.single-post a.back-from-single {
 	text-decoration: none;
 	font-weight: 600;
     font-size: large;
-    margin-left: -170px;
+    /*margin-left: -170px;*/
 }
 
 body.single.single-post a.back-from-single p {
@@ -1318,7 +1328,7 @@ div#footer-logo {
 
 div#footer-content .phone {
 	border-right: none;
-	border-left: 1px dotted #93714e;
+	border-left: 2px dotted #93714e;
 	min-height: 165px;
 }
 
@@ -1339,17 +1349,28 @@ div#footer-content .phone p {
 /** WP TILES update Make the font for image tiles smaller **/
 .wp-tiles-tile-with-image .wp-tiles-byline-title {
     font-size: 1.1em;
-    zoom: 1.2;
+    -webkit-transform: scale(1.2); 
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
 }
 
 /* Update Blog Page 16.12.2015 */
 body.page.page-id-511 div#container,
 body.archive.category div#container,
 body.single.single-post div#container {
-    width: 1600px;
+    max-width: 1600px;
     margin: 0 auto;
 }
 
 div.descriptions_blog img.aligncenter {
 	    margin-bottom: 15px;
+}
+
+/* Update footer */
+div#inner-footer {
+    -webkit-transform: scale(1.37); 
+    -moz-transform: scale(1.37);
+    -o-transform: scale(1.37);
+    transform: scale(1.37);
 }
