@@ -856,14 +856,16 @@ div#blog_selector ul
 
 /* Custom Home */
 .header #tagline {
-    min-height: 335px;
-    margin: 0 auto;
+	min-height: 335px; 
+    /* margin: 0 auto; */
     z-index: 99;
     line-height: 89px;
-    /*top: 295px;*/
-    /*top: -600px;*/
-   /* left: 485px;*/
-   bottom: 450px;
+    /* top: 295px; */
+    /* top: -600px; */
+    /* left: 485px; */
+    /* bottom: 450px; */
+    margin: 380px 0 0 200px;
+    position: absolute;
 }
 
 #sausage-1,#sausage-2 {
@@ -888,7 +890,7 @@ body.home.page div#vid-wrap {
 }*/
 
 body.home.page div#content {
-	margin-top: -320px;
+	margin-top: 0px;
 } 
 
 body.home .header #tag-arrow {
@@ -1373,4 +1375,49 @@ div#inner-footer {
     -moz-transform: scale(1.37);
     -o-transform: scale(1.37);
     transform: scale(1.37);
+}
+
+/* geoff update */
+.home .header {
+/*height: 1000px;*/
+min-height: 0;
+display: block;
+width: 100%;
+height: auto;
+}
+/*.header #tagline {
+bottom: auto;
+top: auto;
+margin-top: -600px
+}*/
+#video-background {
+    height: 100%;
+    width: 100%;
+}
+/* blog */
+div.descriptions_blog h1 {
+display: none;
+}
+article#post-511 section.entry-content div.fill.clearfix div.descriptions_blog p,
+body.archive.category section.entry-content div.fill.clearfix div.descriptions_blog p  {
+font-size: 19px;
+}
+div.wp-tiles-byline-content {
+display: none;
+}
+
+/* Hide */
+section.entry-content.page-block.clearfix.home-secrets-block .fill .wrap,
+section.entry-content.page-block.clearfix.home-market-block,
+section.entry-content.page-block.clearfix.home-get-it-block .fill .wrap{
+	display: none;
+}
+
+.home-get-it-block .fill {
+    min-height: 295px;
+    background: none;
+}
+
+.home-secrets-block .fill {
+	min-height: 100px;
 }
