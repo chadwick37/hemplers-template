@@ -715,7 +715,7 @@ $('div.arrow').on('click', function(e){
 (function($){
     $(document).ready(function() {
         var array_video = new Array("/wp-content/themes/hemplers-2013/library/images/video/ham.mp4","/wp-content/themes/hemplers-2013/library/images/video/Bacon.mp4",
-                            "/wp-content/themes/hemplers-2013/library/images/video/CanadianBacon.mp4","/wp-content/themes/hemplers-2013/library/images/video/HamSandwich.mp4",
+                            "/wp-content/themes/hemplers-2013/library/images/video/CanadianBacon.mp4","/wp-content/themes/hemplers-2013/library/images/video/HamSandwich2.mp4",
                             "/wp-content/themes/hemplers-2013/library/images/video/Hotdog.mp4","/wp-content/themes/hemplers-2013/library/images/video/Sausage.mp4");
         var random_number = Math.floor(Math.random()*array_video.length);
         var video = document.getElementById('video-background');
