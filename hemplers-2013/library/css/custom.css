@@ -664,10 +664,12 @@ footer #footer-content {
 
 .footer {
 	/* zoom: 1.37; */
-    background-size: 121% 65%;
-    margin-bottom: -35px;
-    height: 490px;
+	background: #000 url('../images/flame.png') center bottom no-repeat;
+    background-size: 101% 60%;
+    margin-bottom: -125px;
+    height: 500px;
     margin-top: 65px;
+
 }
 
 #footer-content .address {
@@ -978,7 +980,7 @@ div.arrow-right {
 	background: transparent url('../images/arrow-right.png') right top no-repeat;
     background-size: 5%;
     margin: 0 auto;
-    z-index: 101;
+    z-index: 102;
     padding: 50px;
     position: fixed;
     width: 25%;
@@ -1378,46 +1380,85 @@ div#inner-footer {
 }
 
 /* geoff update */
+
 .home .header {
-/*height: 1000px;*/
-min-height: 0;
-display: block;
-width: 100%;
-height: auto;
+	/*height: 1000px;*/
+	min-height: 0;
 }
-/*.header #tagline {
-bottom: auto;
-top: auto;
-margin-top: -600px
-}*/
+
+.header #tagline {
+	bottom: auto;
+	top: auto;
+	/*margin-top: -600px*/
+	position: absolute;
+}
+
 #video-background {
     height: 100%;
     width: 100%;
+    vertical-align: middle !important;
+    position: inherit;
 }
 /* blog */
 div.descriptions_blog h1 {
-display: none;
+	display: none;
 }
 article#post-511 section.entry-content div.fill.clearfix div.descriptions_blog p,
 body.archive.category section.entry-content div.fill.clearfix div.descriptions_blog p  {
-font-size: 19px;
+	font-size: 19px;
 }
 div.wp-tiles-byline-content {
-display: none;
-}
-
-/* Hide */
-section.entry-content.page-block.clearfix.home-secrets-block .fill .wrap,
-section.entry-content.page-block.clearfix.home-market-block,
-section.entry-content.page-block.clearfix.home-get-it-block .fill .wrap{
 	display: none;
 }
 
-.home-get-it-block .fill {
-    min-height: 295px;
-    background: none;
+.home .hentry {
+    background: transparent url('../images/primary-paper-bg.jpg') center top repeat-x;
 }
 
-.home-secrets-block .fill {
-	min-height: 100px;
+.home .entry-content:last-child {
+    background: transparent url('../images/footer-paper-bg-1.jpg') center bottom repeat-x;
+    min-height: 730px;
+}
+
+div#chicken {
+    position: absolute;
+    margin-top: -750px;
+    left: 800px;
+    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+}
+
+.tag_class {
+	width: auto;
+	height: auto;
+	margin-top: 300px;
+	vertical-align: middle;
+	text-transform: uppercase;
+    text-align: center;
+    font-family: 'Germania One', 'Times New Roman', serif;
+}
+
+.tag_container {
+    position: absolute;
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+}
+
+div.tag_class #tagline {
+    color: #f7e0bb;
+    font-size: 52px;
+    text-shadow: #000 1px 1px 0px;
+    text-shadow: rgba(0,0,0,.75) 1px 1px 0px;
+}
+
+
+div.tag_class #tagline em {
+    display: block;
+    font-family: 'Rye', 'serif';
+    font-style: normal;
+    font-size: 150px;
+    line-height: .7;
+    text-shadow: none;
+    color: #fff;
 }
