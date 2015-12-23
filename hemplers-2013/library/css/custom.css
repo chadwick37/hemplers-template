@@ -980,7 +980,7 @@ div.arrow-right {
 	background: transparent url('../images/arrow-right.png') right top no-repeat;
     background-size: 5%;
     margin: 0 auto;
-    z-index: 101;
+    z-index: 102;
     padding: 50px;
     position: fixed;
     width: 25%;
