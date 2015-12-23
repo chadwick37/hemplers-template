@@ -711,11 +711,29 @@ $('div.arrow').on('click', function(e){
 })(jQuery);
 // End Adding script to added active class on blog menu
 
-// Configure bigvideo
-// (function($) {
-//     var BV = new $.BigVideo({controls:false, doLoop:true});
-//     BV.init();
-//     BV.show('/wp-content/themes/hemplers-2013/library/images/video/ham.mp4',{ambient:true});
-// })(jQuery);
+// Randomly Video
+(function($){
+    $(document).ready(function() {
+        var array_video = new Array("/wp-content/themes/hemplers-2013/library/images/video/ham.mp4","/wp-content/themes/hemplers-2013/library/images/video/Bacon.mp4",
+                            "/wp-content/themes/hemplers-2013/library/images/video/CanadianBacon.mp4","/wp-content/themes/hemplers-2013/library/images/video/HamSandwich2.mp4",
+                            "/wp-content/themes/hemplers-2013/library/images/video/Hotdog.mp4","/wp-content/themes/hemplers-2013/library/images/video/Sausage.mp4");
+        var random_number = Math.floor(Math.random()*array_video.length);
+        var video = document.getElementById('video-background');
+        if (video === null) {
+            console.log("element not found");
+        } else {
+            console.log("element is found");
+            var source = document.createElement('source');
 
-// videojs(".video-js", { "controls": true, "autoplay": false, "preload": "auto" });
+            source.setAttribute('src', array_video[random_number]);
+            source.setAttribute('type','video/mp4');
+
+            video.appendChild(source);
+            video.play();
+        }
+        
+    });
+})(jQuery);
+
+
+
