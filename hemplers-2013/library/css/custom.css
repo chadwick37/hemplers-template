@@ -758,9 +758,9 @@ h4.wp-tiles-byline-title {
 	margin-top: 15px;
 }
 
-div.wp-tiles-tile {
+/*div.wp-tiles-tile {
 	box-shadow: 10px 10px 5px rgba(128, 128, 128, 0.28);
-}
+}*/
 
 /* hide article */
 .hide {
@@ -958,6 +958,7 @@ body.archive.category div#container header.header div#inner-header div.arrow {
 	display: inherit;
 	position: inherit;
     z-index: 103;
+    bottom: 30px;
 }
 
 #container {
@@ -1461,4 +1462,14 @@ div.tag_class #tagline em {
     line-height: .7;
     text-shadow: none;
     color: #fff;
+}
+
+span.first-desc {
+    font-size: 1.1em;
+}
+
+body.page div#inner-header h1#logo a,
+body.archive.category div#inner-header h1#logo a
+{
+	background-size: 50%;
 }
