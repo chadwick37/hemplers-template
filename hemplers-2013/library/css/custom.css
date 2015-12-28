@@ -1473,3 +1473,16 @@ body.archive.category div#inner-header h1#logo a
 {
 	background-size: 50%;
 }
+
+/*Fix margin/padding on long text wraps on Kestin's Korner*/
+div.wp-tiles-tile article.wp-tiles-tile-with-image h4.wp-tiles-byline-title {
+    margin: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+    overflow: hidden;
+    padding: 5px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 85px;
+    padding-top: 2px;
+}
