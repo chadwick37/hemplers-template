@@ -752,10 +752,11 @@ div.wp-tiles-loaded .wp-tiles-tile-bg {
 	font-size: 0.8em;
 }*/
 
-.wp-tiles-byline-wrapper {
-	/*height: 75px;*/
+div.wp-tiles-byline-wrapper {
+	height: auto;
 	cursor: url('../images/cursor.png'),url('../images/cursor.png'),auto;
 	/*margin-top: 15px;*/
+	padding: 0px;
 }
 
 /*div.wp-tiles-tile {
@@ -1353,11 +1354,11 @@ div#footer-content .phone p {
 
 /** WP TILES update Make the font for image tiles smaller **/
 .wp-tiles-tile-with-image .wp-tiles-byline-title {
-    font-size: 1.1em;
-    -webkit-transform: scale(1.06); 
-    -moz-transform: scale(1.06);
-    -o-transform: scale(1.06);
-    transform: scale(1.06);
+    font-size: 1.2em;
+    /*-webkit-transform: scale(1); 
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);*/
 }
 
 /* Update Blog Page 16.12.2015 */
