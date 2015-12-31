@@ -428,13 +428,14 @@ $('.read-more-content').addClass('hide')
 
 // Set up the toggle effect:
 $('.read-more-show').on('click', function(e) {
-  $(this).next('.read-more-content').removeClass('hide');
+  $(this).next('.read-more-content').slideDown()
   $(this).addClass('hide');
   e.preventDefault();
 });
 
+
 $('.read-more-hide').on('click', function(e) {
-  $(this).parent('.read-more-content').addClass('hide').parent().children('.read-more-show').removeClass('hide');
+  $(this).parent('.read-more-content').slideUp().parent().children('.read-more-show').removeClass('hide');
   e.preventDefault();
 });
 // End Script readmore
