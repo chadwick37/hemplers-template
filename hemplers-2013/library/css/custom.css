@@ -748,14 +748,15 @@ div.wp-tiles-loaded .wp-tiles-tile-bg {
 	bottom: 10px;
 }
 
-h4.wp-tiles-byline-title {
+/*h4.wp-tiles-byline-title {
 	font-size: 0.8em;
-}
+}*/
 
-.wp-tiles-byline-wrapper {
-	height: 75px;
+div.wp-tiles-byline-wrapper {
+	height: auto;
 	cursor: url('../images/cursor.png'),url('../images/cursor.png'),auto;
-	margin-top: 15px;
+	/*margin-top: 15px;*/
+	padding: 0px;
 }
 
 /*div.wp-tiles-tile {
@@ -1353,11 +1354,11 @@ div#footer-content .phone p {
 
 /** WP TILES update Make the font for image tiles smaller **/
 .wp-tiles-tile-with-image .wp-tiles-byline-title {
-    font-size: 1.1em;
-    -webkit-transform: scale(1.2); 
-    -moz-transform: scale(1.2);
-    -o-transform: scale(1.2);
-    transform: scale(1.2);
+    font-size: 1.2em;
+    /*-webkit-transform: scale(1); 
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);*/
 }
 
 /* Update Blog Page 16.12.2015 */
@@ -1472,4 +1473,14 @@ body.page div#inner-header h1#logo a,
 body.archive.category div#inner-header h1#logo a
 {
 	background-size: 50%;
+}
+
+/*Fix margin/padding on long text wraps on Kestin's Korner update*/
+div.wp-tiles-tile article.wp-tiles-tile-with-image h4.wp-tiles-byline-title {
+    padding: 23.1px;
+}
+
+/* Hide Loading */
+nav.wp-tiles-pagination-ajax.loading {
+    background: none;
 }
