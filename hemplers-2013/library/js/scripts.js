@@ -778,8 +778,8 @@ $('div.arrow').on('click', function(e){
             $('.wp-tiles-tile').each(function(i,a){
                 for (var j = 0; j < data_pagination.length; j++) { //take a value equal to pagination
                    if ($($('.wp-tiles-tile')[i]).attr('id') === data_pagination[j]) {
-                    $('.wp-tiles-container').animate({height:height_tiles_container_on_show+'px'},250); // Change speed to 0.25 second
-                    $($('.wp-tiles-tile')[i]).show(250); // Change speed to 0.25 second
+                    $('.wp-tiles-container').animate({height:height_tiles_container_on_show+'px'},1000); // Change speed to 1 second
+                    $($('.wp-tiles-tile')[i]).show(250); 
                     };
                 };
             });
@@ -788,7 +788,7 @@ $('div.arrow').on('click', function(e){
             e.preventDefault();  
 
             setTimeout(function () {
-                $('.wp-tiles-container').animate({height:height_tiles_container+'px'},250); // Change speed to 0.25 second
+                $('.wp-tiles-container').animate({height:height_tiles_container+'px'},1000); // Change speed to 1 second
                 $('.wp-tiles-pagination.wp-tiles-pagination-ajax a').text("Show");
                 $('.wp-tiles-pagination.wp-tiles-pagination-ajax').removeClass('show');
                 $('.wp-tiles-pagination.wp-tiles-pagination-ajax').addClass('hide');
@@ -798,7 +798,7 @@ $('div.arrow').on('click', function(e){
             $('.wp-tiles-tile').each(function(i,a){
                 for (var j = 0; j < data_pagination.length; j++) {
                    if ($($('.wp-tiles-tile')[i]).attr('id') === data_pagination[j]) {
-                    $($('.wp-tiles-tile')[i]).hide(250); // Change speed to 0.25 second
+                    $($('.wp-tiles-tile')[i]).hide(250);
                     };
                 };
             });
@@ -808,5 +808,20 @@ $('div.arrow').on('click', function(e){
     
 });
     
+
+// Override pagination speed on wp tiles
+setTimeout(function(){
+    $.wptiles.resizeParent = function($el,padding) {
+    var tiles=$el.children(".wp-tiles-tile"), tileOffsetTop=parseInt($el.offset().top), max=0, newHeight;
+            tiles.each(function() {
+                var $e=$(this), bottom=$e.height()+$e.offset().top;
+                if(bottom>max)max=bottom
+            }
+            );
+        newHeight=max-tileOffsetTop+parseInt(padding)+"px";
+        $el.parent(".wp-tiles-container").animate({height:newHeight}, 1000) // Change speed pagination wptiles to 1 second
+        }
+}, 2000);
+
 })(jQuery)
 
