@@ -773,13 +773,13 @@ $('div.arrow').on('click', function(e){
                 $('.wp-tiles-pagination.wp-tiles-pagination-ajax').addClass('show');
                 $('.wp-tiles-pagination.wp-tiles-pagination-ajax').show();  
                 height_tiles_container_on_show = $('.wp-tiles-container').height();
-            }, 2000);
+            }, 1500);
 
             $('.wp-tiles-tile').each(function(i,a){
                 for (var j = 0; j < data_pagination.length; j++) { //take a value equal to pagination
                    if ($($('.wp-tiles-tile')[i]).attr('id') === data_pagination[j]) {
-                    $('.wp-tiles-container').animate({height:height_tiles_container_on_show+'px'},1000); // Change speed to 1 second
-                    $($('.wp-tiles-tile')[i]).show(250); 
+                    $('.wp-tiles-container').slideDown(500).animate({height:height_tiles_container_on_show+'px'},250); // Change speed to 1 second
+                    $($('.wp-tiles-tile')[i]).slideDown("slow"); 
                     };
                 };
             });
@@ -788,7 +788,7 @@ $('div.arrow').on('click', function(e){
             e.preventDefault();  
 
             setTimeout(function () {
-                $('.wp-tiles-container').animate({height:height_tiles_container+'px'},1000); // Change speed to 1 second
+                $('.wp-tiles-container').animate({height:height_tiles_container+'px'},250); // Change speed to 1 second
                 $('.wp-tiles-pagination.wp-tiles-pagination-ajax a').text("Show");
                 $('.wp-tiles-pagination.wp-tiles-pagination-ajax').removeClass('show');
                 $('.wp-tiles-pagination.wp-tiles-pagination-ajax').addClass('hide');
@@ -798,7 +798,7 @@ $('div.arrow').on('click', function(e){
             $('.wp-tiles-tile').each(function(i,a){
                 for (var j = 0; j < data_pagination.length; j++) {
                    if ($($('.wp-tiles-tile')[i]).attr('id') === data_pagination[j]) {
-                    $($('.wp-tiles-tile')[i]).hide(250);
+                    $($('.wp-tiles-tile')[i]).slideUp("slow");
                     };
                 };
             });
@@ -819,7 +819,7 @@ setTimeout(function(){
             }
             );
         newHeight=max-tileOffsetTop+parseInt(padding)+"px";
-        $el.parent(".wp-tiles-container").animate({height:newHeight}, 1000) // Change speed pagination wptiles to 1 second
+        $el.parent(".wp-tiles-container").slideDown().animate({height:newHeight}, 250) // Change speed pagination wptiles to 1 second
         }
 }, 2000);
 

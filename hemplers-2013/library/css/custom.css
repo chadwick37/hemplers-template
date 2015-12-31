@@ -1479,3 +1479,8 @@ body.archive.category div#inner-header h1#logo a
 div.wp-tiles-tile article.wp-tiles-tile-with-image h4.wp-tiles-byline-title {
     padding: 23.1px;
 }
+
+/* Hide Loading */
+nav.wp-tiles-pagination-ajax.loading {
+    background: none;
+}
