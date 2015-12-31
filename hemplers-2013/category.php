@@ -41,7 +41,7 @@
 										<?php
 										if ( have_posts() ) {
 											if ( function_exists ( 'the_wp_tiles' ) ) {
-												the_loop_wp_tiles();
+												the_loop_wp_tiles(array("byline_height" => 60, "byline_height_auto" => true));
 											}
 											else {
 												echo "Please activated WP Tiles Plugin";
