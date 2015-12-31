@@ -715,7 +715,7 @@ $('div.arrow').on('click', function(e){
 (function($){
     $(document).ready(function() {
         var array_video = new Array("/wp-content/themes/hemplers-2013/library/images/video/ham.mp4","/wp-content/themes/hemplers-2013/library/images/video/Bacon.mp4",
-                            "/wp-content/themes/hemplers-2013/library/images/video/CanadianBacon.mp4","/wp-content/themes/hemplers-2013/library/images/video/HamSandwich.mp4",
+                            "/wp-content/themes/hemplers-2013/library/images/video/CanadianBacon.mp4","/wp-content/themes/hemplers-2013/library/images/video/HamSandwich2.mp4",
                             "/wp-content/themes/hemplers-2013/library/images/video/Hotdog.mp4","/wp-content/themes/hemplers-2013/library/images/video/Sausage.mp4");
         var random_number = Math.floor(Math.random()*array_video.length);
         var video = document.getElementById('video-background');
@@ -736,4 +736,92 @@ $('div.arrow').on('click', function(e){
 })(jQuery);
 
 
+// change the show/hide on the "read more.." on Kestin's Korner to a slideup/slidedown
+(function($){
+    $(document).ready(function() {
+        var on_show = 0;
+        var height_tiles_container = 0;
+        var height_tiles_container_on_show = 0;
+        var data_pagination = [];
+
+    setTimeout(function () {
+        height_tiles_container = $('.wp-tiles-container').height(); //Get height before show more
+    }, 1000);
+
+    $('.wp-tiles-pagination.wp-tiles-pagination-ajax a').text("Show");   
+    $('.wp-tiles-pagination.wp-tiles-pagination-ajax a').css('text-decoration','none');
+    $wp_tiles_pagination_get_a_value = $('.wp-tiles-pagination.wp-tiles-pagination-ajax a');
+    $wp_tiles_pagination_get_a_value.each(function(i, a){
+        
+        $(this).click(function(e){
+            if (!$('.wp-tiles-pagination.wp-tiles-pagination-ajax').hasClass('show') || $('.wp-tiles-pagination.wp-tiles-pagination-ajax').hasClass('hide')) {
+            e.preventDefault();
+
+            $.ajax({
+               url:e.target.href, // Get url from pagination
+               type:'GET',
+               success: function(data){
+                   $(data).find('.wp-tiles-tile').each(function(i,a){
+                     data_pagination[i] = $($(data).find('.wp-tiles-tile')[i]).attr('id');
+                   })
+               }
+            });
+        
+            setTimeout(function () {
+                $('.wp-tiles-pagination.wp-tiles-pagination-ajax a').text("Hide"); 
+                $('.wp-tiles-pagination.wp-tiles-pagination-ajax').removeClass('hide');
+                $('.wp-tiles-pagination.wp-tiles-pagination-ajax').addClass('show');
+                $('.wp-tiles-pagination.wp-tiles-pagination-ajax').show();  
+                height_tiles_container_on_show = $('.wp-tiles-container').height();
+            }, 1500);
+
+            $('.wp-tiles-tile').each(function(i,a){
+                for (var j = 0; j < data_pagination.length; j++) { //take a value equal to pagination
+                   if ($($('.wp-tiles-tile')[i]).attr('id') === data_pagination[j]) {
+                    $('.wp-tiles-container').slideDown(500).animate({height:height_tiles_container_on_show+'px'},250); // Change speed to 1 second
+                    $($('.wp-tiles-tile')[i]).slideDown("slow"); 
+                    };
+                };
+            });
+        } 
+        else if ($('.wp-tiles-pagination.wp-tiles-pagination-ajax').hasClass('show')) {
+            e.preventDefault();  
+
+            setTimeout(function () {
+                $('.wp-tiles-container').animate({height:height_tiles_container+'px'},250); // Change speed to 1 second
+                $('.wp-tiles-pagination.wp-tiles-pagination-ajax a').text("Show");
+                $('.wp-tiles-pagination.wp-tiles-pagination-ajax').removeClass('show');
+                $('.wp-tiles-pagination.wp-tiles-pagination-ajax').addClass('hide');
+                $('.wp-tiles-pagination.wp-tiles-pagination-ajax').show();  
+            }, 1000);
+
+            $('.wp-tiles-tile').each(function(i,a){
+                for (var j = 0; j < data_pagination.length; j++) {
+                   if ($($('.wp-tiles-tile')[i]).attr('id') === data_pagination[j]) {
+                    $($('.wp-tiles-tile')[i]).slideUp("slow");
+                    };
+                };
+            });
+        } 
+        });
+    });
+    
+});
+    
+
+// Override pagination speed on wp tiles
+setTimeout(function(){
+    $.wptiles.resizeParent = function($el,padding) {
+    var tiles=$el.children(".wp-tiles-tile"), tileOffsetTop=parseInt($el.offset().top), max=0, newHeight;
+            tiles.each(function() {
+                var $e=$(this), bottom=$e.height()+$e.offset().top;
+                if(bottom>max)max=bottom
+            }
+            );
+        newHeight=max-tileOffsetTop+parseInt(padding)+"px";
+        $el.parent(".wp-tiles-container").slideDown().animate({height:newHeight}, 250) // Change speed pagination wptiles to 1 second
+        }
+}, 2000);
+
+})(jQuery)
 
