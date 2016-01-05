@@ -544,7 +544,7 @@ article#post-511.clearfix.post-511.page.type-page.status-publish.hentry section.
 
 body.archive.category div#container div#content div#inner-content div#main section.entry-content:last-child  {
 	background: none;
-	margin-top: 15px;
+	/*margin-top: 15px;*/
 }
 
 body.page.page-id-511 div#container div#content div#inner-content,
@@ -564,20 +564,22 @@ body.page.page-id-511 .wptiles.clearfix {
     margin: 0 auto;
     position: inherit;
     /*padding: 150px;*/
-    padding-top: 140px;
+    padding-top: 80px;
     padding-right: 50px;
     padding-bottom: 50px;
-    padding-left: 50px;     
+    padding-left: 50px; 
+    max-width: 1340px;    
 }
 
 body.archive.category .wptiles_cat.clearfix {
 	margin: 0 auto;
     position: inherit;
    /* padding: 150px;*/
-    padding-top: 140px;
+    padding-top: 80px;
     padding-right: 50px;
     padding-bottom: 50px;
     padding-left: 50px; 
+    max-width: 1340px;
 }
 
 div#inner-header {
@@ -590,7 +592,7 @@ div#inner-header {
 body.page.page-id-511 div#inner-header, 
 body.single.single-post div#inner-header,
 body.archive.category div#inner-header {
-	margin: 0 0 0 15px;
+	max-width: 1340px;
 }
 /* end inner-header for Blog page*/
 
@@ -621,7 +623,7 @@ div.arrow {
 	background: transparent url('../images/arrow-left.png') no-repeat; 
 	padding-bottom: 100px;
 	margin-top: 75px;
-	background-size: 15% 25%;
+	background-size: 5% 25%;
     margin-left: 10px;
     margin-right: 800px;
 
@@ -632,6 +634,7 @@ div.kestin-pic {
 	padding-bottom: 235px;
     margin:0 auto;
     background-size: inherit;
+    max-width: 1340px;
     /*margin-left: 1190px;*/
     filter: brightness(45%) contrast(90%);
     -webkit-filter: brightness(45%) contrast(90%);
@@ -654,8 +657,12 @@ article#post-511 section.entry-content div.fill.clearfix div.wrap {
 
 .blogcontent {
 	background: transparent url('../images/wood2.png') center top repeat-y;
-	/*background-size: 100%;*/
+	background-size: contain;
 	margin-bottom: 75px;
+}
+
+body.archive.category .blogcontent {
+	background-size: cover;
 }
 /* Footer customize */
 footer #footer-content {
@@ -706,7 +713,7 @@ div#footer-links {
 
 div#footer-links ul {
     /*margin-right: 10px;*/
-    font-weight: bold;
+    font-weight: normal;
 }
 
 /* Custom social Icons Footer */
@@ -786,11 +793,13 @@ a.read-more-hide {
 }
 
 .descriptions_blog {
-    margin-top: -140px;
     padding-left: 290px;
     padding-right: 290px;
     z-index: 99;
     position: relative;
+    margin: 0 auto;
+    margin-top: -140px;
+    max-width: 1340px;
 }
 /* end css div custom */
 
@@ -818,8 +827,9 @@ div#blog_selector {
 	padding: 15px;
 	margin: 0 auto;
     width: 100%;
-    position: absolute;
+    position: relative;
     z-index: 99;
+    max-width: 1340px;
 }
 
 div#blog_selector ul li a {
@@ -1075,11 +1085,12 @@ body.single.single-post div#inner-content  {
 	font-size: 18px;
 	/*zoom: 1.4;*/
 	margin-bottom: 75px;
-	max-width: 1300px;
+	max-width: 1340px;
 }
 
 body.single.single-post .eightcol  {
 	width: 100%;
+	padding: 40px;
 }
 
 body.single.single-post p.byline  {
@@ -1246,16 +1257,17 @@ body.single.single-post div#content.blog-post {
 }
 
 body.single.single-post div.logo-single-post {
-	background-image: url('../images/kestins-korner-1.png');
+	background-image: url('../images/kestins-korner-12.png');
     background-position: center top;
     background-repeat: no-repeat;
     position: inherit;
     margin: 0 auto;
     margin-top: 25px;
-    width: 35%;
-    padding: 50px;
-    padding-bottom: 35px;
-    background-size: 55%;
+    margin-bottom: -15px;
+    width: 100%;
+    padding: 45px;
+    /*padding-bottom: 35px;*/
+    background-size: inherit;
     -webkit-filter: brightness(40%);
     filter: brightness(40%);
 }
@@ -1267,7 +1279,7 @@ body.single.single-post div.logo-single-post {
 body.single.single-post a.back-from-single {
 	display: inherit;
 	text-decoration: none;
-	font-weight: 600;
+	font-weight: normal;
     font-size: large;
     /*margin-left: -170px;*/
 }
@@ -1376,7 +1388,7 @@ div#footer-content .phone p {
 
 /** WP TILES update Make the font for image tiles smaller **/
 .wp-tiles-tile-with-image .wp-tiles-byline-title {
-    font-size: 1.2em;
+    font-size: 22px;
     /*-webkit-transform: scale(1); 
     -moz-transform: scale(1);
     -o-transform: scale(1);
@@ -1387,7 +1399,7 @@ div#footer-content .phone p {
 body.page.page-id-511 div#container,
 body.archive.category div#container,
 body.single.single-post div#container {
-    max-width: 1600px;
+    /*max-width: 1600px;*/
     margin: 0 auto;
 }
 
@@ -1497,8 +1509,11 @@ body.page div#inner-header h1#logo a
 }
 
 /*Fix margin/padding on long text wraps on Kestin's Korner update*/
-div.wp-tiles-tile article.wp-tiles-tile-with-image h4.wp-tiles-byline-title {
+div.wp-tiles-tile article.wp-tiles-tile-with-image div.wp-tiles-byline-wrapper h4.wp-tiles-byline-title {
     padding: 23.1px;
+    font-weight: normal;
+    line-height: 22px;
+    text-shadow: 4px 4px 3px rgba(0,0,0,0.5);
 }
 
 /* Hide Loading */
