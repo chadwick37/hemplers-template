@@ -600,7 +600,7 @@ div#inner-header h1#logo {
 }
 
 div#inner-header #logo a {
-    background: url('../images/header-hemplers-logo-small-1.png') left top no-repeat;
+    background: url('../images/header-hemplers-logo.png') left top no-repeat;
 }
 
 body.page.page-id-511 div#container header.header div#inner-header a#kestins-korner-1 img{
@@ -968,14 +968,14 @@ body.archive.category div#container header.header div#inner-header div.arrow {
 
 div.logo-kestins-korner-1 {
 	background: transparent url('../images/kestins-korner-3.png') right top no-repeat;
-	background-size: 90%;
+	background-size: 70%;
 	margin: 0 auto;
 	z-index: 101;
 	padding: 100px;
     position: fixed;
     width: 10%;
     right: 0px;
-    top: 5px;
+    top: 15px;
     margin-right: 55px;
 }
 div.arrow-right {
@@ -987,8 +987,8 @@ div.arrow-right {
     position: fixed;
     width: 25%;
     right: 0px;
-    top: 15px;
-    margin-right: 20px;
+    top: 19px;
+    margin-right: 27px;
 }
 
 body.page.page-id-511 div.logo-kestins-korner-1, body.page.page-id-511 div.arrow-right,
@@ -1014,7 +1014,7 @@ body.archive.category div#inner-header h1#logo {
 }
 
 body.home.page .header #logo {
-	width: 250px;
+	width: 277px;
 }
 
 body.home.page div#container header.header a#baconlink, body.home.page div#container header.header a#kestins-korner {
@@ -1472,7 +1472,7 @@ span.first-desc {
 body.page div#inner-header h1#logo a,
 body.archive.category div#inner-header h1#logo a
 {
-	background-size: 50%;
+	background-size: 80%;
 }
 
 /*Fix margin/padding on long text wraps on Kestin's Korner update*/
@@ -1483,4 +1483,8 @@ div.wp-tiles-tile article.wp-tiles-tile-with-image h4.wp-tiles-byline-title {
 /* Hide Loading */
 nav.wp-tiles-pagination-ajax.loading {
     background: none;
+}
+
+header.header #logo a {
+	width: 348px;
 }
