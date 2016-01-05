@@ -13,7 +13,7 @@
                 	while($contents->have_posts()):$contents->the_post();
 		                if ($post->ID == 511) {
 		                	echo '<div class="descriptions_blog" >';
-		                	echo "<img class='aligncenter' src='".get_stylesheet_directory_uri()."/library/images/kestins-korner-1.png' alt='kestins-korner-1' width='400' height='130' />";
+		                	echo "<img class='aligncenter' src='".get_stylesheet_directory_uri()."/library/images/kestins-korner-12.png' alt='kestins-korner-1' />";
 		                	the_content(); 
 		                	echo '</div>';
 		                }

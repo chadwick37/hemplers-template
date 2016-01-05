@@ -621,15 +621,15 @@ div.arrow {
 	background: transparent url('../images/arrow-left.png') no-repeat; 
 	padding-bottom: 100px;
 	margin-top: 75px;
-	background-size: 25% 35%;
-    margin-left: 30px;
+	background-size: 15% 25%;
+    margin-left: 10px;
     margin-right: 800px;
 
 }
 
 div.kestin-pic {
-	background: transparent url('../images/kestin-pic-2.png') center right no-repeat;
-	padding-bottom: 355px;
+	background: transparent url('../images/kestin-pic-21.png') center right no-repeat;
+	padding-bottom: 235px;
     margin:0 auto;
     background-size: inherit;
     /*margin-left: 1190px;*/
@@ -786,9 +786,9 @@ a.read-more-hide {
 }
 
 .descriptions_blog {
-    margin-top: -110px;
-    padding-left: 390px;
-    padding-right: 400px;
+    margin-top: -140px;
+    padding-left: 290px;
+    padding-right: 290px;
     z-index: 99;
     position: relative;
 }
@@ -853,7 +853,7 @@ div#blog_selector ul
     padding: 10px;
     margin: 0 auto;
     overflow: hidden;
-    font-size: 1.1em;
+    font-size: 19px;
 }
 /* End Custom Nav Menu Blog*/
 
@@ -950,8 +950,9 @@ body.page div#container header.header div#inner-header div.arrow {
 	display: none;
 }
 
-body.page.page-id-511 .wrap_blog.clearfix {
-    margin-top: -285px;
+body.page.page-id-511 .wrap_blog.clearfix,
+body.archive.category .wrap_blog.clearfix {
+    margin-top: -195px;
 }
 
 body.page.page-id-511 div#container header.header div#inner-header div.arrow,
@@ -1009,12 +1010,33 @@ body.archive.category div#inner-header h1#logo {
 body.page.page-id-511 div#inner-header h1#logo,
 body.archive.category div#inner-header h1#logo {
     position: absolute;
-    margin-left: 60px;
+    margin-left: 20px;
 
 }
 
-body.home.page .header #logo {
-	width: 277px;
+body.home.page .header #logo,
+body.page .header #logo,
+body.archive .header #logo {
+	width: 280px;
+}
+
+body.page.page-id-511 .header #logo,
+body.archive .header #logo {
+	width: 180px;
+}
+
+body.page.page-id-511 div#inner-header #logo a,
+body.archive div#inner-header #logo a,
+body.archive.category div#inner-header #logo a {
+	background-size: 50%;
+
+}
+
+body.page.page-id-511 div#inner-header #logo,
+body.archive div#inner-header #logo,
+body.archive.category div#inner-header h1#logo {
+	margin-top: 0px;
+	
 }
 
 body.home.page div#container header.header a#baconlink, body.home.page div#container header.header a#kestins-korner {
@@ -1469,8 +1491,7 @@ span.first-desc {
     font-size: 1.1em;
 }
 
-body.page div#inner-header h1#logo a,
-body.archive.category div#inner-header h1#logo a
+body.page div#inner-header h1#logo a
 {
 	background-size: 80%;
 }
