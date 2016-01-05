@@ -600,7 +600,7 @@ div#inner-header h1#logo {
 }
 
 div#inner-header #logo a {
-    background: url('../images/header-hemplers-logo-small-1.png') left top no-repeat;
+    background: url('../images/header-hemplers-logo.png') left top no-repeat;
 }
 
 body.page.page-id-511 div#container header.header div#inner-header a#kestins-korner-1 img{
@@ -621,15 +621,15 @@ div.arrow {
 	background: transparent url('../images/arrow-left.png') no-repeat; 
 	padding-bottom: 100px;
 	margin-top: 75px;
-	background-size: 25% 35%;
-    margin-left: 30px;
+	background-size: 15% 25%;
+    margin-left: 10px;
     margin-right: 800px;
 
 }
 
 div.kestin-pic {
-	background: transparent url('../images/kestin-pic-2.png') center right no-repeat;
-	padding-bottom: 355px;
+	background: transparent url('../images/kestin-pic-21.png') center right no-repeat;
+	padding-bottom: 235px;
     margin:0 auto;
     background-size: inherit;
     /*margin-left: 1190px;*/
@@ -665,10 +665,10 @@ footer #footer-content {
 .footer {
 	/* zoom: 1.37; */
 	background: #000 url('../images/flame.png') center bottom no-repeat;
-    background-size: 101% 60%;
+    background-size: 101% 65%;
     margin-bottom: -125px;
     height: 500px;
-    margin-top: 65px;
+    margin-top: 50px;
 
 }
 
@@ -786,9 +786,9 @@ a.read-more-hide {
 }
 
 .descriptions_blog {
-    margin-top: -110px;
-    padding-left: 390px;
-    padding-right: 400px;
+    margin-top: -140px;
+    padding-left: 290px;
+    padding-right: 290px;
     z-index: 99;
     position: relative;
 }
@@ -853,7 +853,7 @@ div#blog_selector ul
     padding: 10px;
     margin: 0 auto;
     overflow: hidden;
-    font-size: 1.1em;
+    font-size: 19px;
 }
 /* End Custom Nav Menu Blog*/
 
@@ -950,8 +950,9 @@ body.page div#container header.header div#inner-header div.arrow {
 	display: none;
 }
 
-body.page.page-id-511 .wrap_blog.clearfix {
-    margin-top: -285px;
+body.page.page-id-511 .wrap_blog.clearfix,
+body.archive.category .wrap_blog.clearfix {
+    margin-top: -195px;
 }
 
 body.page.page-id-511 div#container header.header div#inner-header div.arrow,
@@ -968,14 +969,14 @@ body.archive.category div#container header.header div#inner-header div.arrow {
 
 div.logo-kestins-korner-1 {
 	background: transparent url('../images/kestins-korner-3.png') right top no-repeat;
-	background-size: 90%;
+	background-size: 70%;
 	margin: 0 auto;
 	z-index: 101;
 	padding: 100px;
     position: fixed;
     width: 10%;
     right: 0px;
-    top: 5px;
+    top: 15px;
     margin-right: 55px;
 }
 div.arrow-right {
@@ -987,8 +988,8 @@ div.arrow-right {
     position: fixed;
     width: 25%;
     right: 0px;
-    top: 15px;
-    margin-right: 20px;
+    top: 19px;
+    margin-right: 27px;
 }
 
 body.page.page-id-511 div.logo-kestins-korner-1, body.page.page-id-511 div.arrow-right,
@@ -1009,12 +1010,33 @@ body.archive.category div#inner-header h1#logo {
 body.page.page-id-511 div#inner-header h1#logo,
 body.archive.category div#inner-header h1#logo {
     position: absolute;
-    margin-left: 60px;
+    margin-left: 20px;
 
 }
 
-body.home.page .header #logo {
-	width: 250px;
+body.home.page .header #logo,
+body.page .header #logo,
+body.archive .header #logo {
+	width: 280px;
+}
+
+body.page.page-id-511 .header #logo,
+body.archive .header #logo {
+	width: 180px;
+}
+
+body.page.page-id-511 div#inner-header #logo a,
+body.archive div#inner-header #logo a,
+body.archive.category div#inner-header #logo a {
+	background-size: 50%;
+
+}
+
+body.page.page-id-511 div#inner-header #logo,
+body.archive div#inner-header #logo,
+body.archive.category div#inner-header h1#logo {
+	margin-top: 0px;
+	
 }
 
 body.home.page div#container header.header a#baconlink, body.home.page div#container header.header a#kestins-korner {
@@ -1229,11 +1251,11 @@ body.single.single-post div.logo-single-post {
     background-repeat: no-repeat;
     position: inherit;
     margin: 0 auto;
-    width: 60%;
+    margin-top: 25px;
+    width: 35%;
     padding: 50px;
-    padding-bottom: 85px;
+    padding-bottom: 35px;
     background-size: 55%;
-    top: 23px;
     -webkit-filter: brightness(40%);
     filter: brightness(40%);
 }
@@ -1316,7 +1338,7 @@ body.single.single-post div.tape-single-post {
     margin-left: -78px;
     clear: both;
     margin-top: -25px;
-    color: #60574C;
+    color: #453B30;
     font-weight: bold;
 }
 
@@ -1374,12 +1396,12 @@ div.descriptions_blog img.aligncenter {
 }
 
 /* Update footer */
-div#inner-footer {
+/*div#inner-footer {
     -webkit-transform: scale(1.37); 
     -moz-transform: scale(1.37);
     -o-transform: scale(1.37);
     transform: scale(1.37);
-}
+}*/
 
 /* geoff update */
 
@@ -1469,10 +1491,9 @@ span.first-desc {
     font-size: 1.1em;
 }
 
-body.page div#inner-header h1#logo a,
-body.archive.category div#inner-header h1#logo a
+body.page div#inner-header h1#logo a
 {
-	background-size: 50%;
+	background-size: 80%;
 }
 
 /*Fix margin/padding on long text wraps on Kestin's Korner update*/
@@ -1483,4 +1504,8 @@ div.wp-tiles-tile article.wp-tiles-tile-with-image h4.wp-tiles-byline-title {
 /* Hide Loading */
 nav.wp-tiles-pagination-ajax.loading {
     background: none;
+}
+
+header.header #logo a {
+	width: 348px;
 }
