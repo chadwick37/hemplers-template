@@ -665,10 +665,10 @@ footer #footer-content {
 .footer {
 	/* zoom: 1.37; */
 	background: #000 url('../images/flame.png') center bottom no-repeat;
-    background-size: 101% 60%;
+    background-size: 101% 65%;
     margin-bottom: -125px;
     height: 500px;
-    margin-top: 65px;
+    margin-top: 50px;
 
 }
 
@@ -1316,7 +1316,7 @@ body.single.single-post div.tape-single-post {
     margin-left: -78px;
     clear: both;
     margin-top: -25px;
-    color: #60574C;
+    color: #453B30;
     font-weight: bold;
 }
 
@@ -1374,12 +1374,12 @@ div.descriptions_blog img.aligncenter {
 }
 
 /* Update footer */
-div#inner-footer {
+/*div#inner-footer {
     -webkit-transform: scale(1.37); 
     -moz-transform: scale(1.37);
     -o-transform: scale(1.37);
     transform: scale(1.37);
-}
+}*/
 
 /* geoff update */
 
