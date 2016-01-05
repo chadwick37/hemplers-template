@@ -1251,11 +1251,11 @@ body.single.single-post div.logo-single-post {
     background-repeat: no-repeat;
     position: inherit;
     margin: 0 auto;
-    width: 60%;
+    margin-top: 25px;
+    width: 35%;
     padding: 50px;
-    padding-bottom: 85px;
+    padding-bottom: 35px;
     background-size: 55%;
-    top: 23px;
     -webkit-filter: brightness(40%);
     filter: brightness(40%);
 }
