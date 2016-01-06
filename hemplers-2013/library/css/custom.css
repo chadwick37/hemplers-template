@@ -698,7 +698,8 @@ footer #footer-content {
 }
 
 #footer-content #footer-logo img {
-	margin-left: -105px;
+	margin-left: -90px;
+    width: 210px;
 }
 
 #footer-content #footer-logo {
@@ -1408,12 +1409,12 @@ div.descriptions_blog img.aligncenter {
 }
 
 /* Update footer */
-/*div#inner-footer {
-    -webkit-transform: scale(1.37); 
-    -moz-transform: scale(1.37);
-    -o-transform: scale(1.37);
-    transform: scale(1.37);
-}*/
+div#inner-footer {
+    -webkit-transform: scale(1.14); 
+    -moz-transform: scale(1.14);
+    -o-transform: scale(1.14);
+    transform: scale(1.14);
+}
 
 /* geoff update */
 
