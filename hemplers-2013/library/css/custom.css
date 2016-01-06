@@ -1524,3 +1524,18 @@ nav.wp-tiles-pagination-ajax.loading {
 header.header #logo a {
 	width: 348px;
 }
+
+@media only screen and (max-width: 1440px) {
+    
+    body.archive.category .blogcontent {
+		background-size: contain;
+	}
+	
+	body.page.page-id-511 .wptiles.clearfix {
+		padding-top: 40px;
+	}
+
+	body.archive.category .wptiles_cat.clearfix {
+		padding-top: 40px;
+	}
+}
