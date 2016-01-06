@@ -568,7 +568,7 @@ body.page.page-id-511 .wptiles.clearfix {
     padding-right: 50px;
     padding-bottom: 50px;
     padding-left: 50px; 
-    max-width: 1340px;    
+    max-width: 1440px;    
 }
 
 body.archive.category .wptiles_cat.clearfix {
@@ -579,7 +579,7 @@ body.archive.category .wptiles_cat.clearfix {
     padding-right: 50px;
     padding-bottom: 50px;
     padding-left: 50px; 
-    max-width: 1340px;
+    max-width: 1440px;
 }
 
 div#inner-header {
@@ -592,7 +592,7 @@ div#inner-header {
 body.page.page-id-511 div#inner-header, 
 body.single.single-post div#inner-header,
 body.archive.category div#inner-header {
-	max-width: 1340px;
+	max-width: 1440px;
 }
 /* end inner-header for Blog page*/
 
@@ -634,7 +634,7 @@ div.kestin-pic {
 	padding-bottom: 235px;
     margin:0 auto;
     background-size: inherit;
-    max-width: 1340px;
+    max-width: 1440px;
     /*margin-left: 1190px;*/
     filter: brightness(45%) contrast(90%);
     -webkit-filter: brightness(45%) contrast(90%);
@@ -800,7 +800,7 @@ a.read-more-hide {
     position: relative;
     margin: 0 auto;
     margin-top: -140px;
-    max-width: 1340px;
+    max-width: 1440px;
 }
 /* end css div custom */
 
@@ -830,7 +830,7 @@ div#blog_selector {
     width: 100%;
     position: relative;
     z-index: 99;
-    max-width: 1340px;
+    max-width: 1440px;
 }
 
 div#blog_selector ul li a {
@@ -1086,7 +1086,7 @@ body.single.single-post div#inner-content  {
 	font-size: 18px;
 	/*zoom: 1.4;*/
 	margin-bottom: 75px;
-	max-width: 1340px;
+	max-width: 1440px;
 }
 
 body.single.single-post .eightcol  {
