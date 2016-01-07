@@ -568,7 +568,7 @@ body.page.page-id-511 .wptiles.clearfix {
     padding-right: 50px;
     padding-bottom: 50px;
     padding-left: 50px; 
-    max-width: 1340px;    
+    max-width: 1440px;    
 }
 
 body.archive.category .wptiles_cat.clearfix {
@@ -579,7 +579,7 @@ body.archive.category .wptiles_cat.clearfix {
     padding-right: 50px;
     padding-bottom: 50px;
     padding-left: 50px; 
-    max-width: 1340px;
+    max-width: 1440px;
 }
 
 div#inner-header {
@@ -592,7 +592,7 @@ div#inner-header {
 body.page.page-id-511 div#inner-header, 
 body.single.single-post div#inner-header,
 body.archive.category div#inner-header {
-	max-width: 1340px;
+	max-width: 1440px;
 }
 /* end inner-header for Blog page*/
 
@@ -601,8 +601,11 @@ div#inner-header h1#logo {
 	margin-left: 45px;
 }
 
-div#inner-header #logo a {
-    background: url('../images/header-hemplers-logo.png') left top no-repeat;
+div#inner-header h1#logo a {
+    background: url('../images/logo-in-chains-smallpsd_1_.png') no-repeat;
+    width : 235px;
+    height : 168px;
+    margin-left: 11px;
 }
 
 body.page.page-id-511 div#container header.header div#inner-header a#kestins-korner-1 img{
@@ -620,21 +623,21 @@ div.kk-logo {
 }
 
 div.arrow {
-	background: transparent url('../images/arrow-left.png') no-repeat; 
+	background: none; 
 	padding-bottom: 100px;
 	margin-top: 75px;
-	background-size: 5% 25%;
-    margin-left: 10px;
+	background-size: 5% 27%;
+    margin-left: -9px;
     margin-right: 800px;
 
 }
 
 div.kestin-pic {
-	background: transparent url('../images/kestin-pic-21.png') center right no-repeat;
-	padding-bottom: 235px;
+	background: transparent url('../images/image11.png') center right no-repeat;
+	padding-bottom: 260px;
     margin:0 auto;
     background-size: inherit;
-    max-width: 1340px;
+    max-width: 1440px;
     /*margin-left: 1190px;*/
     filter: brightness(45%) contrast(90%);
     -webkit-filter: brightness(45%) contrast(90%);
@@ -673,7 +676,7 @@ footer #footer-content {
 	/* zoom: 1.37; */
 	background: #000 url('../images/flame.png') center bottom no-repeat;
     background-size: 101% 65%;
-    margin-bottom: -125px;
+    margin-bottom: -145px;
     height: 500px;
     margin-top: 50px;
 
@@ -698,11 +701,12 @@ footer #footer-content {
 }
 
 #footer-content #footer-logo img {
-	margin-left: -105px;
+	margin-left: -90px;
+    width: 210px;
 }
 
 #footer-content #footer-logo {
-	border-right: 2px dotted #93714e;
+	border-right: 1px dashed #F4C38B;
 }
 
 div#footer-links {
@@ -724,7 +728,7 @@ div#footer-links ul {
     position: relative;
     margin: 0 auto;
     margin-top: -110px;
-    margin-left: 475px; 	
+    margin-left: 485px; 	
 }
 
 #footer-content #ssba a.ssba_tooptip{outline:none;text-decoration:none !important;color:inherit !important;}
@@ -799,7 +803,7 @@ a.read-more-hide {
     position: relative;
     margin: 0 auto;
     margin-top: -140px;
-    max-width: 1340px;
+    max-width: 1440px;
 }
 /* end css div custom */
 
@@ -824,12 +828,12 @@ div#blog_selector {
 	font-family: 'Germania One', 'Times New Roman', serif;
 	text-align: center;
 	background-color: rgba(142, 141, 136, 0.33);
-	padding: 15px;
+	padding: 10px;
 	margin: 0 auto;
     width: 100%;
     position: relative;
     z-index: 99;
-    max-width: 1340px;
+    max-width: 1440px;
 }
 
 div#blog_selector ul li a {
@@ -837,7 +841,7 @@ div#blog_selector ul li a {
 	width: 100%;
 	color: #FFE1BA;
 	text-transform: uppercase;
-	padding: 15px;
+	padding: 9px;
 }
 
 div#blog_selector ul li a:hover,
@@ -863,7 +867,9 @@ div#blog_selector ul
     padding: 10px;
     margin: 0 auto;
     overflow: hidden;
-    font-size: 19px;
+    font-size: 18px;
+    line-height : 36px;
+    color : #FFE1BA;
 }
 /* End Custom Nav Menu Blog*/
 
@@ -927,7 +933,10 @@ body.page nav {
 }
 
 body.home.page nav {
-	background-color: rgba(12, 12, 12, 0.7);
+	background: rgba(0, 0, 0, 1);
+	opacity: 0.7;
+  	height : 67px;
+    filter: alpha(opacity=70);
 }
 
 ul#menu-the-menu {
@@ -939,7 +948,8 @@ ul#menu-the-menu {
 }
 
 ul#menu-the-menu a {
-	color: white;
+    color : rgb(255, 255, 255);
+	font-size : 19px;
 	
 }
 
@@ -952,7 +962,7 @@ ul.nav li.current_page_item a {
 #inner-header nav {
     position: fixed;
     z-index: 99;
-    right: 0px
+    right: 0px;
 }
 
 body.home div#container header.header div#inner-header div.arrow, 
@@ -969,7 +979,7 @@ body.page.page-id-511 div#container header.header div#inner-header div.arrow,
 body.archive.category div#container header.header div#inner-header div.arrow {
 	display: inherit;
 	position: inherit;
-    z-index: 103;
+/*    z-index: 103;*/
     bottom: 30px;
 }
 
@@ -978,19 +988,19 @@ body.archive.category div#container header.header div#inner-header div.arrow {
 }
 
 div.logo-kestins-korner-1 {
-	background: transparent url('../images/kestins-korner-3.png') right top no-repeat;
-	background-size: 70%;
-	margin: 0 auto;
-	z-index: 101;
-	padding: 100px;
+    background: transparent url('../images/image25.png') right top no-repeat;
+    /* background-size: 70%; */
+    margin: 0 auto;
+    z-index: 101;
+    padding: 100px;
     position: fixed;
-    width: 10%;
+    width: 142px;
     right: 0px;
-    top: 15px;
-    margin-right: 55px;
+    top: 10px;
+    margin-right: 20px;
 }
 div.arrow-right {
-	background: transparent url('../images/arrow-right.png') right top no-repeat;
+    /* background: transparent url('../images/arrow-right.png') right top no-repeat; */
     background-size: 5%;
     margin: 0 auto;
     z-index: 102;
@@ -999,7 +1009,7 @@ div.arrow-right {
     width: 25%;
     right: 0px;
     top: 19px;
-    margin-right: 27px;
+    /* margin-right: 27px; */
 }
 
 body.page.page-id-511 div.logo-kestins-korner-1, body.page.page-id-511 div.arrow-right,
@@ -1014,13 +1024,16 @@ body.archive.category div#inner-header h1#logo {
 	z-index: 102;
 	margin: 0 auto;
     left: 20px;
-    margin-top: -10px;
+    margin-top: -36px;
+    height: 168px;
 }
 
 body.page.page-id-511 div#inner-header h1#logo,
 body.archive.category div#inner-header h1#logo {
     position: absolute;
-    margin-left: 20px;
+    margin-left: -30px;
+    width: auto;
+    height: auto;
 
 }
 
@@ -1035,10 +1048,14 @@ body.archive .header #logo {
 	width: 180px;
 }
 
-body.page.page-id-511 div#inner-header #logo a,
-body.archive div#inner-header #logo a,
-body.archive.category div#inner-header #logo a {
-	background-size: 50%;
+body.page.page-id-511 div#inner-header h1#logo a,
+body.archive div#inner-header h1#logo a,
+body.archive.category div#inner-header h1#logo a {
+	background: url('../images/image2.png') no-repeat;
+	margin-left: 0px;
+	margin-top: -20px;
+	left: 0;
+
 
 }
 
@@ -1085,7 +1102,7 @@ body.single.single-post div#inner-content  {
 	font-size: 18px;
 	/*zoom: 1.4;*/
 	margin-bottom: 75px;
-	max-width: 1340px;
+	max-width: 1440px;
 }
 
 body.single.single-post .eightcol  {
@@ -1102,7 +1119,8 @@ body.single.single-post .hentry {
 }
 
 body.single.single-post h1 {
-	font-size: 40px;
+	font-size: 50px;
+	line-height: 60px;
 	color: #5B3500;
 	padding-bottom: 10px;
 	margin-bottom: 10px;
@@ -1252,12 +1270,15 @@ body.single.single-post div#content.blog-post {
 	background: transparent url('../images/wood2.png') center top repeat-y;
 	background-size: contain;
     padding: 30px;
+    padding-top: 10px;
+    padding-left: 90px;
+    padding-right: 90px;
     margin: 0 auto;
     margin-bottom: 75px;
 }
 
 body.single.single-post div.logo-single-post {
-	background-image: url('../images/kestins-korner-12.png');
+	background-image: url('../images/kestins-kornerpsd_4_.png');
     background-position: center top;
     background-repeat: no-repeat;
     position: inherit;
@@ -1268,8 +1289,8 @@ body.single.single-post div.logo-single-post {
     padding: 45px;
     /*padding-bottom: 35px;*/
     background-size: inherit;
-    -webkit-filter: brightness(40%);
-    filter: brightness(40%);
+   /* -webkit-filter: brightness(40%);
+    filter: brightness(40%);*/
 }
 
 .back-from-single {
@@ -1280,8 +1301,10 @@ body.single.single-post a.back-from-single {
 	display: inherit;
 	text-decoration: none;
 	font-weight: normal;
-    font-size: large;
-    /*margin-left: -170px;*/
+    font-size: 14px;
+    line-height: 22px;
+    margin-left: 90px;
+
 }
 
 body.single.single-post a.back-from-single p {
@@ -1292,12 +1315,14 @@ body.single.single-post a.back-from-single p {
 
 body.single.single-post section.entry-content p {
 	color: #5B3500;
+	font-size : 15px;
+    line-height : 21.13px;
 }
 
 body.single.single-post div.tape-single-post {
     background: transparent url('../images/button-tape-1.png') center center no-repeat;
     position: relative;
-    background-size: 17%;
+    background-size: 20%;
     width: 100%;
     padding: 35px;
     z-index: 99;
@@ -1349,9 +1374,11 @@ body.single.single-post div.tape-single-post {
     text-align: center;
     margin-left: -78px;
     clear: both;
-    margin-top: -25px;
-    color: #453B30;
-    font-weight: bold;
+    margin-top: -15px;
+    font-family : Arial;
+    font-size : 12px;
+    line-height: 1.2;
+    color : #60574C;
 }
 
 #footer-content .address { 
@@ -1359,7 +1386,7 @@ body.single.single-post div.tape-single-post {
 }
 
 #footer-links ul li {
-    border-bottom: 2px solid #432300;
+    border-bottom: 1px solid #5B3500;
 }
 
 div#footer-logo {
@@ -1368,14 +1395,15 @@ div#footer-logo {
 
 div#footer-content .phone {
 	border-right: none;
-	border-left: 2px dotted #93714e;
+	border-left: 1px dashed #F4C38B;
 	min-height: 165px;
+	margin-left: 5px;
 }
 
 div#footer-content .phone p {
     position: relative;
     margin: 0 auto;
-    margin-right: -40px;
+    margin-right: -50px;
 }
 
 #footer-content .email {
@@ -1409,10 +1437,10 @@ div.descriptions_blog img.aligncenter {
 
 /* Update footer */
 /*div#inner-footer {
-    -webkit-transform: scale(1.37); 
-    -moz-transform: scale(1.37);
-    -o-transform: scale(1.37);
-    transform: scale(1.37);
+    -webkit-transform: scale(1.14); 
+    -moz-transform: scale(1.14);
+    -o-transform: scale(1.14);
+    transform: scale(1.14);
 }*/
 
 /* geoff update */
@@ -1441,14 +1469,25 @@ div.descriptions_blog h1 {
 }
 article#post-511 section.entry-content div.fill.clearfix div.descriptions_blog p,
 body.archive.category section.entry-content div.fill.clearfix div.descriptions_blog p  {
-	font-size: 19px;
+	font-size: 16px;
+	line-height: 22px;
 }
 div.wp-tiles-byline-content {
 	display: none;
 }
 
+.hentry {
+    background: transparent url('../images/primary-paper-bg-other.png') center top repeat-x;
+    margin-top: -24px;
+}
+
 .home .hentry {
-    background: transparent url('../images/primary-paper-bg.jpg') center top repeat-x;
+    background: transparent url('../images/primary-paper-bg.png') center top repeat-x;
+}
+
+#inner-content {
+    background: url('../images/content-paper-bg.jpg') center top repeat; 
+    position: relative;
 }
 
 .home .entry-content:last-child {
@@ -1459,7 +1498,7 @@ div.wp-tiles-byline-content {
 div#chicken {
     position: absolute;
     margin-top: -750px;
-    left: 800px;
+    left: 735px;
     transform: scale(0.8);
     -webkit-transform: scale(0.8);
 }
@@ -1503,10 +1542,10 @@ span.first-desc {
     font-size: 1.1em;
 }
 
-body.page div#inner-header h1#logo a
+/*body.page div#inner-header h1#logo a
 {
 	background-size: 80%;
-}
+}*/
 
 /*Fix margin/padding on long text wraps on Kestin's Korner update*/
 div.wp-tiles-tile article.wp-tiles-tile-with-image div.wp-tiles-byline-wrapper h4.wp-tiles-byline-title {
@@ -1523,4 +1562,52 @@ nav.wp-tiles-pagination-ajax.loading {
 
 header.header #logo a {
 	width: 348px;
+}
+
+.home .nav li,
+.page .nav li {
+    margin: 0 5px;
+}
+
+body.page-id-26 .hentry p {
+	font-size: 21px;
+	line-height : 30px;
+    color : #5B3500;
+    text-shadow : 1px 1px 0px rgba(255, 255, 255, 0.6);
+    max-width: 516px;
+}
+
+#product_list figcaption {
+	font-family : Arial;
+    font-size : 17px;
+    color : #FFFFFF;
+}
+
+h2{
+	font-size: 100px;
+}
+
+.our-story-now h2 {
+	font-size: 150px;
+}
+
+.page.page-id-511 .footer,
+.archive.category .footer {
+	margin-top: 0px;
+}
+
+
+@media only screen and (max-width: 1440px) {
+    
+    body.archive.category .blogcontent {
+		background-size: contain;
+	}
+	
+	body.page.page-id-511 .wptiles.clearfix {
+		padding-top: 20px;
+	}
+
+	body.archive.category .wptiles_cat.clearfix {
+		padding-top: 20px;
+	}
 }

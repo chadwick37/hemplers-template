@@ -44,7 +44,7 @@
                           //Kestin's Blog
                           if( $post->ID == 511 ) {
                           	echo '<div class="descriptions_blog" >';
-                            echo "<img class='aligncenter' src='".get_stylesheet_directory_uri()."/library/images/kestins-korner-12.png' alt='kestins-korner-1'/>";
+                            echo "<img class='aligncenter' src='".get_stylesheet_directory_uri()."/library/images/kestins-kornerpsd_1_.png' alt='kestins-korner-1'/>";
                         	the_content();
                         	echo '</div>';
                           	get_template_part( 'blogcontent' );
