@@ -50,7 +50,7 @@
         <div class="wptiles clearfix">
             <?php
             if ( function_exists ( 'the_wp_tiles' ) ) {
-              echo do_shortcode('[wp-tiles full_width post_type="post" orderby="date" order="DESC" grid="AABBC|AACDD|DEEGG|FF.GG|AABBC|AACDD|DEEGG|FF.GG" posts_per_page=10 pagination="ajax" byline_height="45%" byline_height_auto=true ]');
+              echo do_shortcode('[wp-tiles full_width post_type="post" orderby="date" order="DESC" grid="AABBC|AACDD|DEEGG|FF.GG|AABBC|AACDD|DEEGG|FF.GG" posts_per_page=10 pagination="ajax" byline_height="50%" byline_height_auto=true ]');
             }
             else {
               echo "Please Activated WP Tiles Plugin";

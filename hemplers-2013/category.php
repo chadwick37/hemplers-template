@@ -13,7 +13,7 @@
                 	while($contents->have_posts()):$contents->the_post();
 		                if ($post->ID == 511) {
 		                	echo '<div class="descriptions_blog" >';
-		                	echo "<img class='aligncenter' src='".get_stylesheet_directory_uri()."/library/images/kestins-korner-12.png' alt='kestins-korner-1' />";
+		                	echo "<img class='aligncenter' src='".get_stylesheet_directory_uri()."/library/images/kestins-kornerpsd_1_.png' alt='kestins-korner-1' />";
 		                	the_content(); 
 		                	echo '</div>';
 		                }
@@ -41,7 +41,7 @@
 										<?php
 										if ( have_posts() ) {
 											if ( function_exists ( 'the_wp_tiles' ) ) {
-												the_loop_wp_tiles(array("byline_height" => 45, "byline_height_auto" => true));
+												the_loop_wp_tiles(array("byline_height" => 50, "byline_height_auto" => true));
 											}
 											else {
 												echo "Please activated WP Tiles Plugin";
