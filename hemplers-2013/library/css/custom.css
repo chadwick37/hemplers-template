@@ -929,14 +929,14 @@ body.home nav {
 
 body.page nav {
      margin-left: inherit;
-     background-color: rgba(0, 0, 0, 0.42);
+     background-color: rgba(0, 0, 0, 0.7);
 }
 
 body.home.page nav {
-	background: rgba(0, 0, 0, 1);
-	opacity: 0.7;
+	/*background: rgba(0, 0, 0, 1);
+	opacity: 0.7;*/
   	height : 67px;
-    filter: alpha(opacity=70);
+    /*filter: alpha(opacity=70);*/
 }
 
 ul#menu-the-menu {
@@ -1596,6 +1596,9 @@ h2{
 	margin-top: 0px;
 }
 
+#product_selector ul li a {
+	color: #492100;
+}
 
 @media only screen and (max-width: 1440px) {
     
