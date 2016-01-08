@@ -659,7 +659,7 @@ article#post-511 section.entry-content div.fill.clearfix div.wrap {
 }
 
 .blogcontent {
-	background: transparent url('../images/wood2.png') center top repeat-y;
+	background: transparent url('../images/wood2.png') center top repeat;
 	background-size: contain;
 	margin-bottom: 75px;
 }
@@ -1267,7 +1267,7 @@ body.single.single-post header.header {
 }
 
 body.single.single-post div#content.blog-post {
-	background: transparent url('../images/wood2.png') center top repeat-y;
+	background: transparent url('../images/wood2.png') center top repeat;
 	background-size: contain;
     padding: 30px;
     padding-top: 10px;
