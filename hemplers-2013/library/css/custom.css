@@ -565,9 +565,9 @@ body.page.page-id-511 .wptiles.clearfix {
     position: inherit;
     /*padding: 150px;*/
     padding-top: 80px;
-    padding-right: 50px;
+    padding-right: 30px;
     padding-bottom: 50px;
-    padding-left: 50px; 
+    padding-left: 30px; 
     max-width: 1440px;    
 }
 
@@ -576,9 +576,9 @@ body.archive.category .wptiles_cat.clearfix {
     position: inherit;
    /* padding: 150px;*/
     padding-top: 80px;
-    padding-right: 50px;
+    padding-right: 30px;
     padding-bottom: 50px;
-    padding-left: 50px; 
+    padding-left: 30px; 
     max-width: 1440px;
 }
 
@@ -659,7 +659,7 @@ article#post-511 section.entry-content div.fill.clearfix div.wrap {
 }
 
 .blogcontent {
-	background: transparent url('../images/wood2.png') center top repeat-y;
+	background: transparent url('../images/wood2.png') center top repeat;
 	background-size: contain;
 	margin-bottom: 75px;
 }
@@ -753,10 +753,10 @@ div#footer-links ul {
 
 /* custom wp tiles */
 div.wp-tiles-loaded .wp-tiles-tile-bg {
-	top: 10px;
-	left: 10px;
-	right: 10px;
-	bottom: 10px;
+	top: 8px;
+	left: 8px;
+	right: 8px;
+	bottom: 8px;
 }
 
 /*h4.wp-tiles-byline-title {
@@ -797,7 +797,7 @@ a.read-more-hide {
 }
 
 .descriptions_blog {
-    padding-left: 290px;
+    padding-left: 280px;
     padding-right: 290px;
     z-index: 99;
     position: relative;
@@ -827,7 +827,13 @@ body.single.single-post h3 {
 div#blog_selector {
 	font-family: 'Germania One', 'Times New Roman', serif;
 	text-align: center;
-	background-color: rgba(142, 141, 136, 0.33);
+	/*background-color: rgba(142, 141, 136, 0.33);*/
+	background : -moz-linear-gradient(0deg, rgba(255, 255, 255, 0.04) 0%, rgba(0, 0, 0, 0.35) 100%);
+  	background : -webkit-linear-gradient(0deg, rgba(255, 255, 255, 0.04) 0%, rgba(0, 0, 0, 0.35) 100%);
+  	background : -webkit-gradient(linear,50% 100% ,50% 0% ,color-stop(0,rgba(255, 255, 255, 0.04) ),color-stop(1,rgba(0, 0, 0, 0.35) ));
+  	background : -o-linear-gradient(0deg, rgba(255, 255, 255, 0.04) 0%, rgba(0, 0, 0, 0.35) 100%);
+  	background : -ms-linear-gradient(0deg, rgba(255, 255, 255, 0.04) 0%, rgba(0, 0, 0, 0.35) 100%);
+  	background : linear-gradient(0deg, rgba(255, 255, 255, 0.04) 0%, rgba(0, 0, 0, 0.35) 100%);
 	padding: 10px;
 	margin: 0 auto;
     width: 100%;
@@ -929,14 +935,14 @@ body.home nav {
 
 body.page nav {
      margin-left: inherit;
-     background-color: rgba(0, 0, 0, 0.42);
+     background-color: rgba(0, 0, 0, 0.7);
 }
 
 body.home.page nav {
-	background: rgba(0, 0, 0, 1);
-	opacity: 0.7;
+	/*background: rgba(0, 0, 0, 1);
+	opacity: 0.7;*/
   	height : 67px;
-    filter: alpha(opacity=70);
+    /*filter: alpha(opacity=70);*/
 }
 
 ul#menu-the-menu {
@@ -1087,8 +1093,9 @@ body.single.single-post div#container {
 
 body.single.single-post div#inner-header {
 	margin: 0 auto;
+	margin-top: -10px;
 	max-width: 1300px;
-	position: inherit;
+	position: relative;
 }
 
 body.single.single-post iv#cboxLoadedContent {
@@ -1119,11 +1126,11 @@ body.single.single-post .hentry {
 }
 
 body.single.single-post h1 {
-	font-size: 50px;
-	line-height: 60px;
-	color: #5B3500;
-	padding-bottom: 10px;
-	margin-bottom: 10px;
+    font-size: 50px;
+    line-height: 60px;
+    color: #5B3500;
+    padding-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 body.single.single-post h1 {
@@ -1267,12 +1274,12 @@ body.single.single-post header.header {
 }
 
 body.single.single-post div#content.blog-post {
-	background: transparent url('../images/wood2.png') center top repeat-y;
+	background: transparent url('../images/wood2.png') center top repeat;
 	background-size: contain;
-    padding: 30px;
     padding-top: 10px;
-    padding-left: 90px;
-    padding-right: 90px;
+    padding-left: 109px;
+    padding-right: 95px;
+    padding-bottom: 10px;
     margin: 0 auto;
     margin-bottom: 75px;
 }
@@ -1283,14 +1290,12 @@ body.single.single-post div.logo-single-post {
     background-repeat: no-repeat;
     position: inherit;
     margin: 0 auto;
-    margin-top: 25px;
+    margin-top: 45px;
     margin-bottom: -15px;
     width: 100%;
     padding: 45px;
-    /*padding-bottom: 35px;*/
+    /* padding-bottom: 35px; */
     background-size: inherit;
-   /* -webkit-filter: brightness(40%);
-    filter: brightness(40%);*/
 }
 
 .back-from-single {
@@ -1299,11 +1304,13 @@ body.single.single-post div.logo-single-post {
 
 body.single.single-post a.back-from-single {
 	display: inherit;
-	text-decoration: none;
-	font-weight: normal;
+    text-decoration: none;
+    font-weight: normal;
     font-size: 14px;
     line-height: 22px;
-    margin-left: 90px;
+    margin-left: 105px;
+    position: absolute;
+    bottom: -19px;
 
 }
 
@@ -1320,23 +1327,14 @@ body.single.single-post section.entry-content p {
 }
 
 body.single.single-post div.tape-single-post {
-    background: transparent url('../images/button-tape-1.png') center center no-repeat;
+    background: transparent url('../images/tapepsd_1_.png') center center no-repeat;
     position: relative;
-    background-size: 20%;
+    /* background-size: 20%; */
     width: 100%;
     padding: 35px;
     z-index: 99;
-    top: 35px;
+    top: 40px;
     right: 0px;
-    -moz-transform: rotate(-5deg);
-    -o-transform: rotate(-5deg);
-    -webkit-transform: rotate(-5deg);
-    transform: rotate(-5deg);
-     opacity: .7;
-    transition: opacity .7s ease-out;
-    -moz-transition: opacity .7s ease-out;
-    -webkit-transition: opacity .7s ease-out;
-    -o-transition: opacity .7s ease-out;
 }
 /* End Custom css single.php*/
 
@@ -1596,6 +1594,70 @@ h2{
 	margin-top: 0px;
 }
 
+#product_selector ul li a {
+	color: #492100;
+}
+
+#product_selector ul li a:hover, #product_selector ul li a:focus {
+    color: #492100;
+}
+
+#product_list > ul > li .thumb img {
+	border: 13px solid #FFFFFF;
+	border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    width: 217px;
+    height: 217px;
+}
+
+.our-products-primary .wrap #snapshot, .our-products-primary .wrap #snapshot-in {
+    position: absolute;
+    top: 50px;
+    right: 7px;
+}
+
+#product_list > ul > li {
+	background: url('../images/product-shadow.png') center 210px no-repeat;
+}
+
+#product-info {
+	display: none;
+}
+
+body.page.page-id-26 .primary .wrap {
+    min-height: 10px !important;
+}
+
+body.single.single-post #ssba {
+    margin-bottom: 40px;
+    margin-top: 60px;
+}
+
+body.single.single-post #ssba img {
+	width: 60px !important;
+}
+
+body.single.single-post #respond input {
+    border-style: Solid;
+    border-color: #808080;
+    border-width: 1px;
+}
+
+#then-photo-1 {
+	top: 70px;
+    left: 475px;
+}
+
+#then-photo-2 {
+	top: 450px;
+    left: 470px;
+}
+
+#then-photo-3 {
+	top: 687px;
+    left: 639px;
+}
 
 @media only screen and (max-width: 1440px) {
     
