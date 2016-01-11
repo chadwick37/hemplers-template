@@ -22,11 +22,11 @@
 	                </div>
 	                <div id="footer-links">
 	                	<ul>
-	                		<li><a href="/our-products">Our Products</a></li>
 	                		<li><a href="/our-story">Our Story</a></li>
-	                		<li><a href="/where-to-buy">Where to Find It</a></li>
-	                		<li><a href="/contact-us">Contact Us</a></li>
-	                		<li><a href="/kestins-korner">Kestin's Korner</a></li>
+	                		<li><a href="/our-products">Our Products</a></li>
+	                		<li><a href="/where-to-buy">Where to Buy</a></li>
+	                		<li id="contact-modal"><a href="/contact-us">Contact Us</a></li>
+	                		<li><a href="/our-story/kestins-korner-2/">Kestin's Korner</a></li>
 	                	</ul>
 	                </div>
 	                <div class="phone">
