@@ -770,9 +770,10 @@ div.wp-tiles-byline-wrapper {
 	padding: 0px;
 }
 
-/*div.wp-tiles-tile {
-	box-shadow: 10px 10px 5px rgba(128, 128, 128, 0.28);
-}*/
+div.wp-tiles-tile {
+/* 	box-shadow: 10px 10px 5px rgba(128, 128, 128, 0.28); */
+	box-shadow: 4px 4px 3px rgba(0,0,0,0.5);
+}
 
 /* hide article */
 .hide {
@@ -1550,7 +1551,7 @@ div.wp-tiles-tile article.wp-tiles-tile-with-image div.wp-tiles-byline-wrapper h
     padding: 23.1px;
     font-weight: normal;
     line-height: 22px;
-    text-shadow: 4px 4px 3px rgba(0,0,0,0.5);
+/*     text-shadow: 4px 4px 3px rgba(0,0,0,0.5); */
 }
 
 /* Hide Loading */

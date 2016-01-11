@@ -69,13 +69,22 @@ $('article.post-32 div.wrap').html('');
 			return false;
 		});
 
-	$("#footer-links ul li:last-child a").click( function(e) {
+	$("#contact-modal").click( function(e) {
 			e.preventDefault();
 			//disable_scroll();
 			$("#contact-wrapper").fadeIn('slow');
 			$("#contact").fadeIn('slow');
 			return false;
 		});
+
+	// Remove last child version, replaced above with ID.
+	// $("#footer-links ul li:last-child a").click( function(e) {
+	// 		e.preventDefault();
+	// 		//disable_scroll();
+	// 		$("#contact-wrapper").fadeIn('slow');
+	// 		$("#contact").fadeIn('slow');
+	// 		return false;
+	// 	});
 
 	/*
 	 * Hide
