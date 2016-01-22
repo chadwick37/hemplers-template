@@ -34,7 +34,7 @@
                           }
 
                           // product list
-                          if( $post->ID == 26 ) {
+                          elseif( $post->ID == 26 ) {
                           	echo '<div class="wrap clearfix">';
                           	the_content(); 
                             get_template_part( 'productlist' );
@@ -42,7 +42,7 @@
                           }
 
                           //Kestin's Blog
-                          if( $post->ID == 511 ) {
+                          elseif( $post->ID == 511 ) {
                           	echo '<div class="descriptions_blog" >';
                             echo "<img class='aligncenter' src='".get_stylesheet_directory_uri()."/library/images/kestins-kornerpsd_1_.png' alt='kestins-korner-1'/>";
                         	the_content();

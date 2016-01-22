@@ -627,7 +627,7 @@ body.page-id-28 #content figure figcaption {
 
 .our-story-now {
   position: relative;
-  z-index: 100;
+  z-index: 10;
   padding-bottom: 150px;
 }
 
