@@ -604,7 +604,7 @@ div#inner-header h1#logo {
 div#inner-header h1#logo a {
     background: url('../images/logo-in-chains-smallpsd_1_.png') no-repeat;
     width : 258px;
-    height : 184px;
+    height : 143px;
     padding-top: 0;
     color: transparent;
     /*margin-left: 11px;*/
@@ -987,8 +987,11 @@ body.archive.category .wrap_blog.clearfix {
 body.page.page-id-511 div#container header.header div#inner-header div.arrow,
 body.archive.category div#container header.header div#inner-header div.arrow {
 	display: inherit;
+	background: transparent url('../images/arrow-left.png') left top no-repeat;
 	position: inherit;
-/*    z-index: 103;*/
+	background-size: 70% 30%;
+    width: 30px;
+    z-index: 103;
     bottom: 30px;
 }
 
@@ -1033,14 +1036,14 @@ body.archive.category div#inner-header h1#logo {
 	z-index: 102;
 	margin: 0 auto;
     left: 20px;
-    margin-top: -36px;
-    height: 184px;
+    /*margin-top: -36px;*/
+    height: 143px;
 }
 
 body.page.page-id-511 div#inner-header h1#logo,
 body.archive.category div#inner-header h1#logo {
     position: absolute;
-    margin-left: -30px;
+    /*margin-left: -30px;*/
     width: auto;
     height: auto;
 
@@ -1060,9 +1063,11 @@ body.archive .header #logo {
 body.page.page-id-511 div#inner-header h1#logo a,
 body.archive div#inner-header h1#logo a,
 body.archive.category div#inner-header h1#logo a {
-	background: url('../images/image2.png') no-repeat;
+	background: url('../images/hempler-logo-kestins.png') no-repeat;
 	margin-left: 0px;
-	margin-top: -20px;
+	/*margin-top: -20px;*/
+	width: 190px;
+    height: 113px;
 	left: 0;
 
 
