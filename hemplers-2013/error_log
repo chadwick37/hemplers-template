@@ -1,7 +1,0 @@
-[28-Mar-2013 16:00:44] PHP Fatal error:  Call to undefined function  wp_get_attachment_image_src() in /home2/criticf6/public_html/hemplers/wp-content/themes/hemplers-2013/productgallery.php on line 9
-[28-Mar-2013 16:03:51] PHP Fatal error:  Call to undefined function  wp_get_attachment_image_src() in /home2/criticf6/public_html/hemplers/wp-content/themes/hemplers-2013/productgallery.php on line 9
-[28-Mar-2013 16:03:59] PHP Fatal error:  Call to undefined function  wp_get_attachment_image_src() in /home2/criticf6/public_html/hemplers/wp-content/themes/hemplers-2013/productgallery.php on line 9
-[28-Mar-2013 16:47:59] PHP Fatal error:  Call to undefined function  wp_get_attachment_image_src() in /home2/criticf6/public_html/hemplers/wp-content/themes/hemplers-2013/productgallery.php on line 9
-[28-Mar-2013 16:48:13] PHP Fatal error:  Call to undefined function  wp_get_attachment_image_src() in /home2/criticf6/public_html/hemplers/wp-content/themes/hemplers-2013/productgallery.php on line 9
-[28-Mar-2013 16:48:15] PHP Fatal error:  Call to undefined function  wp_get_attachment_image_src() in /home2/criticf6/public_html/hemplers/wp-content/themes/hemplers-2013/productgallery.php on line 9
-[28-Mar-2013 17:32:23] PHP Fatal error:  Call to undefined function  wp_get_attachment_image_src() in /home2/criticf6/public_html/hemplers/wp-content/themes/hemplers-2013/productgallery.php on line 9

