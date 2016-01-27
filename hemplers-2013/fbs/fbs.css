@@ -10,7 +10,7 @@ body {
 }
 
 h1 {
-	background: url(http://www.hemplerfoodgroup.com/wp-content/themes/hemplers-2013/fbs/logo.png) center center no-repeat;
+	background: url(http://www.hemplers.com/wp-content/themes/hemplers-2013/fbs/logo.png) center center no-repeat;
 	display: block;
 	text-indent: -1000px;
 	overflow: hidden;
@@ -65,7 +65,7 @@ img a {border:none;}
 }
 
 #top {
-	background: #000 url(http://www.hemplerfoodgroup.com/wp-content/themes/hemplers-2013/fbs/bg.jpg) center center repeat-x;
+	background: #000 url(http://www.hemplers.com/wp-content/themes/hemplers-2013/fbs/bg.jpg) center center repeat-x;
 	 width:100%;
 	 position:fixed;
 	 top:0;
@@ -108,7 +108,7 @@ img a {border:none;}
 
 #shadow {
 	height: 20px;
-	background: transparent url(http://www.hemplerfoodgroup.com/wp-content/themes/hemplers-2013/fbs/shadow.png) center center repeat-x;
+	background: transparent url(http://www.hemplers.com/wp-content/themes/hemplers-2013/fbs/shadow.png) center center repeat-x;
 	margin-top: 144px;
 }
 

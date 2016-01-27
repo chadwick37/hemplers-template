@@ -811,18 +811,20 @@ $('div.arrow').on('click', function(e){
     
 
 // Override pagination speed on wp tiles
-setTimeout(function(){
-    $.wptiles.resizeParent = function($el,padding) {
-    var tiles=$el.children(".wp-tiles-tile"), tileOffsetTop=parseInt($el.offset().top), max=0, newHeight;
-            tiles.each(function() {
-                var $e=$(this), bottom=$e.height()+$e.offset().top;
-                if(bottom>max)max=bottom
-            }
-            );
-        newHeight=max-tileOffsetTop+parseInt(padding)+"px";
-        $el.parent(".wp-tiles-container").slideDown().animate({height:newHeight}, 250) // Change speed pagination wptiles to 1 second
-        }
-}, 2000);
+if ($('body').hasClass('page-id-511')) {
+	setTimeout(function(){
+	    $.wptiles.resizeParent = function($el,padding) {
+	    var tiles=$el.children(".wp-tiles-tile"), tileOffsetTop=parseInt($el.offset().top), max=0, newHeight;
+	            tiles.each(function() {
+	                var $e=$(this), bottom=$e.height()+$e.offset().top;
+	                if(bottom>max)max=bottom
+	            }
+	            );
+	        newHeight=max-tileOffsetTop+parseInt(padding)+"px";
+	        $el.parent(".wp-tiles-container").slideDown().animate({height:newHeight}, 250) // Change speed pagination wptiles to 1 second
+	        }
+	}, 2000);
+}
 
 })(jQuery)
 
