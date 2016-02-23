@@ -419,6 +419,8 @@ function mossy_get_attachments( $args = array() ) {
     $args['post_parent'] = '';
 
     $fun_attachments = get_posts( $args );
+  } else {
+    $fun_attachments = array();
   }
 
   $attachments = array_merge( $legal_attachments, $fun_attachments );
